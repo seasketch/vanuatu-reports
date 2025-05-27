@@ -8,6 +8,7 @@ import {
 import Translator from "../components/TranslatorAsync.js";
 import { Sites } from "../components/Sites.js";
 import { Size } from "../components/Size.js";
+import { BenthicCover } from "../components/BenthicCover.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -27,6 +28,7 @@ const BaseReport = () => {
       <ReportPage hidden={!enableAllTabs && tab !== "OVERVIEW"}>
         <Size />
         <Sites />
+        <BenthicCover />
         <SketchAttributesCard autoHide />
       </ReportPage>
     </>

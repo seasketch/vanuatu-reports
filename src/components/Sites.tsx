@@ -9,12 +9,9 @@ import {
   SmallReportTableStyled,
   Table,
 } from "@seasketch/geoprocessing/client-ui";
+import { ReportResult } from "@seasketch/geoprocessing/client-core";
 
-interface SiteReportResult {
-  metrics: {
-    metricId: string;
-    value: number;
-  }[];
+interface SiteReportResult extends ReportResult {
   stations: {
     station_id: string;
     island: string;

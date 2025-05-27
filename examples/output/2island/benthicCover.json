@@ -1,0 +1,114 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "Calcified Macroalgae",
+      "sketchId": null,
+      "groupId": null,
+      "value": 15.2425
+    },
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "CCA",
+      "sketchId": null,
+      "groupId": null,
+      "value": 15.97
+    },
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "Hard Coral",
+      "sketchId": null,
+      "groupId": null,
+      "value": 28.015
+    },
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "Invertebrate",
+      "sketchId": null,
+      "groupId": null,
+      "value": 1.435
+    },
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "Macroalgae",
+      "sketchId": null,
+      "groupId": null,
+      "value": 3.4775
+    },
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "Other",
+      "sketchId": null,
+      "groupId": null,
+      "value": 9.2875
+    },
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "Soft Coral",
+      "sketchId": null,
+      "groupId": null,
+      "value": 4.9125
+    },
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "Turf",
+      "sketchId": null,
+      "groupId": null,
+      "value": 21.6675
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "AMR_102",
+      "CCA": 10.44,
+      "Calcified Macroalgae": 20.68,
+      "Hard Coral": 38.54,
+      "Invertebrate": 1.76,
+      "Macroalgae": 3.32,
+      "Other": 1.76,
+      "Soft Coral": 0.1,
+      "Turf": 23.41
+    },
+    {
+      "station_id": "AMR_100",
+      "CCA": 7.28,
+      "Calcified Macroalgae": 25.03,
+      "Hard Coral": 35.49,
+      "Invertebrate": 0.41,
+      "Macroalgae": 1.95,
+      "Other": 24,
+      "Soft Coral": 0.62,
+      "Turf": 5.23
+    },
+    {
+      "station_id": "MLK_108",
+      "CCA": 30.26,
+      "Calcified Macroalgae": 6.87,
+      "Hard Coral": 23.49,
+      "Invertebrate": 1.13,
+      "Macroalgae": 3.08,
+      "Other": 7.59,
+      "Soft Coral": 4,
+      "Turf": 23.59
+    },
+    {
+      "station_id": "MLK_105",
+      "CCA": 15.9,
+      "Calcified Macroalgae": 8.39,
+      "Hard Coral": 14.54,
+      "Invertebrate": 2.44,
+      "Macroalgae": 5.56,
+      "Other": 3.8,
+      "Soft Coral": 14.93,
+      "Turf": 34.44
+    }
+  ]
+}

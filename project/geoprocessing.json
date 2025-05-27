@@ -10,5 +10,9 @@
     }
   ],
   "preprocessingFunctions": ["src/functions/clipToOceanEez.ts"],
-  "geoprocessingFunctions": ["src/functions/size.ts", "src/functions/sites.ts"]
+  "geoprocessingFunctions": [
+    "src/functions/size.ts",
+    "src/functions/sites.ts",
+    "src/functions/benthicCover.ts"
+  ]
 }

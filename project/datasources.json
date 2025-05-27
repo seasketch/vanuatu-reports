@@ -2,10 +2,7 @@
   {
     "datasourceId": "world",
     "geo_type": "vector",
-    "formats": [
-      "json",
-      "fgb"
-    ],
+    "formats": ["json", "fgb"],
     "precalc": false,
     "metadata": {
       "name": "World Outline Polygon",
@@ -22,9 +19,7 @@
   {
     "datasourceId": "eez",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "eez",
     "classKeys": [],
@@ -35,22 +30,39 @@
     "explodeMulti": true
   },
   {
-    "src": "data/src/expedition/processed-data/sites.fgb",
-    "layerName": "sites",
-    "geo_type": "vector",
     "datasourceId": "sites",
-    "formats": [
-      "fgb"
-    ],
+    "geo_type": "vector",
+    "formats": ["fgb"],
+    "precalc": false,
+    "layerName": "sites",
     "classKeys": [],
     "created": "2025-05-27T20:53:28.995Z",
     "lastUpdated": "2025-05-27T20:53:28.995Z",
+    "src": "data/src/expedition/processed-data/sites.fgb",
+    "propertiesToKeep": ["station_id", "island", "province"],
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "benthic_cover",
+    "geo_type": "vector",
+    "formats": ["fgb"],
+    "precalc": false,
+    "layerName": "benthic_cover",
+    "classKeys": [],
+    "created": "2025-05-27T22:33:43.473Z",
+    "lastUpdated": "2025-05-27T22:37:18.310Z",
+    "src": "data/src/expedition/processed-data/benthic_cover.fgb",
     "propertiesToKeep": [
       "station_id",
-      "island",
-      "province"
+      "CCA",
+      "Calcified Macroalgae",
+      "Hard Coral",
+      "Invertebrate",
+      "Macroalgae",
+      "Other",
+      "Soft Coral",
+      "Turf"
     ],
-    "explodeMulti": true,
-    "precalc": true
+    "explodeMulti": true
   }
 ]

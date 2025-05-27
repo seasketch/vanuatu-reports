@@ -2,7 +2,7 @@
   {
     "metricId": "size",
     "type": "areaOverlap",
-    "layerId": "nO_WNgvVP",
+    "layerId": "1_rbZwN2L",
     "classes": [
       {
         "classId": "eez",
@@ -20,6 +20,53 @@
         "classId": "sites",
         "display": "Sites",
         "datasourceId": "sites"
+      }
+    ]
+  },
+  {
+    "metricId": "benthicCover",
+    "type": "countOverlap",
+    "datasourceId": "benthic_cover",
+    "classes": [
+      {
+        "classId": "Calcified Macroalgae",
+        "display": "Calcified Macroalgae",
+        "layerId": "2UQuhCyJ8"
+      },
+      {
+        "classId": "CCA",
+        "display": "CCA",
+        "layerId": "muTVDOZi_"
+      },
+      {
+        "classId": "Hard Coral",
+        "display": "Hard Coral",
+        "layerId": "0r163pX1c"
+      },
+      {
+        "classId": "Invertebrate",
+        "display": "Invertebrate",
+        "layerId": "0Rg9c5fBM"
+      },
+      {
+        "classId": "Macroalgae",
+        "display": "Macroalgae",
+        "layerId": "vjxYwUOCE"
+      },
+      {
+        "classId": "Other",
+        "display": "Other",
+        "layerId": "Xjd8d0jaG"
+      },
+      {
+        "classId": "Soft Coral",
+        "display": "Soft Coral",
+        "layerId": "Z5eQvNxpZ"
+      },
+      {
+        "classId": "Turf",
+        "display": "Turf",
+        "layerId": "_yvqVJT3O"
       }
     ]
   }
