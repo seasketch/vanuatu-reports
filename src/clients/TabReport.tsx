@@ -6,7 +6,8 @@ import {
   SketchAttributesCard,
 } from "@seasketch/geoprocessing/client-ui";
 import Translator from "../components/TranslatorAsync.js";
-import { SimpleCard } from "../components/SimpleCard.js";
+import { Sites } from "../components/Sites.js";
+import { Size } from "../components/Size.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -24,7 +25,8 @@ const BaseReport = () => {
         />
       </div>
       <ReportPage hidden={!enableAllTabs && tab !== "OVERVIEW"}>
-        <SimpleCard />
+        <Size />
+        <Sites />
         <SketchAttributesCard autoHide />
       </ReportPage>
     </>

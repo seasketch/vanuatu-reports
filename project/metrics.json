@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "metricId": "size",
+    "type": "areaOverlap",
+    "layerId": "nO_WNgvVP",
+    "classes": [
+      {
+        "classId": "eez",
+        "display": "EEZ",
+        "datasourceId": "eez"
+      }
+    ]
+  },
+  {
+    "metricId": "sites",
+    "type": "countOverlap",
+    "layerId": "snBC9o_nH",
+    "classes": [
+      {
+        "classId": "sites",
+        "display": "Sites",
+        "datasourceId": "sites"
+      }
+    ]
+  }
+]

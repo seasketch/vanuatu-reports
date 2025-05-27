@@ -1,0 +1,50 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "islands",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 2
+    },
+    {
+      "geographyId": null,
+      "metricId": "provinces",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 1
+    },
+    {
+      "geographyId": null,
+      "metricId": "stations",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 4
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "AMR_102",
+      "island": "Ambrym",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "AMR_100",
+      "island": "Ambrym",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "MLK_108",
+      "island": "Malekula",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "MLK_105",
+      "island": "Malekula",
+      "province": "Malampa"
+    }
+  ]
+}

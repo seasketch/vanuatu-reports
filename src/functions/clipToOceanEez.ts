@@ -6,7 +6,6 @@ import {
   Polygon,
   MultiPolygon,
   loadFgb,
-  clip,
   clipMultiMerge,
   ValidationError,
   isPolygonFeature,

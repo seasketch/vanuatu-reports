@@ -2,7 +2,13 @@
   "author": "Abby Vath Meyer <avmey@ucsb.edu>",
   "organization": "SeaSketch",
   "region": "us-west-1",
-  "clients": [],
+  "clients": [
+    {
+      "name": "TabReport",
+      "description": "Reports",
+      "source": "src/clients/TabReport.tsx"
+    }
+  ],
   "preprocessingFunctions": ["src/functions/clipToOceanEez.ts"],
-  "geoprocessingFunctions": []
+  "geoprocessingFunctions": ["src/functions/size.ts", "src/functions/sites.ts"]
 }
