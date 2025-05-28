@@ -80,7 +80,8 @@ export const BenthicCover: React.FunctionComponent = () => {
                   chartOptions: {
                     showTitle: true,
                   },
-                  width: 20,
+                  colStyle: { textAlign: "center" },
+                  width: 50,
                 },
                 {
                   columnLabel: mapLabel,
@@ -128,6 +129,7 @@ const genSketchTable = (
       accessor: (row) => {
         return row[curClass.classId] + "%";
       },
+      style: { textAlign: "center" },
     }));
 
   const columns: Column<Record<string, string | number>>[] = [

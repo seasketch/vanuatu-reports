@@ -36,7 +36,7 @@ export const Richness: React.FunctionComponent = () => {
   // Labels
   const titleLabel = t("Richness");
   const mapLabel = t("Map");
-  const withinLabel = t("Richness");
+  const withinLabel = t("Average Richness");
 
   return (
     <ResultsCard title={titleLabel} functionName="richness">
@@ -67,6 +67,7 @@ export const Richness: React.FunctionComponent = () => {
                   chartOptions: {
                     showTitle: true,
                   },
+                  colStyle: { textAlign: "center" },
                   width: 20,
                 },
                 {
@@ -117,6 +118,7 @@ const genSketchTable = (
       accessor: (row) => {
         return row[curClass.classId];
       },
+      style: { textAlign: "center" },
     }));
 
   const columns: Column<Record<string, string | number>>[] = [
