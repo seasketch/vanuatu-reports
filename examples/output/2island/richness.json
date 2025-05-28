@@ -1,0 +1,54 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "richness",
+      "classId": "coral_genus_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": 11.25
+    },
+    {
+      "geographyId": null,
+      "metricId": "richness",
+      "classId": "fish_family_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": 20.25
+    },
+    {
+      "geographyId": null,
+      "metricId": "richness",
+      "classId": "invertebrate_species_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": 17.5
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "AMR_102",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 24,
+      "invertebrate_species_richness": 18
+    },
+    {
+      "station_id": "AMR_100",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 20,
+      "invertebrate_species_richness": 16
+    },
+    {
+      "station_id": "MLK_108",
+      "coral_genus_richness": 4,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 16
+    },
+    {
+      "station_id": "MLK_105",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 20
+    }
+  ]
+}
