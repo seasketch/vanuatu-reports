@@ -8,34 +8,18 @@ import {
   Pill,
   ReportError,
   ResultsCard,
-  SketchClassTable,
   SketchClassTableStyled,
   Table,
-  useSketchProperties,
 } from "@seasketch/geoprocessing/client-ui";
-import {
-  GeogProp,
-  Metric,
-  MetricGroup,
-  ReportResult,
-  SketchProperties,
-  flattenBySketchAllClass,
-  metricsWithSketchId,
-  toPercentMetric,
-} from "@seasketch/geoprocessing/client-core";
+import { MetricGroup } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
 import { Station } from "../util/station.js";
 
 /**
  * JuvenileCoralDensity component
  */
-export const JuvenileCoralDensity: React.FunctionComponent<GeogProp> = (
-  props,
-) => {
+export const JuvenileCoralDensity: React.FunctionComponent = () => {
   const { t } = useTranslation();
-  const curGeography = project.getGeographyById(props.geographyId, {
-    fallbackGroup: "default-boundary",
-  });
 
   // Metrics
   const metricGroup = project.getMetricGroup("juvenileCoralDensity", t);
@@ -47,11 +31,7 @@ export const JuvenileCoralDensity: React.FunctionComponent<GeogProp> = (
   const averageLabel = t("Average Coral Density");
 
   return (
-    <ResultsCard
-      title={titleLabel}
-      functionName="juvenileCoralDensity"
-      extraParams={{ geographyIds: [curGeography.geographyId] }}
-    >
+    <ResultsCard title={titleLabel} functionName="juvenileCoralDensity">
       {(data: Station[]) => {
         const averages = data.find((s) => s.station_id === "averages");
         const averageMetrics = averages
