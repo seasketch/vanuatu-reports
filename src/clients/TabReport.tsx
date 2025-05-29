@@ -10,6 +10,7 @@ import { Sites } from "../components/Sites.js";
 import { Size } from "../components/Size.js";
 import { BenthicCover } from "../components/BenthicCover.js";
 import { Richness } from "../components/Richness.js";
+import { JuvenileCoralDensity } from "../components/JuvenileCoralDensity.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -31,6 +32,7 @@ const BaseReport = () => {
         <Sites />
         <BenthicCover />
         <Richness />
+        <JuvenileCoralDensity />
         <SketchAttributesCard autoHide />
       </ReportPage>
     </>
