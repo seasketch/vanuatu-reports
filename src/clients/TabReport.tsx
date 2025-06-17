@@ -22,7 +22,7 @@ const BaseReport = () => {
   const segments = [
     { id: "OVERVIEW", label: t("Overview") },
     { id: "EXPEDITION", label: t("Expedition Data") },
-    { id: "ACA", label: t("Allen Coral Atlas") },
+    { id: "REPRESENTATION", label: t("Representation") },
   ];
   const [tab, setTab] = useState<string>("OVERVIEW");
 
@@ -46,7 +46,7 @@ const BaseReport = () => {
         <Richness />
         <JuvenileCoralDensity />
       </ReportPage>
-      <ReportPage hidden={!enableAllTabs && tab !== "ACA"}>
+      <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
         <BenthicACA />
         <GeomorphACA />
         <ReefExtentACA />
