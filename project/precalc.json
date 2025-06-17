@@ -2,10 +2,122 @@
   {
     "geographyId": "world",
     "metricId": "area",
+    "classId": "benthic_aca-Coral/Algae",
+    "sketchId": null,
+    "groupId": null,
+    "value": 286219768.2616198
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "benthic_aca-Microalgal Mats",
+    "sketchId": null,
+    "groupId": null,
+    "value": 14013538.29918971
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "benthic_aca-Rock",
+    "sketchId": null,
+    "groupId": null,
+    "value": 93952003.48004337
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "benthic_aca-Rubble",
+    "sketchId": null,
+    "groupId": null,
+    "value": 36575848.35468364
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "benthic_aca-Sand",
+    "sketchId": null,
+    "groupId": null,
+    "value": 38614657.51784066
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "benthic_aca-Seagrass",
+    "sketchId": null,
+    "groupId": null,
+    "value": 6611465.448483655
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "benthic_aca-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 475987281.36186206
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
     "classId": "eez-total",
     "sketchId": null,
     "groupId": null,
     "value": 625523911657.4789
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "benthic_aca-Coral/Algae",
+    "sketchId": null,
+    "groupId": null,
+    "value": 29315
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "benthic_aca-Microalgal Mats",
+    "sketchId": null,
+    "groupId": null,
+    "value": 4410
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "benthic_aca-Rock",
+    "sketchId": null,
+    "groupId": null,
+    "value": 31324
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "benthic_aca-Rubble",
+    "sketchId": null,
+    "groupId": null,
+    "value": 13594
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "benthic_aca-Sand",
+    "sketchId": null,
+    "groupId": null,
+    "value": 15884
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "benthic_aca-Seagrass",
+    "sketchId": null,
+    "groupId": null,
+    "value": 5921
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "benthic_aca-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 100448
   },
   {
     "geographyId": "world",

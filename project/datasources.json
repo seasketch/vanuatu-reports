@@ -105,14 +105,15 @@
     "explodeMulti": true
   },
   {
-    "src": "data/src/expedition/processed-data/juvenile_coral_density.fgb",
-    "layerName": "juvenile_coral_density",
-    "geo_type": "vector",
     "datasourceId": "juvenile_coral_density",
+    "geo_type": "vector",
     "formats": ["fgb"],
+    "precalc": false,
+    "layerName": "juvenile_coral_density",
     "classKeys": [],
     "created": "2025-05-29T20:34:56.008Z",
     "lastUpdated": "2025-05-29T20:34:56.008Z",
+    "src": "data/src/expedition/processed-data/juvenile_coral_density.fgb",
     "propertiesToKeep": [
       "station_id",
       "total",
@@ -180,7 +181,31 @@
       "sponge",
       "tunica"
     ],
-    "explodeMulti": true,
-    "precalc": true
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "benthic_aca",
+    "geo_type": "vector",
+    "formats": ["fgb"],
+    "precalc": true,
+    "layerName": "benthic",
+    "classKeys": ["class"],
+    "created": "2025-06-17T19:53:36.673Z",
+    "lastUpdated": "2025-06-17T20:01:01.350Z",
+    "src": "data/src/allen-coral-atlas/Benthic-Map/benthic.fgb",
+    "propertiesToKeep": ["class"],
+    "explodeMulti": true
+  },
+  {
+    "src": "data/src/Data_Received/GEBCO/GEBCO_17_Jun_2025_b442cdd62f89/gebco_2024_n-12.1627_s-21.6429_w163.1667_e173.6089.tif",
+    "band": 1,
+    "geo_type": "raster",
+    "datasourceId": "gebco_depth",
+    "formats": ["tif"],
+    "created": "2025-06-17T20:33:59.516Z",
+    "lastUpdated": "2025-06-17T20:33:59.516Z",
+    "noDataValue": -32767,
+    "measurementType": "quantitative",
+    "precalc": false
   }
 ]

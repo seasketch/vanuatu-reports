@@ -325,5 +325,49 @@
         "layerId": "3aIRlf4Tk"
       }
     ]
+  },
+  {
+    "metricId": "benthicACA",
+    "type": "areaOverlap",
+    "datasourceId": "benthic_aca",
+    "classKey": "class",
+    "layerId": "FN8HKwKV2",
+    "classes": [
+      {
+        "classId": "Coral/Algae",
+        "display": "Coral/Algae"
+      },
+      {
+        "classId": "Microalgal Mats",
+        "display": "Microalgal Mats"
+      },
+      {
+        "classId": "Rock",
+        "display": "Rock"
+      },
+      {
+        "classId": "Rubble",
+        "display": "Rubble"
+      },
+      {
+        "classId": "Sand",
+        "display": "Sand"
+      },
+      {
+        "classId": "Seagrass",
+        "display": "Seagrass"
+      }
+    ]
+  },
+  {
+    "metricId": "bathymetry",
+    "type": "valueOverlap",
+    "layerId": "zM1Hpf1AI",
+    "datasourceId": "gebco_depth",
+    "classes": [
+      { "classId": "min", "display": "Min" },
+      { "classId": "mean", "display": "Mean" },
+      { "classId": "max", "display": "Max" }
+    ]
   }
 ]

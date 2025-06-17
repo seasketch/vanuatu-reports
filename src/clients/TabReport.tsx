@@ -11,11 +11,16 @@ import { Size } from "../components/Size.js";
 import { BenthicCover } from "../components/BenthicCover.js";
 import { Richness } from "../components/Richness.js";
 import { JuvenileCoralDensity } from "../components/JuvenileCoralDensity.js";
+import { BenthicACA } from "../components/BenthicACA.js";
+import { Bathymetry } from "../components/Bathymetry.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
   const { t } = useTranslation();
-  const segments = [{ id: "OVERVIEW", label: t("Overview") }];
+  const segments = [
+    { id: "OVERVIEW", label: t("Overview") },
+    { id: "EXPEDITION", label: t("Expedition Data") },
+  ];
   const [tab, setTab] = useState<string>("OVERVIEW");
 
   return (
@@ -29,11 +34,15 @@ const BaseReport = () => {
       </div>
       <ReportPage hidden={!enableAllTabs && tab !== "OVERVIEW"}>
         <Size />
+        <Bathymetry />
+        <BenthicACA />
+        <SketchAttributesCard autoHide />
+      </ReportPage>
+      <ReportPage hidden={!enableAllTabs && tab !== "EXPEDITION"}>
         <Sites />
         <BenthicCover />
         <Richness />
         <JuvenileCoralDensity />
-        <SketchAttributesCard autoHide />
       </ReportPage>
     </>
   );
