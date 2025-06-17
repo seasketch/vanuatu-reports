@@ -22,6 +22,7 @@ const BaseReport = () => {
   const segments = [
     { id: "OVERVIEW", label: t("Overview") },
     { id: "EXPEDITION", label: t("Expedition Data") },
+    { id: "ACA", label: t("Allen Coral Atlas") },
   ];
   const [tab, setTab] = useState<string>("OVERVIEW");
 
@@ -37,9 +38,6 @@ const BaseReport = () => {
       <ReportPage hidden={!enableAllTabs && tab !== "OVERVIEW"}>
         <Size />
         <Bathymetry />
-        <BenthicACA />
-        <GeomorphACA />
-        <ReefExtentACA />
         <SketchAttributesCard autoHide />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "EXPEDITION"}>
@@ -47,6 +45,11 @@ const BaseReport = () => {
         <BenthicCover />
         <Richness />
         <JuvenileCoralDensity />
+      </ReportPage>
+      <ReportPage hidden={!enableAllTabs && tab !== "ACA"}>
+        <BenthicACA />
+        <GeomorphACA />
+        <ReefExtentACA />
       </ReportPage>
     </>
   );
