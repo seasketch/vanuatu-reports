@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "geographyId": "world",
+      "metricId": "reefExtentACA",
+      "classId": "reefExtent",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 57434446.000791,
+      "extra": {
+        "sketchName": "2island"
+      }
+    }
+  ]
+}

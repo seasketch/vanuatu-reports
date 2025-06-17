@@ -23,12 +23,12 @@ import {
 import project from "../../project/projectClient.js";
 
 /**
- * BenthicACA component
+ * GeomorphACA component
  *
  * @param props - geographyId
  * @returns A react component which displays an overlap report
  */
-export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
+export const GeomorphACA: React.FunctionComponent<GeogProp> = (props) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
   const curGeography = project.getGeographyById(props.geographyId, {
@@ -36,7 +36,7 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
   });
 
   // Metrics
-  const metricGroup = project.getMetricGroup("benthicACA", t);
+  const metricGroup = project.getMetricGroup("geomorphACA", t);
   const precalcMetrics = project.getPrecalcMetrics(
     metricGroup,
     "area",
@@ -44,7 +44,7 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
   );
 
   // Labels
-  const titleLabel = t("Benthic Map - Allen Coral Atlas");
+  const titleLabel = t("Geomorphology - Allen Coral Atlas");
   const withinLabel = t("Within Plan");
   const percWithinLabel = t("% Within Plan");
   const unitsLabel = t("km²");
@@ -52,7 +52,7 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
   return (
     <ResultsCard
       title={titleLabel}
-      functionName="benthicACA"
+      functionName="geomorphACA"
       extraParams={{ geographyIds: [curGeography.geographyId] }}
     >
       {(data: ReportResult) => {
@@ -79,16 +79,15 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
         return (
           <ReportError>
             <p>
-              <Trans i18nKey="BenthicACA 1">
-                This report summarizes this plan&apos;s overlap with benthic
-                features within the Vanuatu EEZ, based on Allen Coral Atlas
-                data.
+              <Trans i18nKey="GeomorphACA 1">
+                This report summarizes this zone&apos;s overlap with geomorphic
+                features within Vanuatu's EEZ, based on Allen Coral Atlas data.
               </Trans>
             </p>
 
             <LayerToggle
               layerId={metricGroup.layerId}
-              label={t("Show Benthic Features On Map")}
+              label={t("Show Geomorphic Features On Map")}
             />
 
             <ClassTable
@@ -97,7 +96,7 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
               objective={objectives}
               columnConfig={[
                 {
-                  columnLabel: t("Benthic Feature"),
+                  columnLabel: "Geomorphic Feature",
                   type: "class",
                   width: 30,
                 },
@@ -138,24 +137,21 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
             )}
 
             <Collapse title={t("Learn More")}>
-              <Trans i18nKey="BenthicACA - learn more">
+              <Trans i18nKey="GeomorphACA - learn more">
                 <p>
                   ℹ️ Overview: The Allen Coral Atlas is a global-scale coral
-                  reef habitat mapping project that uses Planet Dove 3.7 m
+                  reef habitat mapping project that is using Planet Dove 3.7m
                   resolution daily satellite imagery (in combination with wave
-                  models and ecological data) to create consistent and high-
-                  detail global habitat maps to support reef-related science and
-                  conservation. Global Benthic Habitat Maps characterise
-                  different coral reef bottom types. These bottom types include
-                  communities of living organisms attached to the reef
-                  (benthos), as well as sediments and underlying substrate.
+                  models and ecological data) to create consistent global coral
+                  reef habitat maps with the purpose of supporting science and
+                  conservation.
                 </p>
                 <p>
                   📈 Report: This report calculates the total area of each
-                  benthic feature within the plan. This value is divided by the
-                  total area of each benthic feature to obtain the % contained
-                  within the plan. If the plan includes multiple areas that
-                  overlap, the overlap is only counted once.
+                  geomorphic feature within the zone. This value is divided by
+                  the total area of each geomorphic feature to obtain the %
+                  contained within the zone. If the zone includes multiple areas
+                  that overlap, the overlap is only counted once.
                 </p>
               </Trans>
             </Collapse>

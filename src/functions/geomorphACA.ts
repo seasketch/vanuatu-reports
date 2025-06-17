@@ -21,12 +21,12 @@ import {
 import { clipToGeography } from "../util/clipToGeography.js";
 
 /**
- * benthicACA: A geoprocessing function that calculates overlap metrics for vector datasources
+ * geomorphACA: A geoprocessing function that calculates overlap metrics for vector datasources
  * @param sketch - A sketch or collection of sketches
  * @param extraParams
  * @returns Calculated metrics and a null sketch
  */
-export async function benthicACA(
+export async function geomorphACA(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
@@ -46,7 +46,7 @@ export async function benthicACA(
   > = {};
 
   // Calculate overlap metrics for each class in metric group
-  const metricGroup = project.getMetricGroup("benthicACA");
+  const metricGroup = project.getMetricGroup("geomorphACA");
   const metrics = (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {
@@ -105,8 +105,8 @@ export async function benthicACA(
   };
 }
 
-export default new GeoprocessingHandler(benthicACA, {
-  title: "benthicACA",
+export default new GeoprocessingHandler(geomorphACA, {
+  title: "geomorphACA",
   description: "",
   timeout: 500, // seconds
   memory: 1024, // megabytes

@@ -3,7 +3,6 @@ import { Trans, useTranslation } from "react-i18next";
 import {
   ClassTable,
   Collapse,
-  LayerToggle,
   ReportError,
   ResultsCard,
   SketchClassTable,
@@ -23,12 +22,12 @@ import {
 import project from "../../project/projectClient.js";
 
 /**
- * BenthicACA component
+ * ReefExtentACA component
  *
  * @param props - geographyId
  * @returns A react component which displays an overlap report
  */
-export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
+export const ReefExtentACA: React.FunctionComponent<GeogProp> = (props) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
   const curGeography = project.getGeographyById(props.geographyId, {
@@ -36,7 +35,7 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
   });
 
   // Metrics
-  const metricGroup = project.getMetricGroup("benthicACA", t);
+  const metricGroup = project.getMetricGroup("reefExtentACA", t);
   const precalcMetrics = project.getPrecalcMetrics(
     metricGroup,
     "area",
@@ -44,7 +43,8 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
   );
 
   // Labels
-  const titleLabel = t("Benthic Map - Allen Coral Atlas");
+  const titleLabel = t("Reef Extent - Allen Coral Atlas");
+  const mapLabel = t("Map");
   const withinLabel = t("Within Plan");
   const percWithinLabel = t("% Within Plan");
   const unitsLabel = t("km²");
@@ -52,7 +52,7 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
   return (
     <ResultsCard
       title={titleLabel}
-      functionName="benthicACA"
+      functionName="reefExtentACA"
       extraParams={{ geographyIds: [curGeography.geographyId] }}
     >
       {(data: ReportResult) => {
@@ -79,17 +79,11 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
         return (
           <ReportError>
             <p>
-              <Trans i18nKey="BenthicACA 1">
-                This report summarizes this plan&apos;s overlap with benthic
-                features within the Vanuatu EEZ, based on Allen Coral Atlas
-                data.
+              <Trans i18nKey="ReefExtentACA 1">
+                This report summarizes this plan&apos;s overlap with reef
+                extent, based on Allen Coral Atlas data.
               </Trans>
             </p>
-
-            <LayerToggle
-              layerId={metricGroup.layerId}
-              label={t("Show Benthic Features On Map")}
-            />
 
             <ClassTable
               rows={metrics}
@@ -97,7 +91,7 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
               objective={objectives}
               columnConfig={[
                 {
-                  columnLabel: t("Benthic Feature"),
+                  columnLabel: " ",
                   type: "class",
                   width: 30,
                 },
@@ -123,6 +117,11 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
                   },
                   width: 40,
                 },
+                {
+                  columnLabel: mapLabel,
+                  type: "layerToggle",
+                  width: 10,
+                },
               ]}
             />
 
@@ -138,24 +137,34 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
             )}
 
             <Collapse title={t("Learn More")}>
-              <Trans i18nKey="BenthicACA - learn more">
+              <Trans i18nKey="ReefExtentACA - learn more">
                 <p>
                   ℹ️ Overview: The Allen Coral Atlas is a global-scale coral
                   reef habitat mapping project that uses Planet Dove 3.7 m
                   resolution daily satellite imagery (in combination with wave
                   models and ecological data) to create consistent and high-
                   detail global habitat maps to support reef-related science and
-                  conservation. Global Benthic Habitat Maps characterise
-                  different coral reef bottom types. These bottom types include
-                  communities of living organisms attached to the reef
-                  (benthos), as well as sediments and underlying substrate.
+                  conservation. The reef extent layer more inclusively depicts
+                  the shallow coral reef environment than our more detailed
+                  benthic or geomorphic habitat maps. It includes reef features
+                  that were unmappable to geomorphic/benthic level, including
+                  deeper reef structures, reef habitat in more turbid water,
+                  deep or very steep reef slope areas, and very shallow
+                  intertidal areas at the land-sea interface. Known limitations
+                  are that some areas of supra-tidal beach and vegetation are
+                  included, which may not strictly be coral reef environments.
+                  Overall, the reef extent product is still conservative, and we
+                  expect that the area of reef erroneously included at the
+                  land-sea interface is greatly outweighed by the areas of reef
+                  still missed at both the shallow and deep margins of the
+                  product.
                 </p>
                 <p>
-                  📈 Report: This report calculates the total area of each
-                  benthic feature within the plan. This value is divided by the
-                  total area of each benthic feature to obtain the % contained
-                  within the plan. If the plan includes multiple areas that
-                  overlap, the overlap is only counted once.
+                  📈 Report: This report calculates the total area of reef
+                  extent within the zone. This value is divided by the total
+                  area of reef extent to obtain the % contained within the zone.
+                  If the zone includes multiple areas that overlap, the overlap
+                  is only counted once.
                 </p>
               </Trans>
             </Collapse>

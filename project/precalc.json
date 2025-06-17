@@ -65,6 +65,102 @@
   },
   {
     "geographyId": "world",
+    "metricId": "area",
+    "classId": "geomorph_aca-Back Reef Slope",
+    "sketchId": null,
+    "groupId": null,
+    "value": 16733378.890135288
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "geomorph_aca-Deep Lagoon",
+    "sketchId": null,
+    "groupId": null,
+    "value": 22304813.891049422
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "geomorph_aca-Inner Reef Flat",
+    "sketchId": null,
+    "groupId": null,
+    "value": 44468084.04530139
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "geomorph_aca-Outer Reef Flat",
+    "sketchId": null,
+    "groupId": null,
+    "value": 172947607.534525
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "geomorph_aca-Plateau",
+    "sketchId": null,
+    "groupId": null,
+    "value": 14220151.351512797
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "geomorph_aca-Reef Crest",
+    "sketchId": null,
+    "groupId": null,
+    "value": 26360800.647080254
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "geomorph_aca-Reef Slope",
+    "sketchId": null,
+    "groupId": null,
+    "value": 14679704.360164369
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "geomorph_aca-Shallow Lagoon",
+    "sketchId": null,
+    "groupId": null,
+    "value": 12843151.784338038
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "geomorph_aca-Sheltered Reef Slope",
+    "sketchId": null,
+    "groupId": null,
+    "value": 236292106.88879684
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "geomorph_aca-Terrestrial Reef Flat",
+    "sketchId": null,
+    "groupId": null,
+    "value": 14469699.363528065
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "geomorph_aca-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 575319498.7564294
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "reef_extent_aca-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1155636571.1287217
+  },
+  {
+    "geographyId": "world",
     "metricId": "count",
     "classId": "benthic_aca-Coral/Algae",
     "sketchId": null,
@@ -126,5 +222,101 @@
     "sketchId": null,
     "groupId": null,
     "value": 1
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "geomorph_aca-Back Reef Slope",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1530
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "geomorph_aca-Deep Lagoon",
+    "sketchId": null,
+    "groupId": null,
+    "value": 3255
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "geomorph_aca-Inner Reef Flat",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2113
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "geomorph_aca-Outer Reef Flat",
+    "sketchId": null,
+    "groupId": null,
+    "value": 9041
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "geomorph_aca-Plateau",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1988
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "geomorph_aca-Reef Crest",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1802
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "geomorph_aca-Reef Slope",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1525
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "geomorph_aca-Shallow Lagoon",
+    "sketchId": null,
+    "groupId": null,
+    "value": 986
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "geomorph_aca-Sheltered Reef Slope",
+    "sketchId": null,
+    "groupId": null,
+    "value": 18158
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "geomorph_aca-Terrestrial Reef Flat",
+    "sketchId": null,
+    "groupId": null,
+    "value": 924
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "geomorph_aca-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 41322
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "reef_extent_aca-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 2605
   }
 ]

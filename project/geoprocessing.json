@@ -17,6 +17,8 @@
     "src/functions/richness.ts",
     "src/functions/juvenileCoralDensity.ts",
     "src/functions/benthicACA.ts",
-    "src/functions/bathymetry.ts"
+    "src/functions/bathymetry.ts",
+    "src/functions/geomorphACA.ts",
+    "src/functions/reefExtentACA.ts"
   ]
 }

@@ -1,0 +1,114 @@
+{
+  "metrics": [
+    {
+      "geographyId": "world",
+      "metricId": "geomorphACA",
+      "classId": "Back Reef Slope",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 234205.216904,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "geomorphACA",
+      "classId": "Deep Lagoon",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 896108.494043,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "geomorphACA",
+      "classId": "Inner Reef Flat",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 1420179.154556,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "geomorphACA",
+      "classId": "Outer Reef Flat",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 20803438.564779,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "geomorphACA",
+      "classId": "Plateau",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 649893.448958,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "geomorphACA",
+      "classId": "Reef Crest",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 3071289.350969,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "geomorphACA",
+      "classId": "Reef Slope",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "geomorphACA",
+      "classId": "Shallow Lagoon",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 476011.487613,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "geomorphACA",
+      "classId": "Sheltered Reef Slope",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 12975186.387143,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "geomorphACA",
+      "classId": "Terrestrial Reef Flat",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    }
+  ]
+}

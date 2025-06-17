@@ -13,6 +13,8 @@ import { Richness } from "../components/Richness.js";
 import { JuvenileCoralDensity } from "../components/JuvenileCoralDensity.js";
 import { BenthicACA } from "../components/BenthicACA.js";
 import { Bathymetry } from "../components/Bathymetry.js";
+import { GeomorphACA } from "../components/GeomorphACA.js";
+import { ReefExtentACA } from "../components/ReefExtentACA.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -36,6 +38,8 @@ const BaseReport = () => {
         <Size />
         <Bathymetry />
         <BenthicACA />
+        <GeomorphACA />
+        <ReefExtentACA />
         <SketchAttributesCard autoHide />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "EXPEDITION"}>
