@@ -26,11 +26,11 @@
       "fgb"
     ],
     "precalc": true,
-    "layerName": "eez",
+    "layerName": "eez_gmw",
     "classKeys": [],
     "created": "2025-05-23T21:58:29.245Z",
-    "lastUpdated": "2025-05-23T21:58:29.245Z",
-    "src": "data/src/EEZ/eez.shp",
+    "lastUpdated": "2025-06-18T21:46:35.929Z",
+    "src": "data/src/EEZ/EEZ_GMW/eez_gmw.fgb",
     "propertiesToKeep": [],
     "explodeMulti": true
   },
@@ -266,18 +266,32 @@
     "explodeMulti": true
   },
   {
-    "src": "data/src/allen-coral-atlas/Reef-Extent/reef-extent.fgb",
-    "layerName": "reef-extent",
-    "geo_type": "vector",
     "datasourceId": "reef_extent_aca",
+    "geo_type": "vector",
     "formats": [
       "fgb"
     ],
+    "precalc": true,
+    "layerName": "reef-extent",
     "classKeys": [],
     "created": "2025-06-17T21:01:44.636Z",
     "lastUpdated": "2025-06-17T21:01:44.636Z",
+    "src": "data/src/allen-coral-atlas/Reef-Extent/reef-extent.fgb",
     "propertiesToKeep": [],
-    "explodeMulti": true,
-    "precalc": true
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "mangroves",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": 0,
+    "created": "2025-06-18T21:58:54.422Z",
+    "lastUpdated": "2025-06-18T22:22:47.915Z",
+    "src": "data/src/Data_Received/GlobalMangroveWatch/globalMangroveWatch2020.tif"
   }
 ]

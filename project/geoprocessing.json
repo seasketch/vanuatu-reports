@@ -9,7 +9,9 @@
       "source": "src/clients/TabReport.tsx"
     }
   ],
-  "preprocessingFunctions": ["src/functions/clipToOceanEez.ts"],
+  "preprocessingFunctions": [
+    "src/functions/clipToOceanEez.ts"
+  ],
   "geoprocessingFunctions": [
     "src/functions/size.ts",
     "src/functions/sites.ts",
@@ -19,6 +21,7 @@
     "src/functions/benthicACA.ts",
     "src/functions/bathymetry.ts",
     "src/functions/geomorphACA.ts",
-    "src/functions/reefExtentACA.ts"
+    "src/functions/reefExtentACA.ts",
+    "src/functions/mangroves.ts"
   ]
 }

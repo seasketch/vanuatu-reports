@@ -394,6 +394,18 @@
     ]
   },
   {
+    "metricId": "mangroves",
+    "type": "areaOverlap",
+    "classes": [
+      {
+        "classId": "mangroves",
+        "datasourceId": "mangroves",
+        "display": "Mangrove Extent",
+        "layerId": "OCDwPJL5P"
+      }
+    ]
+  },
+  {
     "metricId": "bathymetry",
     "type": "valueOverlap",
     "layerId": "zM1Hpf1AI",

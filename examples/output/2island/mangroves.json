@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "mangroves",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 1017490.896899,
+      "extra": {
+        "sketchName": "2island"
+      }
+    }
+  ]
+}

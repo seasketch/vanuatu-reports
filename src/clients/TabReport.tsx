@@ -15,6 +15,7 @@ import { BenthicACA } from "../components/BenthicACA.js";
 import { Bathymetry } from "../components/Bathymetry.js";
 import { GeomorphACA } from "../components/GeomorphACA.js";
 import { ReefExtentACA } from "../components/ReefExtentACA.js";
+import { Mangroves } from "../components/Mangroves.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -50,6 +51,7 @@ const BaseReport = () => {
         <BenthicACA />
         <GeomorphACA />
         <ReefExtentACA />
+        <Mangroves />
       </ReportPage>
     </>
   );

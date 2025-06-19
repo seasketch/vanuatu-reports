@@ -34,7 +34,7 @@ export const Richness: React.FunctionComponent = () => {
   const metricGroup = project.getMetricGroup("richness", t);
 
   // Labels
-  const titleLabel = t("Richness");
+  const titleLabel = t("Taxa Richness");
   const mapLabel = t("Map");
   const withinLabel = t("Average Richness");
 
