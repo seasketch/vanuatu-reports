@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "mangroves",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    }
+  ]
+}

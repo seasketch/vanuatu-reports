@@ -22,6 +22,8 @@
     "src/functions/bathymetry.ts",
     "src/functions/geomorphACA.ts",
     "src/functions/reefExtentACA.ts",
-    "src/functions/mangroves.ts"
+    "src/functions/mangroves.ts",
+    "src/functions/dhw.ts",
+    "src/functions/bleachingAlerts.ts"
   ]
 }

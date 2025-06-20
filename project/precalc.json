@@ -1,5 +1,117 @@
 [
   {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "benthic_aca-Coral/Algae",
+    "sketchId": null,
+    "groupId": null,
+    "value": 244216121.09006
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "benthic_aca-Microalgal Mats",
+    "sketchId": null,
+    "groupId": null,
+    "value": 13790989.210629174
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "benthic_aca-Rock",
+    "sketchId": null,
+    "groupId": null,
+    "value": 77024537.5581604
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "benthic_aca-Rubble",
+    "sketchId": null,
+    "groupId": null,
+    "value": 33551277.394629937
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "benthic_aca-Sand",
+    "sketchId": null,
+    "groupId": null,
+    "value": 33128947.44212615
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "benthic_aca-Seagrass",
+    "sketchId": null,
+    "groupId": null,
+    "value": 4803250.856032972
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "benthic_aca-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 406515123.5516389
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "benthic_aca-Coral/Algae",
+    "sketchId": null,
+    "groupId": null,
+    "value": 21733
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "benthic_aca-Microalgal Mats",
+    "sketchId": null,
+    "groupId": null,
+    "value": 4246
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "benthic_aca-Rock",
+    "sketchId": null,
+    "groupId": null,
+    "value": 22852
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "benthic_aca-Rubble",
+    "sketchId": null,
+    "groupId": null,
+    "value": 11007
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "benthic_aca-Sand",
+    "sketchId": null,
+    "groupId": null,
+    "value": 12616
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "benthic_aca-Seagrass",
+    "sketchId": null,
+    "groupId": null,
+    "value": 4254
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "benthic_aca-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 76708
+  },
+  {
     "geographyId": "world",
     "metricId": "area",
     "classId": "benthic_aca-Coral/Algae",
@@ -150,6 +262,14 @@
     "sketchId": null,
     "groupId": null,
     "value": 575319498.7564294
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "mangroves-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 15742695.722857
   },
   {
     "geographyId": "world",
@@ -314,9 +434,33 @@
   {
     "geographyId": "world",
     "metricId": "count",
+    "classId": "mangroves-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 78797430
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
     "classId": "reef_extent_aca-total",
     "sketchId": null,
     "groupId": null,
     "value": 2605
+  },
+  {
+    "geographyId": "world",
+    "metricId": "sum",
+    "classId": "mangroves-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 26318
+  },
+  {
+    "geographyId": "world",
+    "metricId": "valid",
+    "classId": "mangroves-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 26318
   }
 ]

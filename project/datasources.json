@@ -293,5 +293,159 @@
     "created": "2025-06-18T21:58:54.422Z",
     "lastUpdated": "2025-06-18T22:22:47.915Z",
     "src": "data/src/Data_Received/GlobalMangroveWatch/globalMangroveWatch2020.tif"
+  },
+  {
+    "datasourceId": "dhw_2015",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 31,
+    "noDataValue": 9.96921e+36,
+    "created": "2025-06-20T16:24:41.802Z",
+    "lastUpdated": "2025-06-20T16:26:23.873Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2016",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 32,
+    "noDataValue": 9.96921e+36,
+    "created": "2025-06-20T16:24:41.802Z",
+    "lastUpdated": "2025-06-20T16:26:25.322Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2017",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 33,
+    "noDataValue": 9.96921e+36,
+    "created": "2025-06-20T16:24:41.802Z",
+    "lastUpdated": "2025-06-20T16:26:26.784Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2018",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 34,
+    "noDataValue": 9.96921e+36,
+    "created": "2025-06-20T16:24:41.802Z",
+    "lastUpdated": "2025-06-20T16:26:28.160Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2019",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 35,
+    "noDataValue": 9.96921e+36,
+    "created": "2025-06-20T16:24:41.802Z",
+    "lastUpdated": "2025-06-20T16:26:29.229Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2020",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 36,
+    "noDataValue": 9.96921e+36,
+    "created": "2025-06-20T16:24:41.802Z",
+    "lastUpdated": "2025-06-20T16:26:30.492Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2021",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 37,
+    "noDataValue": 9.96921e+36,
+    "created": "2025-06-20T16:24:41.802Z",
+    "lastUpdated": "2025-06-20T16:26:31.626Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2022",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 38,
+    "noDataValue": 9.96921e+36,
+    "created": "2025-06-20T16:24:41.802Z",
+    "lastUpdated": "2025-06-20T16:26:32.697Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2023",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 39,
+    "noDataValue": 9.96921e+36,
+    "created": "2025-06-20T16:24:41.802Z",
+    "lastUpdated": "2025-06-20T16:26:33.609Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "datasourceId": "dhw_2024",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 40,
+    "noDataValue": 9.96921e+36,
+    "created": "2025-06-20T16:24:41.802Z",
+    "lastUpdated": "2025-06-20T16:26:34.709Z",
+    "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
+  },
+  {
+    "src": "data/src/Data_Received/CoralReefWatch/baa_2024.tif",
+    "band": 1,
+    "geo_type": "raster",
+    "datasourceId": "bleachingAlerts",
+    "formats": [
+      "tif"
+    ],
+    "created": "2025-06-20T21:49:16.040Z",
+    "lastUpdated": "2025-06-20T21:49:16.040Z",
+    "noDataValue": 251,
+    "measurementType": "categorical",
+    "precalc": true
   }
 ]

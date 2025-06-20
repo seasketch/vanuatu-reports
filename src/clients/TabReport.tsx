@@ -16,6 +16,8 @@ import { Bathymetry } from "../components/Bathymetry.js";
 import { GeomorphACA } from "../components/GeomorphACA.js";
 import { ReefExtentACA } from "../components/ReefExtentACA.js";
 import { Mangroves } from "../components/Mangroves.js";
+import { Dhw } from "../components/Dhw.js";
+import { BleachingAlerts } from "../components/BleachingAlerts.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -52,6 +54,8 @@ const BaseReport = () => {
         <GeomorphACA />
         <ReefExtentACA />
         <Mangroves />
+        <Dhw />
+        <BleachingAlerts />
       </ReportPage>
     </>
   );

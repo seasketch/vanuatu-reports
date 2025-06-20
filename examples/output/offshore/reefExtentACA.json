@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "geographyId": "world",
+      "metricId": "reefExtentACA",
+      "classId": "reefExtent",
+      "sketchId": "106370",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    }
+  ]
+}

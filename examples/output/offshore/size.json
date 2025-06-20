@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "106370",
+      "groupId": null,
+      "value": 3167719864.46894,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    }
+  ]
+}
