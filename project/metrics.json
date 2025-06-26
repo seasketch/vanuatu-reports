@@ -511,5 +511,262 @@
         "display": "Bleaching Alert Level 5"
       }
     ]
+  },
+  {
+    "metricId": "fishDensity",
+    "type": "countOverlap",
+    "datasourceId": "fish_density",
+    "classes": [
+      {
+        "classId": "toal_fish_density",
+        "display": "Total",
+        "layerId": "lhsUXPscp"
+      },
+      {
+        "classId": "Acanthuridae",
+        "display": "Acanthuridae",
+        "layerId": "te_pnwXh6"
+      },
+      {
+        "classId": "Aetobatidae",
+        "display": "Aetobatidae",
+        "layerId": "bioWuFk6p"
+      },
+      {
+        "classId": "Anthiadidae",
+        "display": "Anthiadidae",
+        "layerId": "RlkWAKAmT"
+      },
+      {
+        "classId": "Apogonidae",
+        "display": "Apogonidae",
+        "layerId": "s4Fk4tbu2"
+      },
+      {
+        "classId": "Aulostomidae",
+        "display": "Aulostomidae",
+        "layerId": "lhB25fSav"
+      },
+      {
+        "classId": "Balistidae",
+        "display": "Balistidae",
+        "layerId": "8y_N4bGSX"
+      },
+      {
+        "classId": "Blenniidae",
+        "display": "Blenniidae",
+        "layerId": "oYTIzJHrU"
+      },
+      {
+        "classId": "Caesionidae",
+        "display": "Caesionidae",
+        "layerId": "5UGsaAHOU"
+      },
+      {
+        "classId": "Carangidae",
+        "display": "Carangidae",
+        "layerId": "fn7WCOcRR"
+      },
+      {
+        "classId": "Carcharhinidae",
+        "display": "Carcharhinidae",
+        "layerId": "QPgI5CYTH"
+      },
+      {
+        "classId": "Chaetodontidae",
+        "display": "Chaetodontidae",
+        "layerId": "w0nHX1iu2"
+      },
+      {
+        "classId": "Cirrhitidae",
+        "display": "Cirrhitidae",
+        "layerId": "7xr__qnTk"
+      },
+      {
+        "classId": "Dasyatidae",
+        "display": "Dasyatidae",
+        "layerId": "0llsngtzi"
+      },
+      {
+        "classId": "Diodontidae",
+        "display": "Diodontidae",
+        "layerId": "dDbrh8CpX"
+      },
+      {
+        "classId": "Ephippidae",
+        "display": "Ephippidae",
+        "layerId": "B9vHQVrvk"
+      },
+      {
+        "classId": "Fistularidae",
+        "display": "Fistularidae",
+        "layerId": "bRtKN6B5I"
+      },
+      {
+        "classId": "Gobiidae",
+        "display": "Gobiidae",
+        "layerId": "BuD3Yqhv4"
+      },
+      {
+        "classId": "Haemulidae",
+        "display": "Haemulidae",
+        "layerId": "dVLvs3l_N"
+      },
+      {
+        "classId": "Holocentridae",
+        "display": "Holocentridae",
+        "layerId": "Nkt25NiWd"
+      },
+      {
+        "classId": "Kyphosidae",
+        "display": "Kyphosidae",
+        "layerId": "djzhwMyUa"
+      },
+      {
+        "classId": "Labridae",
+        "display": "Labridae",
+        "layerId": "EWdZU1R2d"
+      },
+      {
+        "classId": "Labridae_Scarinae",
+        "display": "Labridae_Scarinae",
+        "layerId": "_K_KwVr7L"
+      },
+      {
+        "classId": "Lethrinidae",
+        "display": "Lethrinidae",
+        "layerId": "Rl2kT5niv"
+      },
+      {
+        "classId": "Lutjanidae",
+        "display": "Lutjanidae",
+        "layerId": "IY9wcfAi4"
+      },
+      {
+        "classId": "Malacanthidae",
+        "display": "Malacanthidae",
+        "layerId": "xYWrEJVQs"
+      },
+      {
+        "classId": "Microdesmidae",
+        "display": "Microdesmidae",
+        "layerId": "h8mQSpobx"
+      },
+      {
+        "classId": "Monacanthidae",
+        "display": "Monacanthidae",
+        "layerId": "MUmU3xmER"
+      },
+      {
+        "classId": "Mullidae",
+        "display": "Mullidae",
+        "layerId": "hBwPNb7tr"
+      },
+      {
+        "classId": "Muraenidae",
+        "display": "Muraenidae",
+        "layerId": "ol6wjMX1n"
+      },
+      {
+        "classId": "Nemipteridae",
+        "display": "Nemipteridae",
+        "layerId": "pGAsFTPwe"
+      },
+      {
+        "classId": "Ostraciidae",
+        "display": "Ostraciidae",
+        "layerId": "33LZNf_mg"
+      },
+      {
+        "classId": "Pempheridae",
+        "display": "Pempheridae",
+        "layerId": "xQ259FySc"
+      },
+      {
+        "classId": "Pinguipedidae",
+        "display": "Pinguipedidae",
+        "layerId": "ZeYc9mH02"
+      },
+      {
+        "classId": "Pomacanthidae",
+        "display": "Pomacanthidae",
+        "layerId": "hxo_fqJQF"
+      },
+      {
+        "classId": "Pomacentridae",
+        "display": "Pomacentridae",
+        "layerId": "9ZvHu4YkF"
+      },
+      {
+        "classId": "Priacanthidae",
+        "display": "Priacanthidae",
+        "layerId": "chxRAtrF9"
+      },
+      {
+        "classId": "Pseudochromidae",
+        "display": "Pseudochromidae",
+        "layerId": "ZftX8oxWp"
+      },
+      {
+        "classId": "Scombridae",
+        "display": "Scombridae",
+        "layerId": "xV7RbyKso"
+      },
+      {
+        "classId": "Scorpaenidae",
+        "display": "Scorpaenidae",
+        "layerId": "mNumKaiEs"
+      },
+      {
+        "classId": "Serranidae",
+        "display": "Serranidae",
+        "layerId": "1ImsfIwWS"
+      },
+      {
+        "classId": "Siganidae",
+        "display": "Siganidae",
+        "layerId": "3bJwLrfor"
+      },
+      {
+        "classId": "Synodontidae",
+        "display": "Synodontidae",
+        "layerId": "kkHH15smD"
+      },
+      {
+        "classId": "Tetraodontidae",
+        "display": "Tetraodontidae",
+        "layerId": "HeiUNI5k_"
+      },
+      {
+        "classId": "Zanclidae",
+        "display": "Zanclidae",
+        "layerId": "7CbaCwEnx"
+      },
+      {
+        "classId": "Herbivore/Detritivore",
+        "display": "Herbivore/Detritivore",
+        "layerId": "ZhUunXuvo"
+      },
+      {
+        "classId": "Lower-carnivore",
+        "display": "Lower-carnivore",
+        "layerId": "1fG2cK9Vf"
+      },
+      {
+        "classId": "Planktivore",
+        "display": "Planktivore",
+        "layerId": "j4cBNqbNs"
+      },
+      {
+        "classId": "Shark",
+        "display": "Shark",
+        "layerId": "vwVL_NL6H"
+      },
+      {
+        "classId": "Top-predator",
+        "display": "Top-predator",
+        "layerId": "0CvBmLDF5"
+      }
+    ]
   }
 ]

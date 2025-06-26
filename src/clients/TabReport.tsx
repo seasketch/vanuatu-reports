@@ -18,6 +18,7 @@ import { ReefExtentACA } from "../components/ReefExtentACA.js";
 import { Mangroves } from "../components/Mangroves.js";
 import { Dhw } from "../components/Dhw.js";
 import { BleachingAlerts } from "../components/BleachingAlerts.js";
+import { FishDensity } from "../components/FishDensity.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -46,8 +47,9 @@ const BaseReport = () => {
       <ReportPage hidden={!enableAllTabs && tab !== "EXPEDITION"}>
         <Sites />
         <BenthicCover />
-        <Richness />
         <JuvenileCoralDensity />
+        <FishDensity />
+        <Richness />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
         <BenthicACA />

@@ -2,10 +2,7 @@
   {
     "datasourceId": "world",
     "geo_type": "vector",
-    "formats": [
-      "json",
-      "fgb"
-    ],
+    "formats": ["json", "fgb"],
     "precalc": false,
     "metadata": {
       "name": "World Outline Polygon",
@@ -22,9 +19,7 @@
   {
     "datasourceId": "eez",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "eez_gmw",
     "classKeys": [],
@@ -37,28 +32,20 @@
   {
     "datasourceId": "sites",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "sites",
     "classKeys": [],
     "created": "2025-05-27T20:53:28.995Z",
     "lastUpdated": "2025-05-27T20:53:28.995Z",
     "src": "data/src/expedition/processed-data/sites.fgb",
-    "propertiesToKeep": [
-      "station_id",
-      "island",
-      "province"
-    ],
+    "propertiesToKeep": ["station_id", "island", "province"],
     "explodeMulti": true
   },
   {
     "datasourceId": "benthic_cover",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "benthic_cover",
     "classKeys": [],
@@ -81,63 +68,46 @@
   {
     "datasourceId": "richness_coral",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "coral_genus_richness",
     "classKeys": [],
     "created": "2025-05-28T22:06:27.099Z",
     "lastUpdated": "2025-05-28T22:06:27.099Z",
     "src": "data/src/expedition/processed-data/coral_genus_richness.fgb",
-    "propertiesToKeep": [
-      "station_id",
-      "coral_genus_richness"
-    ],
+    "propertiesToKeep": ["station_id", "coral_genus_richness"],
     "explodeMulti": true
   },
   {
     "datasourceId": "richness_fish",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "fish_family_richness",
     "classKeys": [],
     "created": "2025-05-28T22:06:43.172Z",
     "lastUpdated": "2025-05-28T22:06:43.172Z",
     "src": "data/src/expedition/processed-data/fish_family_richness.fgb",
-    "propertiesToKeep": [
-      "station_id",
-      "fish_family_richness"
-    ],
+    "propertiesToKeep": ["station_id", "fish_family_richness"],
     "explodeMulti": true
   },
   {
     "datasourceId": "richness_invert",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "invert_species_richness_on_transects",
     "classKeys": [],
     "created": "2025-05-28T22:07:00.913Z",
     "lastUpdated": "2025-05-28T22:07:00.913Z",
     "src": "data/src/expedition/processed-data/invert_species_richness.fgb",
-    "propertiesToKeep": [
-      "station_id",
-      "invertebrate_species_richness"
-    ],
+    "propertiesToKeep": ["station_id", "invertebrate_species_richness"],
     "explodeMulti": true
   },
   {
     "datasourceId": "juvenile_coral_density",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "juvenile_coral_density",
     "classKeys": [],
@@ -216,28 +186,20 @@
   {
     "datasourceId": "benthic_aca",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "benthic",
-    "classKeys": [
-      "class"
-    ],
+    "classKeys": ["class"],
     "created": "2025-06-17T19:53:36.673Z",
     "lastUpdated": "2025-06-17T20:01:01.350Z",
     "src": "data/src/allen-coral-atlas/Benthic-Map/benthic.fgb",
-    "propertiesToKeep": [
-      "class"
-    ],
+    "propertiesToKeep": ["class"],
     "explodeMulti": true
   },
   {
     "datasourceId": "gebco_depth",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 1,
@@ -249,28 +211,20 @@
   {
     "datasourceId": "geomorph_aca",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "geomorphic",
-    "classKeys": [
-      "class"
-    ],
+    "classKeys": ["class"],
     "created": "2025-06-17T20:45:48.783Z",
     "lastUpdated": "2025-06-17T20:45:48.783Z",
     "src": "data/src/allen-coral-atlas/Geomorphic-Map/geomorphic.fgb",
-    "propertiesToKeep": [
-      "class"
-    ],
+    "propertiesToKeep": ["class"],
     "explodeMulti": true
   },
   {
     "datasourceId": "reef_extent_aca",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "reef-extent",
     "classKeys": [],
@@ -283,9 +237,7 @@
   {
     "datasourceId": "mangroves",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -297,13 +249,11 @@
   {
     "datasourceId": "dhw_2015",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 31,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:23.873Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -311,13 +261,11 @@
   {
     "datasourceId": "dhw_2016",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 32,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:25.322Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -325,13 +273,11 @@
   {
     "datasourceId": "dhw_2017",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 33,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:26.784Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -339,13 +285,11 @@
   {
     "datasourceId": "dhw_2018",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 34,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:28.160Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -353,13 +297,11 @@
   {
     "datasourceId": "dhw_2019",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 35,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:29.229Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -367,13 +309,11 @@
   {
     "datasourceId": "dhw_2020",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 36,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:30.492Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -381,13 +321,11 @@
   {
     "datasourceId": "dhw_2021",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 37,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:31.626Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -395,13 +333,11 @@
   {
     "datasourceId": "dhw_2022",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 38,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:32.697Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -409,13 +345,11 @@
   {
     "datasourceId": "dhw_2023",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 39,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:33.609Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -423,29 +357,134 @@
   {
     "datasourceId": "dhw_2024",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 40,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:34.709Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
   },
   {
-    "src": "data/src/Data_Received/CoralReefWatch/baa_2024.tif",
-    "band": 1,
-    "geo_type": "raster",
     "datasourceId": "bleachingAlerts",
-    "formats": [
-      "tif"
-    ],
+    "geo_type": "raster",
+    "formats": ["tif"],
+    "precalc": true,
+    "measurementType": "categorical",
+    "band": 1,
+    "noDataValue": 251,
     "created": "2025-06-20T21:49:16.040Z",
     "lastUpdated": "2025-06-20T21:49:16.040Z",
-    "noDataValue": 251,
-    "measurementType": "categorical",
-    "precalc": true
+    "src": "data/src/Data_Received/CoralReefWatch/baa_2024.tif"
+  },
+  {
+    "datasourceId": "fish_density",
+    "geo_type": "vector",
+    "formats": ["fgb"],
+    "precalc": false,
+    "layerName": "fish_density",
+    "classKeys": [],
+    "created": "2025-06-26T22:04:43.702Z",
+    "lastUpdated": "2025-06-26T22:16:20.886Z",
+    "src": "data/src/expedition/processed-data/fish_density.fgb",
+    "propertiesToKeep": [
+      "station_id",
+      "toal_fish_density",
+      "Acanthuridae",
+      "Aetobatidae",
+      "Antennariidae",
+      "Anthiadidae",
+      "Apogonidae",
+      "Atherinidae",
+      "Aulostomidae",
+      "Balistidae",
+      "Belonidae",
+      "Blenniidae",
+      "Bothidae",
+      "Caesionidae",
+      "Callionymidae",
+      "Carangidae",
+      "Carcharhinidae",
+      "Centriscidae",
+      "Chaetodontidae",
+      "Chanidae",
+      "Cheilodactylidae",
+      "Chirocentridae",
+      "Cirrhitidae",
+      "Clupeidae",
+      "Congridae",
+      "Dasyatidae",
+      "Diodontidae",
+      "Drepaneidae",
+      "Echeneidae",
+      "Engraulidae",
+      "Ephippidae",
+      "Fistularidae",
+      "Gerreidae",
+      "Ginglymostomatidae",
+      "Gobiidae",
+      "Haemulidae",
+      "Hemiramphidae",
+      "Holocentridae",
+      "Istiophoridae",
+      "Kuhliidae",
+      "Kyphosidae",
+      "Labridae",
+      "Labridae_Scarinae",
+      "Leiognathidae",
+      "Lethrinidae",
+      "Lutjanidae",
+      "Malacanthidae",
+      "Megalopidae",
+      "Microdesmidae",
+      "Monacanthidae",
+      "Monodactylidae",
+      "Mugilidae",
+      "Mullidae",
+      "Muraenesocidae",
+      "Muraenidae",
+      "Nematistidae",
+      "Nemipteridae",
+      "Ophichthidae",
+      "Ophidiidae",
+      "Oplegnathidae",
+      "Ostraciidae",
+      "Paralichthyidae",
+      "Pempheridae",
+      "Pentacerotidae",
+      "Pinguipedidae",
+      "Platycephalidae",
+      "Plesiopidae",
+      "Plotosidae",
+      "Polynemidae",
+      "Pomacanthidae",
+      "Pomacentridae",
+      "Priacanthidae",
+      "Pristigasteridae",
+      "Pseudochromidae",
+      "Rhinobatidae",
+      "Scatophagidae",
+      "Sciaenidae",
+      "Scombridae",
+      "Scorpaenidae",
+      "Serranidae",
+      "Siganidae",
+      "Sphyraenidae",
+      "Sphyrnidae",
+      "Synanceiidae",
+      "Synodontidae",
+      "Terapontidae",
+      "Tetraodontidae",
+      "Trichiuridae",
+      "Tripterygiidae",
+      "Zanclidae",
+      "Herbivore/Detritivore",
+      "Lower-carnivore",
+      "Planktivore",
+      "Shark",
+      "Top-predator"
+    ],
+    "explodeMulti": true
   }
 ]
