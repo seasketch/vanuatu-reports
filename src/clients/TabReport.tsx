@@ -19,6 +19,7 @@ import { Mangroves } from "../components/Mangroves.js";
 import { Dhw } from "../components/Dhw.js";
 import { BleachingAlerts } from "../components/BleachingAlerts.js";
 import { FishDensity } from "../components/FishDensity.js";
+import { FishBiomass } from "../components/FishBiomass.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -49,6 +50,7 @@ const BaseReport = () => {
         <BenthicCover />
         <JuvenileCoralDensity />
         <FishDensity />
+        <FishBiomass />
         <Richness />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
