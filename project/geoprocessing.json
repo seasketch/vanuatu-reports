@@ -24,6 +24,7 @@
     "src/functions/dhw.ts",
     "src/functions/bleachingAlerts.ts",
     "src/functions/fishDensity.ts",
-    "src/functions/fishBiomass.ts"
+    "src/functions/fishBiomass.ts",
+    "src/functions/invertDensity.ts"
   ]
 }

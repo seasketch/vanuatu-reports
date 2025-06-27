@@ -20,6 +20,7 @@ import { Dhw } from "../components/Dhw.js";
 import { BleachingAlerts } from "../components/BleachingAlerts.js";
 import { FishDensity } from "../components/FishDensity.js";
 import { FishBiomass } from "../components/FishBiomass.js";
+import { InvertDensity } from "../components/InvertDensity.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -51,6 +52,7 @@ const BaseReport = () => {
         <JuvenileCoralDensity />
         <FishDensity />
         <FishBiomass />
+        <InvertDensity />
         <Richness />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>

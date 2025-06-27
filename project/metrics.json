@@ -1025,5 +1025,286 @@
         "layerId": "tPrVpf4Xd"
       }
     ]
+  },
+  {
+    "metricId": "invertDensity",
+    "type": "countOverlap",
+    "datasourceId": "invert_density",
+    "classes": [
+      { "classId": "density", "display": "Total", "layerId": "null" },
+      {
+        "classId": "Crustacean",
+        "display": "Crustacean",
+        "layerId": "BF23uyRZ7"
+      },
+      {
+        "classId": "Echinoderm",
+        "display": "Echinoderm",
+        "layerId": "pMbRfH35z"
+      },
+      { "classId": "Mollusc", "display": "Mollusc", "layerId": "2h8Vew4V7" },
+      { "classId": "Sponge", "display": "Sponge", "layerId": "WJRh6nU5A" },
+      {
+        "classId": "Coenobita",
+        "display": "Coenobita",
+        "layerId": "_FqpOE75b"
+      },
+      { "classId": "Comaster", "display": "Comaster", "layerId": "ivyKCfswR" },
+      { "classId": "Conus", "display": "Conus", "layerId": "cuPmmtGLh" },
+      { "classId": "Culcita", "display": "Culcita", "layerId": "jcFg2stRT" },
+      { "classId": "Cyprea", "display": "Cyprea", "layerId": "x8VnWbPrB" },
+      { "classId": "Dardanus", "display": "Dardanus", "layerId": "NVR1BExoI" },
+      {
+        "classId": "Dendropoma",
+        "display": "Dendropoma",
+        "layerId": "KMX0m5yTJ"
+      },
+      { "classId": "Diadema", "display": "Diadema", "layerId": "uYGy4abSD" },
+      { "classId": "Drupella", "display": "Drupella", "layerId": "NUiXWJfGD" },
+      {
+        "classId": "Echinometra",
+        "display": "Echinometra",
+        "layerId": "QKvUrxjmv"
+      },
+      {
+        "classId": "Echinothrix",
+        "display": "Echinothrix",
+        "layerId": "vQRW9zijD"
+      },
+      { "classId": "Linckia", "display": "Linckia", "layerId": "9e4y4nNtp" },
+      {
+        "classId": "Muricopsis",
+        "display": "Muricopsis",
+        "layerId": "bvP3lEiSU"
+      },
+      {
+        "classId": "Nembrotha",
+        "display": "Nembrotha",
+        "layerId": "aWkagWMIJ"
+      },
+      {
+        "classId": "Ophiothrix",
+        "display": "Ophiothrix",
+        "layerId": "zfNKwWcWD"
+      },
+      {
+        "classId": "Phyllidia",
+        "display": "Phyllidia",
+        "layerId": "UaRoQtGTu"
+      },
+      { "classId": "Tridacna", "display": "Tridacna", "layerId": "ONRj_6imT" },
+      {
+        "classId": "Tropiometra",
+        "display": "Tropiometra",
+        "layerId": "BCNB8DAij"
+      },
+      {
+        "classId": "Actinopyga",
+        "display": "Actinopyga",
+        "layerId": "L4vJM7n_M"
+      },
+      {
+        "classId": "Cerithium",
+        "display": "Cerithium",
+        "layerId": "gsoQC6Q6b"
+      },
+      {
+        "classId": "Coralliophila",
+        "display": "Coralliophila",
+        "layerId": "tt5qOmo2s"
+      },
+      {
+        "classId": "Peristernia",
+        "display": "Peristernia",
+        "layerId": "L4Zw2pKts"
+      },
+      { "classId": "Tectus", "display": "Tectus", "layerId": "u8Egow94r" },
+      {
+        "classId": "Thelenota",
+        "display": "Thelenota",
+        "layerId": "NF_Rzf_J3"
+      },
+      { "classId": "Turbo", "display": "Turbo", "layerId": "3mhfKr_0B" },
+      { "classId": "Vasum", "display": "Vasum", "layerId": "8ZSnOPo9h" },
+      { "classId": "Vexillum", "display": "Vexillum", "layerId": "kfAfKSya9" },
+      {
+        "classId": "Menathais",
+        "display": "Menathais",
+        "layerId": "r0C2k0vkG"
+      },
+      { "classId": "Nardoa", "display": "Nardoa", "layerId": "Y9w4gwdGk" },
+      { "classId": "Nassa", "display": "Nassa", "layerId": "nObOB_UHX" },
+      { "classId": "Reishia", "display": "Reishia", "layerId": "F7kbkdviE" },
+      {
+        "classId": "Valvaster",
+        "display": "Valvaster",
+        "layerId": "NAZJzZCf1"
+      },
+      {
+        "classId": "Chromodoris",
+        "display": "Chromodoris",
+        "layerId": "TgNm7Q6m1"
+      },
+      {
+        "classId": "Latirolagena",
+        "display": "Latirolagena",
+        "layerId": "8wdBxDwO2"
+      },
+      { "classId": "Monoplex", "display": "Monoplex", "layerId": "BXrksVUcm" },
+      { "classId": "Fryeria", "display": "Fryeria", "layerId": "qqy5tUjDy" },
+      { "classId": "Thalessa", "display": "Thalessa", "layerId": "EOay_C9Q0" },
+      { "classId": "Polygona", "display": "Polygona", "layerId": "IRiZvDPY0" },
+      { "classId": "Tellina", "display": "Tellina", "layerId": "oX8PyEhtr" },
+      { "classId": "Trochus", "display": "Trochus", "layerId": "ipB4iT4J4" },
+      {
+        "classId": "Bohadschia",
+        "display": "Bohadschia",
+        "layerId": "HPt2WSIbj"
+      },
+      { "classId": "Charonia", "display": "Charonia", "layerId": "JFkT13xjA" },
+      { "classId": "Drupa", "display": "Drupa", "layerId": "01_rrmkiN" },
+      {
+        "classId": "Holothuria",
+        "display": "Holothuria",
+        "layerId": "KfJvQdZS5"
+      },
+      {
+        "classId": "Spondylus",
+        "display": "Spondylus",
+        "layerId": "pUnq2tnTO"
+      },
+      {
+        "classId": "Pteraeolidia",
+        "display": "Pteraeolidia",
+        "layerId": "VljOf1LRQ"
+      },
+      { "classId": "Malea", "display": "Malea", "layerId": "nLUKJmFDF" },
+      {
+        "classId": "Phyllacanthus",
+        "display": "Phyllacanthus",
+        "layerId": "J6yoiy0rB"
+      },
+      { "classId": "Lambis", "display": "Lambis", "layerId": "lINymnLYf" },
+      {
+        "classId": "Phyllidiopsis",
+        "display": "Phyllidiopsis",
+        "layerId": "blFIa5RIE"
+      },
+      {
+        "classId": "Pleuroploca",
+        "display": "Pleuroploca",
+        "layerId": "HWIJi62jN"
+      },
+      { "classId": "Etisus", "display": "Etisus", "layerId": "iGq1tubbK" },
+      { "classId": "Hippopus", "display": "Hippopus", "layerId": "PWlt5UU2u" },
+      { "classId": "Rochia", "display": "Rochia", "layerId": "j006RUaE6" },
+      { "classId": "Calcinus", "display": "Calcinus", "layerId": "WwJjLPFRb" },
+      {
+        "classId": "Heterocentrus",
+        "display": "Heterocentrus",
+        "layerId": "qMDPcavvW"
+      },
+      { "classId": "Pinna", "display": "Pinna", "layerId": "gq7Jxqe8_" },
+      {
+        "classId": "Stichopus",
+        "display": "Stichopus",
+        "layerId": "dJSpSQQe8"
+      },
+      { "classId": "Pinctada", "display": "Pinctada", "layerId": "zcShNAH5x" },
+      { "classId": "Gomophia", "display": "Gomophia", "layerId": "G9lWkekHC" },
+      { "classId": "Chama", "display": "Chama", "layerId": "lNmsagclu" },
+      {
+        "classId": "Conomurex",
+        "display": "Conomurex",
+        "layerId": "r2eF9aKrd"
+      },
+      {
+        "classId": "Acanthaster",
+        "display": "Acanthaster",
+        "layerId": "gC4DFjT_3"
+      },
+      { "classId": "Fromia", "display": "Fromia", "layerId": "gDQUTYmWw" },
+      { "classId": "Octopus", "display": "Octopus", "layerId": "xJItLGCDk" },
+      { "classId": "Oliva", "display": "Oliva", "layerId": "R60PHQzjo" },
+      { "classId": "Leucetta", "display": "Leucetta", "layerId": "CBUu5r1ef" },
+      { "classId": "Timoclea", "display": "Timoclea", "layerId": "p7m0P8VI0" },
+      { "classId": "Tutufa", "display": "Tutufa", "layerId": "fktVVxE00" },
+      { "classId": "Cassis", "display": "Cassis", "layerId": "mE22zIsS_" },
+      {
+        "classId": "Alanbeuella",
+        "display": "Alanbeuella",
+        "layerId": "KmkyKgJh4"
+      },
+      { "classId": "Pedium", "display": "Pedium", "layerId": "b4U5dvZlX" },
+      {
+        "classId": "Hypselodoris",
+        "display": "Hypselodoris",
+        "layerId": "NO7Msn1ah"
+      },
+      {
+        "classId": "Astralium",
+        "display": "Astralium",
+        "layerId": "yVhgntfTq"
+      },
+      {
+        "classId": "Pearsonothuria",
+        "display": "Pearsonothuria",
+        "layerId": "Jyd2aDlZL"
+      },
+      {
+        "classId": "Chicoreus",
+        "display": "Chicoreus",
+        "layerId": "Kv4VMgYBE"
+      },
+      {
+        "classId": "Panulirus",
+        "display": "Panulirus",
+        "layerId": "tPCKhcpoY"
+      },
+      {
+        "classId": "Terebralia",
+        "display": "Terebralia",
+        "layerId": "MqiqZ3jtS"
+      },
+      {
+        "classId": "Choriaster",
+        "display": "Choriaster",
+        "layerId": "YeZTdp47v"
+      },
+      { "classId": "Talparia", "display": "Talparia", "layerId": "u_s0fvr4e" },
+      { "classId": "Oxymeris", "display": "Oxymeris", "layerId": "ClsaMDkpL" },
+      {
+        "classId": "Gafrarium",
+        "display": "Gafrarium",
+        "layerId": "sNXWyjscS"
+      },
+      { "classId": "Mammilla", "display": "Mammilla", "layerId": "0FW_qzgHG" },
+      {
+        "classId": "Pseudobiceros",
+        "display": "Pseudobiceros",
+        "layerId": "ejaY1_XWV"
+      },
+      {
+        "classId": "Flabellina",
+        "display": "Flabellina",
+        "layerId": "imT2YtbzJ"
+      },
+      {
+        "classId": "Vasticardium",
+        "display": "Vasticardium",
+        "layerId": "oWY8qtCU0"
+      },
+      { "classId": "Amphiura", "display": "Amphiura", "layerId": "ggQ7GrrJ1" },
+      {
+        "classId": "Hesperisternia",
+        "display": "Hesperisternia",
+        "layerId": "0P4dKjDL0"
+      },
+      {
+        "classId": "Gibberulus",
+        "display": "Gibberulus",
+        "layerId": "ov5from_0"
+      }
+    ]
   }
 ]
