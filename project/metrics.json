@@ -398,10 +398,59 @@
     "type": "areaOverlap",
     "classes": [
       {
-        "classId": "mangroves",
-        "datasourceId": "mangroves",
-        "display": "Mangrove Extent",
-        "layerId": "OCDwPJL5P"
+        "classId": "1996",
+        "datasourceId": "mangroves1996",
+        "display": "1996"
+      },
+      {
+        "classId": "2007",
+        "datasourceId": "mangroves2007",
+        "display": "2007"
+      },
+      {
+        "classId": "2008",
+        "datasourceId": "mangroves2008",
+        "display": "2008"
+      },
+      {
+        "classId": "2009",
+        "datasourceId": "mangroves2009",
+        "display": "2009"
+      },
+      {
+        "classId": "2010",
+        "datasourceId": "mangroves2010",
+        "display": "2010"
+      },
+      {
+        "classId": "2015",
+        "datasourceId": "mangroves2015",
+        "display": "2015"
+      },
+      {
+        "classId": "2016",
+        "datasourceId": "mangroves2016",
+        "display": "2016"
+      },
+      {
+        "classId": "2017",
+        "datasourceId": "mangroves2017",
+        "display": "2017"
+      },
+      {
+        "classId": "2018",
+        "datasourceId": "mangroves2018",
+        "display": "2018"
+      },
+      {
+        "classId": "2019",
+        "datasourceId": "mangroves2019",
+        "display": "2019"
+      },
+      {
+        "classId": "2020",
+        "datasourceId": "mangroves2020",
+        "display": "2020"
       }
     ]
   },

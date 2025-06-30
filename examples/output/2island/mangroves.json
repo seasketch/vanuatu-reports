@@ -3,7 +3,117 @@
     {
       "geographyId": "world",
       "metricId": "mangroves",
-      "classId": "mangroves",
+      "classId": "1996",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 1253768.912346,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2007",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 1270517.733694,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2008",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 1315380.648019,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2009",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 1375197.867119,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2010",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 1374599.694928,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2015",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 1379983.244647,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2016",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 1333923.98594,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2017",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 1317773.336783,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2018",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 1283079.349705,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2019",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 1240609.124143,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2020",
       "sketchId": "102333",
       "groupId": "band-0",
       "value": 1017490.896899,

@@ -3,7 +3,117 @@
     {
       "geographyId": "world",
       "metricId": "mangroves",
-      "classId": "mangroves",
+      "classId": "1996",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2007",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2008",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2009",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2010",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2015",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2016",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2017",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2018",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2019",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": "world",
+      "metricId": "mangroves",
+      "classId": "2020",
       "sketchId": "106370",
       "groupId": "band-0",
       "value": 0,

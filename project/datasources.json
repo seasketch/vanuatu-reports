@@ -281,7 +281,7 @@
     "explodeMulti": true
   },
   {
-    "datasourceId": "mangroves",
+    "datasourceId": "mangroves2020",
     "geo_type": "raster",
     "formats": [
       "tif"
@@ -291,7 +291,7 @@
     "band": 1,
     "noDataValue": 0,
     "created": "2025-06-18T21:58:54.422Z",
-    "lastUpdated": "2025-06-18T22:22:47.915Z",
+    "lastUpdated": "2025-06-30T20:56:54.620Z",
     "src": "data/src/Data_Received/GlobalMangroveWatch/globalMangroveWatch2020.tif"
   },
   {
@@ -784,23 +784,163 @@
     "explodeMulti": true
   },
   {
-    "src": "data/src/expedition/processed-data/isotope_means.fgb",
-    "layerName": "isotope_means",
-    "geo_type": "vector",
     "datasourceId": "isotopes",
+    "geo_type": "vector",
     "formats": [
       "fgb"
     ],
+    "precalc": true,
+    "layerName": "isotope_means",
     "classKeys": [],
     "created": "2025-06-27T18:10:37.443Z",
     "lastUpdated": "2025-06-27T18:10:37.443Z",
+    "src": "data/src/expedition/processed-data/isotope_means.fgb",
     "propertiesToKeep": [
       "station_id",
       "mean_total_n",
       "mean_d15n",
       "species"
     ],
-    "explodeMulti": true,
+    "explodeMulti": true
+  },
+  {
+    "datasourceId": "mangroves1996",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": 0,
+    "created": "2025-06-30T21:02:25.021Z",
+    "lastUpdated": "2025-06-30T21:02:25.021Z",
+    "src": "data/src/Data_Received/GlobalMangroveWatch/globalMangroveWatch1996.tif"
+  },
+  {
+    "datasourceId": "mangroves2007",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": 0,
+    "created": "2025-06-30T21:02:43.568Z",
+    "lastUpdated": "2025-06-30T21:02:43.568Z",
+    "src": "data/src/Data_Received/GlobalMangroveWatch/globalMangroveWatch2007.tif"
+  },
+  {
+    "datasourceId": "mangroves2008",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": 0,
+    "created": "2025-06-30T21:03:10.811Z",
+    "lastUpdated": "2025-06-30T21:03:10.811Z",
+    "src": "data/src/Data_Received/GlobalMangroveWatch/globalMangroveWatch2008.tif"
+  },
+  {
+    "datasourceId": "mangroves2009",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": 0,
+    "created": "2025-06-30T21:03:28.523Z",
+    "lastUpdated": "2025-06-30T21:03:28.523Z",
+    "src": "data/src/Data_Received/GlobalMangroveWatch/globalMangroveWatch2009.tif"
+  },
+  {
+    "datasourceId": "mangroves2010",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": 0,
+    "created": "2025-06-30T21:03:44.207Z",
+    "lastUpdated": "2025-06-30T21:03:44.207Z",
+    "src": "data/src/Data_Received/GlobalMangroveWatch/globalMangroveWatch2010.tif"
+  },
+  {
+    "datasourceId": "mangroves2015",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": 0,
+    "created": "2025-06-30T21:03:59.380Z",
+    "lastUpdated": "2025-06-30T21:03:59.380Z",
+    "src": "data/src/Data_Received/GlobalMangroveWatch/globalMangroveWatch2015.tif"
+  },
+  {
+    "datasourceId": "mangroves2016",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": 0,
+    "created": "2025-06-30T21:04:17.527Z",
+    "lastUpdated": "2025-06-30T21:04:17.527Z",
+    "src": "data/src/Data_Received/GlobalMangroveWatch/globalMangroveWatch2016.tif"
+  },
+  {
+    "datasourceId": "mangroves2017",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": 0,
+    "created": "2025-06-30T21:04:33.467Z",
+    "lastUpdated": "2025-06-30T21:04:33.467Z",
+    "src": "data/src/Data_Received/GlobalMangroveWatch/globalMangroveWatch2017.tif"
+  },
+  {
+    "datasourceId": "mangroves2018",
+    "geo_type": "raster",
+    "formats": [
+      "tif"
+    ],
+    "precalc": true,
+    "measurementType": "quantitative",
+    "band": 1,
+    "noDataValue": 0,
+    "created": "2025-06-30T21:04:49.826Z",
+    "lastUpdated": "2025-06-30T21:04:49.826Z",
+    "src": "data/src/Data_Received/GlobalMangroveWatch/globalMangroveWatch2018.tif"
+  },
+  {
+    "src": "data/src/Data_Received/GlobalMangroveWatch/globalMangroveWatch2019.tif",
+    "band": 1,
+    "geo_type": "raster",
+    "datasourceId": "mangroves2019",
+    "formats": [
+      "tif"
+    ],
+    "created": "2025-06-30T21:05:07.772Z",
+    "lastUpdated": "2025-06-30T21:05:07.772Z",
+    "noDataValue": 0,
+    "measurementType": "quantitative",
     "precalc": true
   }
 ]

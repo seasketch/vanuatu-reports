@@ -1,54 +1,45 @@
 import React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import {
-  ClassTable,
   Collapse,
+  KeySection,
   ReportError,
   ResultsCard,
-  SketchClassTable,
   useSketchProperties,
 } from "@seasketch/geoprocessing/client-ui";
 import {
   GeogProp,
-  Metric,
-  MetricGroup,
   ReportResult,
-  SketchProperties,
-  flattenBySketchAllClass,
-  metricsWithSketchId,
+  firstMatchingMetric,
+  percentWithEdge,
   squareMeterToKilometer,
   toPercentMetric,
 } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
+import { MangrovesLineChart } from "./MangrovesLineChart.js";
 
 /**
  * Mangroves component
  */
 export const Mangroves: React.FunctionComponent<GeogProp> = (props) => {
   const { t } = useTranslation();
-  const [{ isCollection, id, childProperties }] = useSketchProperties();
   const curGeography = project.getGeographyById(props.geographyId, {
     fallbackGroup: "default-boundary",
   });
 
   // Metrics
   const metricGroup = project.getMetricGroup("mangroves", t);
-  const precalcMetrics = [
-    {
-      geographyId: "world",
-      metricId: "area",
-      classId: "mangroves",
-      sketchId: null,
-      groupId: null,
-      value: 15742695.7229,
-    },
-  ];
+  const precalcMetric = {
+    geographyId: "world",
+    metricId: "area",
+    classId: "2020",
+    sketchId: null,
+    groupId: null,
+    value: 15742695.7229,
+  };
 
   // Labels
   const titleLabel = t("Mangroves - Global Mangrove Watch");
-  const mapLabel = t("Map");
-  const withinLabel = t("Within Plan");
-  const percWithinLabel = t("% Within Plan");
   const unitsLabel = t("km²");
 
   return (
@@ -60,82 +51,71 @@ export const Mangroves: React.FunctionComponent<GeogProp> = (props) => {
       {(data: ReportResult) => {
         const percMetricIdName = `${metricGroup.metricId}Perc`;
 
-        const valueMetrics = metricsWithSketchId(
-          data.metrics.filter((m) => m.metricId === metricGroup.metricId),
-          [id],
-        );
-        const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
-          metricIdOverride: percMetricIdName,
-        });
-        const metrics = [...valueMetrics, ...percentMetrics];
+        // Gather all yearly area metrics for mangroves
+        const yearlyMetrics = metricGroup.classes
+          .map((cls) => {
+            const m = data.metrics.find(
+              (m) =>
+                m.metricId === metricGroup.metricId &&
+                m.classId === cls.classId,
+            );
+            return m
+              ? {
+                  year: Number(cls.classId),
+                  area: squareMeterToKilometer(m.value),
+                }
+              : null;
+          })
+          .filter(Boolean) as { year: number; area: number }[];
 
-        const objectives = (() => {
-          const objectives = project.getMetricGroupObjectives(metricGroup, t);
-          if (objectives.length) {
-            return objectives;
-          } else {
-            return;
-          }
-        })();
+        // Prepare data for the mangrove line chart (year, area)
+        const mangroveLineData = yearlyMetrics.map((d) => ({
+          year: d.year,
+          area: d.area,
+        }));
+
+        const valueMetric2020 = firstMatchingMetric(
+          data.metrics,
+          (m) => m.metricId === metricGroup.metricId && m.classId === "2020",
+        );
+        const percentMetric2020 = toPercentMetric(
+          [valueMetric2020],
+          [precalcMetric],
+          {
+            metricIdOverride: percMetricIdName,
+          },
+        );
 
         return (
           <ReportError>
             <p>
               <Trans i18nKey="Mangroves 1">
                 This report summarizes overlap with mangrove extent, based on
-                Global Mangrove Watch data from 2020.
+                Global Mangrove Watch data.
               </Trans>
             </p>
 
-            <ClassTable
-              rows={metrics}
-              metricGroup={metricGroup}
-              objective={objectives}
-              columnConfig={[
-                {
-                  columnLabel: " ",
-                  type: "class",
-                  width: 30,
-                },
-                {
-                  columnLabel: withinLabel,
-                  type: "metricValue",
-                  metricId: metricGroup.metricId,
-                  valueFormatter: (val) =>
-                    squareMeterToKilometer(Number(val)).toFixed(2),
-                  valueLabel: unitsLabel,
-                  chartOptions: {
-                    showTitle: true,
-                  },
-                  width: 20,
-                },
-                {
-                  columnLabel: percWithinLabel,
-                  type: "metricChart",
-                  metricId: percMetricIdName,
-                  valueFormatter: "percent",
-                  chartOptions: {
-                    showTitle: true,
-                  },
-                  width: 40,
-                },
-                {
-                  columnLabel: mapLabel,
-                  type: "layerToggle",
-                  width: 10,
-                },
-              ]}
-            />
-
-            {isCollection && childProperties && (
-              <Collapse title={t("Show by Sketch")}>
-                {genSketchTable(
-                  data,
-                  metricGroup,
-                  precalcMetrics,
-                  childProperties,
-                )}
-              </Collapse>
+            {data.metrics.some((d) => d.value !== 0) ? (
+              <>
+                <KeySection>
+                  In 2020, this area of interest contained{" "}
+                  {squareMeterToKilometer(valueMetric2020.value).toFixed(2)}{" "}
+                  {unitsLabel}, which was{" "}
+                  {percentWithEdge(percentMetric2020[0].value)} of Vanuatu's
+                  mangrove habitat.
+                </KeySection>
+                <MangrovesLineChart
+                  data={mangroveLineData}
+                  width={450}
+                  height={300}
+                />
+              </>
+            ) : (
+              <p
+                style={{ color: "#888", fontStyle: "italic", margin: "20px 0" }}
+              >
+                No mangroves contained in area of interest
+              </p>
             )}
 
             <Collapse title={t("Learn More")}>
@@ -154,32 +134,5 @@ export const Mangroves: React.FunctionComponent<GeogProp> = (props) => {
         );
       }}
     </ResultsCard>
-  );
-};
-
-const genSketchTable = (
-  data: ReportResult,
-  metricGroup: MetricGroup,
-  precalcMetrics: Metric[],
-  childProperties: SketchProperties[],
-) => {
-  const childSketchIds = childProperties
-    ? childProperties.map((skp) => skp.id)
-    : [];
-  // Build agg metric objects for each child sketch in collection with percValue for each class
-  const childSketchMetrics = toPercentMetric(
-    metricsWithSketchId(
-      data.metrics.filter((m) => m.metricId === metricGroup.metricId),
-      childSketchIds,
-    ),
-    precalcMetrics,
-  );
-  const sketchRows = flattenBySketchAllClass(
-    childSketchMetrics,
-    metricGroup.classes,
-    childProperties,
-  );
-  return (
-    <SketchClassTable rows={sketchRows} metricGroup={metricGroup} formatPerc />
   );
 };
