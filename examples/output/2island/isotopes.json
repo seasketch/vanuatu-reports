@@ -1,0 +1,26 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "isotopes",
+      "classId": "isotopeRatio",
+      "sketchId": null,
+      "groupId": null,
+      "value": 0.02209699210442745
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "AMR_102",
+      "ratio": 0.024825366388166004
+    },
+    {
+      "station_id": "AMR_100",
+      "ratio": 0.01840178287169691
+    },
+    {
+      "station_id": "MLK_108",
+      "ratio": 0.023063827053419424
+    }
+  ]
+}

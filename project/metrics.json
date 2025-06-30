@@ -1306,5 +1306,17 @@
         "layerId": "ov5from_0"
       }
     ]
+  },
+  {
+    "metricId": "isotopes",
+    "type": "countOverlap",
+    "datasourceId": "isotopes",
+    "classes": [
+      {
+        "classId": "isotopeRatio",
+        "display": "Nitrogen-15",
+        "layerId": "BMulcQLWF"
+      }
+    ]
   }
 ]

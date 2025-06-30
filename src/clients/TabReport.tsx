@@ -21,6 +21,7 @@ import { BleachingAlerts } from "../components/BleachingAlerts.js";
 import { FishDensity } from "../components/FishDensity.js";
 import { FishBiomass } from "../components/FishBiomass.js";
 import { InvertDensity } from "../components/InvertDensity.js";
+import { StableIsotopes } from "../components/StableIsotopes.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -54,6 +55,7 @@ const BaseReport = () => {
         <FishBiomass />
         <InvertDensity />
         <Richness />
+        <StableIsotopes />
       </ReportPage>
       <ReportPage hidden={!enableAllTabs && tab !== "REPRESENTATION"}>
         <BenthicACA />
