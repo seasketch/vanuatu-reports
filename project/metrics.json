@@ -1381,5 +1381,17 @@
       { "classId": "orchard", "display": "Orchard" },
       { "classId": "residential", "display": "Residential" }
     ]
+  },
+  {
+    "metricId": "waterways",
+    "type": "countOverlap",
+    "datasourceId": "waterways",
+    "layerId": "m4Wss6qJV",
+    "classes": [
+      {
+        "classId": "waterways",
+        "display": "Waterways"
+      }
+    ]
   }
 ]
