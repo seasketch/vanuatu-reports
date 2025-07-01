@@ -1,0 +1,59 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "construction",
+      "sketchId": "106370",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "farmland",
+      "sketchId": "106370",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "industrial",
+      "sketchId": "106370",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "orchard",
+      "sketchId": "106370",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "residential",
+      "sketchId": "106370",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "construction",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "farmland",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "industrial",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "orchard",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 203497.370018,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "residential",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 1771566.117162,
+      "extra": {
+        "sketchName": "2island"
+      }
+    }
+  ]
+}

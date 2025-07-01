@@ -1367,5 +1367,19 @@
         "layerId": "BMulcQLWF"
       }
     ]
+  },
+  {
+    "metricId": "landUse",
+    "type": "areaOverlap",
+    "datasourceId": "landUse",
+    "classKey": "type",
+    "layerId": "ahMXEIXNI",
+    "classes": [
+      { "classId": "construction", "display": "Construction" },
+      { "classId": "industrial", "display": "Industrial" },
+      { "classId": "farmland", "display": "Farmland" },
+      { "classId": "orchard", "display": "Orchard" },
+      { "classId": "residential", "display": "Residential" }
+    ]
   }
 ]

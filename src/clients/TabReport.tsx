@@ -22,6 +22,7 @@ import { FishDensity } from "../components/FishDensity.js";
 import { FishBiomass } from "../components/FishBiomass.js";
 import { InvertDensity } from "../components/InvertDensity.js";
 import { StableIsotopes } from "../components/StableIsotopes.js";
+import { LandUse } from "../components/LandUse.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -64,6 +65,7 @@ const BaseReport = () => {
         <Mangroves />
         <Dhw />
         <BleachingAlerts />
+        <LandUse />
       </ReportPage>
     </>
   );
