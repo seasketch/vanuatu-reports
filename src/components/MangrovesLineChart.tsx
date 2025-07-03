@@ -40,7 +40,7 @@ export const MangrovesLineChart: React.FC<MangrovesLineChartProps> = ({
       .scaleLinear()
       .domain(d3.extent(data, (d) => d.year) as [number, number])
       .range([0, w]);
-    const minArea = d3.min(data, (d) => d.area) ?? 0;
+    const minArea = 0;
     const maxArea = d3.max(data, (d) => d.area) ?? 1;
     // Add a small buffer below the minimum for clarity
     const yMin = minArea;
