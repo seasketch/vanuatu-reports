@@ -3,10 +3,65 @@
     {
       "geographyId": null,
       "metricId": "size",
+      "classId": "archipelagicBaseline",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 1296220314.562229,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "size",
       "classId": "eez",
       "sketchId": "102333",
       "groupId": null,
-      "value": 1297886549.92198,
+      "value": 1298006148.250934,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "size",
+      "classId": "intermediateMMA",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 1060633670.945611,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "size",
+      "classId": "offshore",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 238391995.845263,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "size",
+      "classId": "reef100m",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 56836071.811239,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "size",
+      "classId": "territorialSeas",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 0,
       "extra": {
         "sketchName": "2island"
       }

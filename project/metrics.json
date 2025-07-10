@@ -2,12 +2,42 @@
   {
     "metricId": "size",
     "type": "areaOverlap",
-    "layerId": "1_rbZwN2L",
     "classes": [
       {
         "classId": "eez",
         "display": "EEZ",
-        "datasourceId": "eez"
+        "datasourceId": "eez",
+        "layerId": "1_rbZwN2L"
+      },
+      {
+        "classId": "territorialSeas",
+        "display": "Territorial Seas",
+        "datasourceId": "territorialSeas",
+        "layerId": "pJW6jwUwn"
+      },
+      {
+        "classId": "intermediateMMA",
+        "display": "Intermediate MMA (0-6nm)",
+        "datasourceId": "intermediateMMA",
+        "layerId": "dLMDy7R_C"
+      },
+      {
+        "classId": "archipelagicBaseline",
+        "display": "Archipelagic Zone",
+        "datasourceId": "archipelagicBaseline",
+        "layerId": "S0yBk0ZZa"
+      },
+      {
+        "classId": "reef100m",
+        "display": "Reef +100m",
+        "datasourceId": "reef100m",
+        "layerId": "6GhHo5DzM"
+      },
+      {
+        "classId": "offshore",
+        "display": "Offshore (6-200nm)",
+        "datasourceId": "offshore",
+        "layerId": "PtmDXKDR6"
       }
     ]
   },

@@ -82,11 +82,11 @@ export const Size: React.FunctionComponent<GeogProp> = (props) => {
 
         const areaMetric = firstMatchingMetric(
           data.metrics,
-          (m) => m.sketchId === id && m.groupId === null,
+          (m) => m.sketchId === id && m.groupId === null && m.classId === "eez",
         );
         const totalAreaMetric = firstMatchingMetric(
           precalcMetrics,
-          (m) => m.groupId === null,
+          (m) => m.groupId === null && m.classId === "eez",
         );
         const areaDisplay = roundLower(
           squareMeterToKilometer(areaMetric.value),
@@ -100,8 +100,8 @@ export const Size: React.FunctionComponent<GeogProp> = (props) => {
             <p>
               <Trans i18nKey="Size 1">
                 The Vanuatu Exclusive Economic Zone extends from the shoreline
-                to 200 nautical miles. This report summarizes this plan's
-                overlap with the EEZ.
+                to 200 nautical miles. This report summarizes this area of
+                interest's overlap with boundaries within the EEZ.
               </Trans>
             </p>
 
@@ -120,16 +120,18 @@ export const Size: React.FunctionComponent<GeogProp> = (props) => {
               objective={objectives}
               columnConfig={[
                 {
-                  columnLabel: " ",
+                  columnLabel: t("Boundary"),
                   type: "class",
-                  width: 20,
+                  width: 40,
                 },
                 {
                   columnLabel: withinLabel,
                   type: "metricValue",
                   metricId: metricGroup.metricId,
                   valueFormatter: (v) =>
-                    roundLower(squareMeterToKilometer(Number(v))),
+                    Number(v)
+                      ? roundLower(squareMeterToKilometer(Number(v)))
+                      : 0,
                   valueLabel: unitsLabel,
                   chartOptions: {
                     showTitle: true,

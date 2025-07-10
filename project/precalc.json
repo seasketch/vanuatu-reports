@@ -114,6 +114,14 @@
   {
     "geographyId": "world",
     "metricId": "area",
+    "classId": "archipelagicBaseline-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 71068078698.62077
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
     "classId": "benthic_aca-Coral/Algae",
     "sketchId": null,
     "groupId": null,
@@ -173,7 +181,7 @@
     "classId": "eez-total",
     "sketchId": null,
     "groupId": null,
-    "value": 625543673678.6702
+    "value": 627979779839.7606
   },
   {
     "geographyId": "world",
@@ -322,6 +330,14 @@
   {
     "geographyId": "world",
     "metricId": "area",
+    "classId": "intermediateMMA-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 31689738462.768803
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
     "classId": "mangroves-total",
     "sketchId": null,
     "groupId": "band-0",
@@ -330,10 +346,42 @@
   {
     "geographyId": "world",
     "metricId": "area",
+    "classId": "offshore-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 596407985222.6609
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
     "classId": "reef_extent_aca-total",
     "sketchId": null,
     "groupId": null,
     "value": 1155636571.1287217
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "reef100m-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1031869641.0431026
+  },
+  {
+    "geographyId": "world",
+    "metricId": "area",
+    "classId": "territorialSeas-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 43706187249.23973
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "archipelagicBaseline-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 7
   },
   {
     "geographyId": "world",
@@ -546,6 +594,14 @@
   {
     "geographyId": "world",
     "metricId": "count",
+    "classId": "intermediateMMA-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 55
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
     "classId": "mangroves-total",
     "sketchId": null,
     "groupId": "band-0",
@@ -554,10 +610,34 @@
   {
     "geographyId": "world",
     "metricId": "count",
+    "classId": "offshore-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
     "classId": "reef_extent_aca-total",
     "sketchId": null,
     "groupId": null,
     "value": 2605
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "reef100m-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 306
+  },
+  {
+    "geographyId": "world",
+    "metricId": "count",
+    "classId": "territorialSeas-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1
   },
   {
     "geographyId": "world",
