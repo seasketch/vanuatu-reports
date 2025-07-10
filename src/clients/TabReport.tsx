@@ -24,6 +24,7 @@ import { InvertDensity } from "../components/InvertDensity.js";
 import { StableIsotopes } from "../components/StableIsotopes.js";
 import { LandUse } from "../components/LandUse.js";
 import { Waterways } from "../components/Waterways.js";
+import { Gfw } from "../components/Gfw.jsx";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -68,6 +69,7 @@ const BaseReport = () => {
         <BleachingAlerts />
         <LandUse />
         <Waterways />
+        <Gfw />
       </ReportPage>
     </>
   );

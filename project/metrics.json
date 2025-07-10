@@ -191,7 +191,7 @@
       },
       {
         "classId": "favia",
-        "display": "Favia",
+        "display": "Dipsastrea",
         "layerId": "g7OVHeKwv"
       },
       {
@@ -206,7 +206,7 @@
       },
       {
         "classId": "montas",
-        "display": "Montastrea",
+        "display": "Astrea",
         "layerId": "pZ3jr450d"
       },
       {
@@ -296,32 +296,32 @@
       },
       {
         "classId": "fire",
-        "display": "Fire Coral",
+        "display": "Millepora",
         "layerId": "WP8lOyKgy"
       },
       {
         "classId": "sed_fi",
-        "display": "Sed_fi",
+        "display": "Physogyra",
         "layerId": "_YPKHY6FG"
       },
       {
         "classId": "anemon",
-        "display": "Anemone",
+        "display": "Lithophyllon",
         "layerId": "_lkLCVWUC"
       },
       {
         "classId": "cmorph",
-        "display": "Cmorph",
+        "display": "Echinomorpha",
         "layerId": "i7_RR3D_Q"
       },
       {
         "classId": "sponge",
-        "display": "Sponge",
+        "display": "Cantharellus",
         "layerId": "1BNFfTyEs"
       },
       {
         "classId": "tunica",
-        "display": "Tunicate",
+        "display": "Cynaria",
         "layerId": "3aIRlf4Tk"
       }
     ]
@@ -1391,6 +1391,54 @@
       {
         "classId": "waterways",
         "display": "Waterways"
+      }
+    ]
+  },
+  {
+    "metricId": "gfw",
+    "type": "sumOverlap",
+    "classes": [
+      {
+        "classId": "2018",
+        "datasourceId": "gfw_2018",
+        "display": "2018",
+        "layerId": "hPxd2FCWR"
+      },
+      {
+        "classId": "2019",
+        "datasourceId": "gfw_2019",
+        "display": "2019",
+        "layerId": "18Bhbvs5R"
+      },
+      {
+        "classId": "2020",
+        "datasourceId": "gfw_2020",
+        "display": "2020",
+        "layerId": "b7wkbjlst"
+      },
+      {
+        "classId": "2021",
+        "datasourceId": "gfw_2021",
+        "display": "2021",
+        "layerId": "0I_3HgFlz"
+      },
+      {
+        "classId": "2022",
+        "datasourceId": "gfw_2022",
+        "display": "2022",
+        "layerId": "CMlgPqXk3"
+      },
+      {
+        "classId": "2023",
+        "datasourceId": "gfw_2023",
+        "display": "2023",
+        "layerId": "gktHSnTZ2"
+      },
+      {
+        "classId": "2024",
+        "datasourceId": "gfw_2024",
+        "display": "2024",
+        "layerId": "FKjPBkroD"
       }
     ]
   }

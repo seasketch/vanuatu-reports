@@ -69,7 +69,11 @@ export const FishDensity: React.FunctionComponent = () => {
             </KeySection>
 
             <LayerToggle
-              layerId="L34FellVJ"
+              layerId={
+                metricGroup.classes.find(
+                  (curClass) => curClass.classId === "toal_fish_density",
+                )?.layerId
+              }
               label="Show Total Fish Density On Map"
             />
 

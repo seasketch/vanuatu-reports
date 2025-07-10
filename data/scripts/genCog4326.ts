@@ -2,7 +2,7 @@ import { $ } from "zx";
 import datasources from "../../project/datasources.json" with { type: "json" };
 import project from "../../project/projectClient.js";
 
-const mgs = ["dhw"];
+const mgs = ["dhw", "gfw"];
 
 mgs.forEach((mg) => {
   console.log(`Reimporting ${mg}`);

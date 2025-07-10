@@ -1,0 +1,81 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2018",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2019",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 28.719999,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2020",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2021",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0.71,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2022",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2023",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "gfw",
+      "classId": "2024",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    }
+  ]
+}

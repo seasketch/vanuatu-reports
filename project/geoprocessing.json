@@ -28,6 +28,7 @@
     "src/functions/invertDensity.ts",
     "src/functions/isotopes.ts",
     "src/functions/landUse.ts",
-    "src/functions/waterways.ts"
+    "src/functions/waterways.ts",
+    "src/functions/gfw.ts"
   ]
 }
