@@ -45,8 +45,8 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
 
   // Labels
   const titleLabel = t("Benthic Map - Allen Coral Atlas");
-  const withinLabel = t("Within Plan");
-  const percWithinLabel = t("% Within Plan");
+  const withinLabel = t("Within Area");
+  const percWithinLabel = t("% Within Area");
   const unitsLabel = t("km²");
 
   return (
@@ -80,9 +80,8 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
           <ReportError>
             <p>
               <Trans i18nKey="BenthicACA 1">
-                This report summarizes this plan&apos;s overlap with benthic
-                features within the Vanuatu EEZ, based on Allen Coral Atlas
-                data.
+                This report summarizes benthic features within the area of
+                interest, based on Allen Coral Atlas data.
               </Trans>
             </p>
 
@@ -152,10 +151,9 @@ export const BenthicACA: React.FunctionComponent<GeogProp> = (props) => {
                 </p>
                 <p>
                   📈 Report: This report calculates the total area of each
-                  benthic feature within the plan. This value is divided by the
-                  total area of each benthic feature to obtain the % contained
-                  within the plan. If the plan includes multiple areas that
-                  overlap, the overlap is only counted once.
+                  benthic feature within the area of interest. This value is
+                  divided by the total area of each benthic feature to obtain
+                  the % contained within the area of interest.
                 </p>
               </Trans>
             </Collapse>

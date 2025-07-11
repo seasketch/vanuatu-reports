@@ -45,8 +45,8 @@ export const GeomorphACA: React.FunctionComponent<GeogProp> = (props) => {
 
   // Labels
   const titleLabel = t("Geomorphology - Allen Coral Atlas");
-  const withinLabel = t("Within Plan");
-  const percWithinLabel = t("% Within Plan");
+  const withinLabel = t("Within Area");
+  const percWithinLabel = t("% Within Area");
   const unitsLabel = t("km²");
 
   return (
@@ -150,8 +150,7 @@ export const GeomorphACA: React.FunctionComponent<GeogProp> = (props) => {
                   📈 Report: This report calculates the total area of each
                   geomorphic feature within the zone. This value is divided by
                   the total area of each geomorphic feature to obtain the %
-                  contained within the zone. If the zone includes multiple areas
-                  that overlap, the overlap is only counted once.
+                  contained within the zone.
                 </p>
               </Trans>
             </Collapse>

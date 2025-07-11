@@ -45,8 +45,8 @@ export const ReefExtentACA: React.FunctionComponent<GeogProp> = (props) => {
   // Labels
   const titleLabel = t("Reef Extent - Allen Coral Atlas");
   const mapLabel = t("Map");
-  const withinLabel = t("Within Plan");
-  const percWithinLabel = t("% Within Plan");
+  const withinLabel = t("Within Area");
+  const percWithinLabel = t("% Within Area");
   const unitsLabel = t("km²");
 
   return (
@@ -80,8 +80,8 @@ export const ReefExtentACA: React.FunctionComponent<GeogProp> = (props) => {
           <ReportError>
             <p>
               <Trans i18nKey="ReefExtentACA 1">
-                This report summarizes this plan&apos;s overlap with reef
-                extent, based on Allen Coral Atlas data.
+                This report summarizes reef extent within the area of interest,
+                based on Allen Coral Atlas data.
               </Trans>
             </p>
 
@@ -163,8 +163,6 @@ export const ReefExtentACA: React.FunctionComponent<GeogProp> = (props) => {
                   📈 Report: This report calculates the total area of reef
                   extent within the zone. This value is divided by the total
                   area of reef extent to obtain the % contained within the zone.
-                  If the zone includes multiple areas that overlap, the overlap
-                  is only counted once.
                 </p>
               </Trans>
             </Collapse>

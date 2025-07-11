@@ -30,7 +30,7 @@ export const LandUse: React.FunctionComponent<GeogProp> = (props) => {
   // Labels
   const titleLabel = t("Land Use - Open Street Map");
   const descriptionLabel = t("Land Use Type");
-  const withinLabel = t("Within Plan");
+  const withinLabel = t("Within Area");
   const unitsLabel = t("km²");
   const mapLabel = t("Show On Map");
 

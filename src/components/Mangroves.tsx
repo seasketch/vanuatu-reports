@@ -124,9 +124,7 @@ export const Mangroves: React.FunctionComponent<GeogProp> = (props) => {
                 <p>
                   📈 Report: This report calculates the total area of mangroves
                   within the zone. This value is divided by the total area of
-                  mangroves to obtain the % contained within the zone. If the
-                  zone includes multiple areas that overlap, the overlap is only
-                  counted once.
+                  mangroves to obtain the % contained within the zone.
                 </p>
               </Trans>
             </Collapse>

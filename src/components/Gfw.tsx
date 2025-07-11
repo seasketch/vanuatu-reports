@@ -98,10 +98,9 @@ export const Gfw: React.FunctionComponent<GeogProp> = (props) => {
                 <p>🗺️ Source Data: Global Fishing Watch</p>
                 <p>
                   📈 Report: This report calculates the sum of apparent fishing
-                  effort within the plan. This value is divided by the total sum
-                  of apparent fishing effort to obtain the % contained within
-                  the plan. If the plan includes multiple areas that overlap,
-                  the overlap is only counted once.
+                  effort within the area of interest. This value is divided by
+                  the total sum of apparent fishing effort to obtain the %
+                  contained within the area of interest.
                 </p>
               </Trans>
             </Collapse>

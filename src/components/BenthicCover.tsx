@@ -44,7 +44,7 @@ export const BenthicCover: React.FunctionComponent = () => {
 
   // Labels
   const titleLabel = t("Benthic Cover");
-  const withinLabel = t("Average Within Plan");
+  const withinLabel = t("Average Within Area");
   const mapLabel = t("Map");
 
   return (
@@ -57,7 +57,7 @@ export const BenthicCover: React.FunctionComponent = () => {
             <p>
               <Trans i18nKey="BenthicCover 1">
                 This report estimates the percentage of benthic habitats within
-                this plan.
+                this area of interest.
               </Trans>
             </p>
 
@@ -104,8 +104,9 @@ export const BenthicCover: React.FunctionComponent = () => {
                 </p>
                 <p>
                   📈 Report: This report collects the percent of each benthic
-                  cover at each site within the plan. It then caluclates the
-                  average percent cover of each benthic habitat type.
+                  cover at each site within the area of interest. It then
+                  caluclates the average percent cover of each benthic habitat
+                  type.
                 </p>
               </Trans>
             </Collapse>

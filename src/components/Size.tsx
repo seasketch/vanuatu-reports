@@ -49,8 +49,8 @@ export const Size: React.FunctionComponent<GeogProp> = (props) => {
   // Labels
   const titleLabel = t("Size");
   const mapLabel = t("Map");
-  const withinLabel = t("Within Plan");
-  const percWithinLabel = t("% Within Plan");
+  const withinLabel = t("Within Area");
+  const percWithinLabel = t("% Within Area");
   const unitsLabel = t("km²");
 
   return (
@@ -106,7 +106,7 @@ export const Size: React.FunctionComponent<GeogProp> = (props) => {
             </p>
 
             <KeySection>
-              {t("This plan is")}{" "}
+              {t("This area of interest is")}{" "}
               <b>
                 {areaDisplay} {unitsLabel}
               </b>
@@ -169,11 +169,31 @@ export const Size: React.FunctionComponent<GeogProp> = (props) => {
 
             <Collapse title={t("Learn More")}>
               <Trans i18nKey="Size - learn more">
-                <p>🗺️ Source Data: Marine Regions v12</p>
+                <p>Overview of maritime boundaries:</p>
+                <ul>
+                  <li>
+                    EEZ, Exclusive Economic Zone (0-200nm, Data source: Marine
+                    Regions v12)
+                  </li>
+                  <li>
+                    Archipelagic zone: Waters enclosed by the outermost points
+                    of the archipelago
+                  </li>
+                  <li>Territorial seas: 0-12 nm</li>
+                  <li>Offshore: 6-200 nm</li>
+                  <li>Intermediate MMA (Marine Managed Area): 0-6 nm</li>
+                  <li>
+                    Reef +100 (Inshore custom/coastal management areas): 0-100m
+                    beyond reefs, including specific sites beyond that boundary
+                    where communities claim stewardship and governed by
+                    traditional practices.
+                  </li>
+                </ul>
                 <p>
-                  📈 Report: This report calculates the total area of the plan
-                  within the EEZ. This value is divided by the total area of the
-                  EEZ to obtain the % contained within the plan.
+                  📈 Report: This report calculates the total area of the area
+                  of interest within various maritime boundaries. This value is
+                  divided by the total area of the maritime zones to obtain the
+                  % contained within the area of interest.
                 </p>
               </Trans>
             </Collapse>

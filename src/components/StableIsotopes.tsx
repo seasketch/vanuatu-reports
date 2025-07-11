@@ -37,7 +37,7 @@ export const StableIsotopes: React.FunctionComponent = () => {
 
   // Labels
   const titleLabel = t("Stable Isotopes");
-  const withinLabel = t("Average Within Plan");
+  const withinLabel = t("Average Within Area");
   const mapLabel = t("Map");
 
   return (

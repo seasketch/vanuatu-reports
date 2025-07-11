@@ -65,10 +65,9 @@ export const Dhw: React.FunctionComponent<GeogProp> = () => {
                 </p>
                 <p>
                   📈 Report: This report calculates the total value of each
-                  feature within the plan. This value is divided by the total
-                  value of each feature to obtain the % contained within the
-                  plan. If the plan includes multiple areas that overlap, the
-                  overlap is only counted once.
+                  feature within the area of interest. This value is divided by
+                  the total value of each feature to obtain the % contained
+                  within the area of interest.
                 </p>
               </Trans>
             </Collapse>

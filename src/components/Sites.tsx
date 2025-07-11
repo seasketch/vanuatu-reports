@@ -47,7 +47,8 @@ export const Sites: React.FunctionComponent = () => {
           <ReportError>
             <p>
               <Trans i18nKey="Sites 1">
-                This plan contains <Pill>{stations.toString()}</Pill> station
+                This area of interest contains{" "}
+                <Pill>{stations.toString()}</Pill> station
                 {stations > 1 ? "s" : ""} in <Pill>{islands.toString()}</Pill>{" "}
                 island{islands > 1 ? "s" : ""} and{" "}
                 <Pill>{provinces.toString()}</Pill> province
@@ -86,7 +87,8 @@ export const Sites: React.FunctionComponent = () => {
               <Trans i18nKey="Sites - learn more">
                 <p>
                   ℹ️ Overview: This report shows the number of stations,
-                  islands, and provinces that overlap with your plan area.
+                  islands, and provinces that overlap with this area of
+                  interest.
                 </p>
                 <p>
                   🗺️ Source Data: The data comes from the sites dataset which
