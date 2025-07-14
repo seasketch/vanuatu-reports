@@ -1521,7 +1521,7 @@
       },
       {
         "classId": "Canyons_shelf_incising",
-        "display": "Canyons shelf Incising"
+        "display": "Shelf Incising Canyons"
       },
       {
         "classId": "Plateaus",
@@ -1545,7 +1545,7 @@
       },
       {
         "classId": "Canyons_blind",
-        "display": "Canyons"
+        "display": "Blind Canyons"
       }
     ]
   }
