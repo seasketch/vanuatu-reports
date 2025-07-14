@@ -29,6 +29,7 @@
     "src/functions/isotopes.ts",
     "src/functions/landUse.ts",
     "src/functions/waterways.ts",
-    "src/functions/gfw.ts"
+    "src/functions/gfw.ts",
+    "src/functions/seamounts.ts"
   ]
 }
