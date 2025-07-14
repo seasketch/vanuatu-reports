@@ -1,0 +1,386 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "isotopes",
+      "classId": "isotopeRatio",
+      "sketchId": null,
+      "groupId": null,
+      "value": 0.02492575832355634
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "ANE_006",
+      "ratio": 0.023226863226863226
+    },
+    {
+      "station_id": "FUT_011",
+      "ratio": 0.021794574542082078
+    },
+    {
+      "station_id": "FUT_012",
+      "ratio": 0.016911109061279708
+    },
+    {
+      "station_id": "FUT_008",
+      "ratio": 0.02086277426552622
+    },
+    {
+      "station_id": "FUT_010",
+      "ratio": 0.016273305313072528
+    },
+    {
+      "station_id": "TAN_013",
+      "ratio": 0.012548262548262547
+    },
+    {
+      "station_id": "TAN_016",
+      "ratio": 0.02932195283470071
+    },
+    {
+      "station_id": "TAN_014",
+      "ratio": 0.02161759224748416
+    },
+    {
+      "station_id": "ANE_004",
+      "ratio": 0.014706300668468213
+    },
+    {
+      "station_id": "ANE_003",
+      "ratio": 0.010569543557290964
+    },
+    {
+      "station_id": "ANE_001",
+      "ratio": 0.012579191033138402
+    },
+    {
+      "station_id": "TAN_018",
+      "ratio": 0.03150878610381741
+    },
+    {
+      "station_id": "TAN_017",
+      "ratio": 0.019424349699861475
+    },
+    {
+      "station_id": "ERR_024",
+      "ratio": 0.022019552112940002
+    },
+    {
+      "station_id": "ERR_022",
+      "ratio": 0.015223880597014926
+    },
+    {
+      "station_id": "ERR_019",
+      "ratio": 0.020370837537840567
+    },
+    {
+      "station_id": "ERR_020",
+      "ratio": 0.022261798753339272
+    },
+    {
+      "station_id": "ERR_021",
+      "ratio": 0.024166995917292246
+    },
+    {
+      "station_id": "TAN_015",
+      "ratio": 0.020060495377240042
+    },
+    {
+      "station_id": "ERR_023",
+      "ratio": 0.02332629003558719
+    },
+    {
+      "station_id": "EFA_032",
+      "ratio": 0.03459453088165959
+    },
+    {
+      "station_id": "AMR_098",
+      "ratio": 0.023262312259867267
+    },
+    {
+      "station_id": "AMR_101",
+      "ratio": 0.030618588747280073
+    },
+    {
+      "station_id": "AMR_099",
+      "ratio": 0.03554933519944017
+    },
+    {
+      "station_id": "AMR_097",
+      "ratio": 0.027744226053219134
+    },
+    {
+      "station_id": "AMR_102",
+      "ratio": 0.024825366388166004
+    },
+    {
+      "station_id": "AMR_100",
+      "ratio": 0.01840178287169691
+    },
+    {
+      "station_id": "EPI_026",
+      "ratio": 0.02977165766079833
+    },
+    {
+      "station_id": "MLK_108",
+      "ratio": 0.023063827053419424
+    },
+    {
+      "station_id": "MLK_110",
+      "ratio": 0.030629366362610207
+    },
+    {
+      "station_id": "MLK_109",
+      "ratio": 0.04937843808203751
+    },
+    {
+      "station_id": "MLK_106",
+      "ratio": 0.018511493816857596
+    },
+    {
+      "station_id": "MLK_103",
+      "ratio": 0.024061282613677286
+    },
+    {
+      "station_id": "AMB_084",
+      "ratio": 0.02183209543101508
+    },
+    {
+      "station_id": "AMB_080",
+      "ratio": 0.01605122609544593
+    },
+    {
+      "station_id": "AMB_082",
+      "ratio": 0.03203051896638595
+    },
+    {
+      "station_id": "AMB_081",
+      "ratio": 0.021241777635167654
+    },
+    {
+      "station_id": "MAE_085",
+      "ratio": 0.019312714776632302
+    },
+    {
+      "station_id": "MAE_087",
+      "ratio": 0.022904260192395786
+    },
+    {
+      "station_id": "MAE_089",
+      "ratio": 0.018003779419343755
+    },
+    {
+      "station_id": "MAE_088",
+      "ratio": 0.0042603550295857995
+    },
+    {
+      "station_id": "PEN_093",
+      "ratio": 0.037066881547139406
+    },
+    {
+      "station_id": "PEN_094",
+      "ratio": 0.02970213126562434
+    },
+    {
+      "station_id": "PEN_092",
+      "ratio": 0.026457675421705306
+    },
+    {
+      "station_id": "VOT_052",
+      "ratio": 0.028462709284627092
+    },
+    {
+      "station_id": "ROW_055",
+      "ratio": 0.012859227943026828
+    },
+    {
+      "station_id": "ROW_057",
+      "ratio": 0.016767929473433404
+    },
+    {
+      "station_id": "ROW_059",
+      "ratio": 0.029455816275586615
+    },
+    {
+      "station_id": "VAN_062",
+      "ratio": 0.026330513774150018
+    },
+    {
+      "station_id": "MOT_056",
+      "ratio": 0.022959262821507245
+    },
+    {
+      "station_id": "MOT_060",
+      "ratio": 0.025879253880108217
+    },
+    {
+      "station_id": "MOT_058",
+      "ratio": 0.02537304035761506
+    },
+    {
+      "station_id": "VAN_061",
+      "ratio": 0.0237639811963041
+    },
+    {
+      "station_id": "VAN_065",
+      "ratio": 0.029632539059090513
+    },
+    {
+      "station_id": "VAN_066",
+      "ratio": 0.039228159457167094
+    },
+    {
+      "station_id": "VAN_064",
+      "ratio": 0.027399039085833007
+    },
+    {
+      "station_id": "VAN_063",
+      "ratio": 0.022086847860043734
+    },
+    {
+      "station_id": "URE_051",
+      "ratio": 0.02613072255929399
+    },
+    {
+      "station_id": "URE_053",
+      "ratio": 0.024403168967435947
+    },
+    {
+      "station_id": "URE_049",
+      "ratio": 0.031943024362726086
+    },
+    {
+      "station_id": "TOR_068",
+      "ratio": 0.04524406714258152
+    },
+    {
+      "station_id": "TOR_072",
+      "ratio": 0.026924523570712136
+    },
+    {
+      "station_id": "TOR_067",
+      "ratio": 0.03526645768025078
+    },
+    {
+      "station_id": "TOR_069",
+      "ratio": 0.03042584434654919
+    },
+    {
+      "station_id": "TOR_071",
+      "ratio": 0.03306251036312386
+    },
+    {
+      "station_id": "TOR_070",
+      "ratio": 0.04302051188963515
+    },
+    {
+      "station_id": "SAN_076",
+      "ratio": 0.017015964785493727
+    },
+    {
+      "station_id": "SAN_074",
+      "ratio": 0.013819686001692205
+    },
+    {
+      "station_id": "SAN_040",
+      "ratio": 0.025924241439802483
+    },
+    {
+      "station_id": "SAN_038",
+      "ratio": 0.032449320126389035
+    },
+    {
+      "station_id": "SAN_075",
+      "ratio": 0.02187861575681077
+    },
+    {
+      "station_id": "SAN_077",
+      "ratio": 0.017303465369686202
+    },
+    {
+      "station_id": "SAN_073",
+      "ratio": 0.01723292240279912
+    },
+    {
+      "station_id": "SAN_044",
+      "ratio": 0.023604776659819655
+    },
+    {
+      "station_id": "SAN_046",
+      "ratio": 0.013314646110721792
+    },
+    {
+      "station_id": "SAN_048",
+      "ratio": 0.01853277449890229
+    },
+    {
+      "station_id": "SAN_047",
+      "ratio": 0.02565715883668904
+    },
+    {
+      "station_id": "SAN_043",
+      "ratio": 0.02356687898089172
+    },
+    {
+      "station_id": "MAL_041",
+      "ratio": 0.028095353928484553
+    },
+    {
+      "station_id": "MAL_039",
+      "ratio": 0.021244012902805386
+    },
+    {
+      "station_id": "SAN_045",
+      "ratio": 0.024909940982601363
+    },
+    {
+      "station_id": "SAN_042",
+      "ratio": 0.02304688646839494
+    },
+    {
+      "station_id": "MAL_037",
+      "ratio": 0.02575525546429069
+    },
+    {
+      "station_id": "MLK_104",
+      "ratio": 0.03279279279279279
+    },
+    {
+      "station_id": "EPI_027",
+      "ratio": 0.023950683824024793
+    },
+    {
+      "station_id": "EPI_025",
+      "ratio": 0.02289925317770414
+    },
+    {
+      "station_id": "EMA_114",
+      "ratio": 0.0358357223814921
+    },
+    {
+      "station_id": "COO_113",
+      "ratio": 0.02354151537158073
+    },
+    {
+      "station_id": "COO_111",
+      "ratio": 0.028477511931476972
+    },
+    {
+      "station_id": "EFA_031",
+      "ratio": 0.03150937596065171
+    },
+    {
+      "station_id": "EFA_034",
+      "ratio": 0.022453205570668724
+    },
+    {
+      "station_id": "EFA_036",
+      "ratio": 0.03143722430706432
+    },
+    {
+      "station_id": "EFA_035",
+      "ratio": 0.04717710750193349
+    }
+  ]
+}

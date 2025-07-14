@@ -2,10 +2,18 @@
   {
     "geographyId": "eez",
     "metricId": "area",
+    "classId": "archipelagicBaseline-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 71068078597.85117
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
     "classId": "benthic_aca-Coral/Algae",
     "sketchId": null,
     "groupId": null,
-    "value": 244216121.09006
+    "value": 244288892.07464042
   },
   {
     "geographyId": "eez",
@@ -13,7 +21,7 @@
     "classId": "benthic_aca-Microalgal Mats",
     "sketchId": null,
     "groupId": null,
-    "value": 13790989.210629174
+    "value": 13790986.62815952
   },
   {
     "geographyId": "eez",
@@ -21,7 +29,7 @@
     "classId": "benthic_aca-Rock",
     "sketchId": null,
     "groupId": null,
-    "value": 77024537.5581604
+    "value": 77068787.2641816
   },
   {
     "geographyId": "eez",
@@ -29,7 +37,7 @@
     "classId": "benthic_aca-Rubble",
     "sketchId": null,
     "groupId": null,
-    "value": 33551277.394629937
+    "value": 33541715.395872805
   },
   {
     "geographyId": "eez",
@@ -37,7 +45,7 @@
     "classId": "benthic_aca-Sand",
     "sketchId": null,
     "groupId": null,
-    "value": 33128947.44212615
+    "value": 33130245.58628538
   },
   {
     "geographyId": "eez",
@@ -45,7 +53,7 @@
     "classId": "benthic_aca-Seagrass",
     "sketchId": null,
     "groupId": null,
-    "value": 4803250.856032972
+    "value": 4804219.021689743
   },
   {
     "geographyId": "eez",
@@ -53,7 +61,295 @@
     "classId": "benthic_aca-total",
     "sketchId": null,
     "groupId": null,
-    "value": 406515123.5516389
+    "value": 406624845.97083014
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "eez-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 627979779839.7606
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geomorph_aca-Back Reef Slope",
+    "sketchId": null,
+    "groupId": null,
+    "value": 16561152.97551528
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geomorph_aca-Deep Lagoon",
+    "sketchId": null,
+    "groupId": null,
+    "value": 21940038.724736117
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geomorph_aca-Inner Reef Flat",
+    "sketchId": null,
+    "groupId": null,
+    "value": 41201204.905183405
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geomorph_aca-Outer Reef Flat",
+    "sketchId": null,
+    "groupId": null,
+    "value": 134843317.0047613
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geomorph_aca-Plateau",
+    "sketchId": null,
+    "groupId": null,
+    "value": 13859625.837548276
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geomorph_aca-Reef Crest",
+    "sketchId": null,
+    "groupId": null,
+    "value": 25766967.799438134
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geomorph_aca-Reef Slope",
+    "sketchId": null,
+    "groupId": null,
+    "value": 12785877.674923614
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geomorph_aca-Shallow Lagoon",
+    "sketchId": null,
+    "groupId": null,
+    "value": 12641343.086838823
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geomorph_aca-Sheltered Reef Slope",
+    "sketchId": null,
+    "groupId": null,
+    "value": 212744433.4663726
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geomorph_aca-Terrestrial Reef Flat",
+    "sketchId": null,
+    "groupId": null,
+    "value": 10470331.428847047
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "geomorph_aca-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 502814292.9041627
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_2018-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 52.6127
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_2019-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 52.6127
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_2020-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 52.6127
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_2021-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 52.6127
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_2022-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 52.6127
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_2023-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 52.6127
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "gfw_2024-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 52.6127
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "intermediateMMA-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 31532357183.511105
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "mangroves1996-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 16212859.064987
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "mangroves2007-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 16290023.277627
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "mangroves2008-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 16307968.443357
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "mangroves2009-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 16415639.437737
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "mangroves2010-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 16369580.17903
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "mangroves2015-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 16389918.033524
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "mangroves2016-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 16281050.694761
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "mangroves2017-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 16370178.351221
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "mangroves2018-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 16373169.212176
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "mangroves2019-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 16350438.668918
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "mangroves2020-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 15734321.312183
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "offshore-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 596407985222.6609
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "reef_extent_aca-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 1002853190.6826864
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "reef100m-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 923379166.3718605
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "territorialSeas-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 43705999183.94516
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "archipelagicBaseline-total",
+    "sketchId": null,
+    "groupId": null,
+    "value": 7
   },
   {
     "geographyId": "eez",
@@ -61,7 +357,7 @@
     "classId": "benthic_aca-Coral/Algae",
     "sketchId": null,
     "groupId": null,
-    "value": 21733
+    "value": 21752
   },
   {
     "geographyId": "eez",
@@ -77,7 +373,7 @@
     "classId": "benthic_aca-Rock",
     "sketchId": null,
     "groupId": null,
-    "value": 22852
+    "value": 22856
   },
   {
     "geographyId": "eez",
@@ -85,7 +381,7 @@
     "classId": "benthic_aca-Rubble",
     "sketchId": null,
     "groupId": null,
-    "value": 11007
+    "value": 11010
   },
   {
     "geographyId": "eez",
@@ -101,7 +397,7 @@
     "classId": "benthic_aca-Seagrass",
     "sketchId": null,
     "groupId": null,
-    "value": 4254
+    "value": 4258
   },
   {
     "geographyId": "eez",
@@ -109,338 +405,10 @@
     "classId": "benthic_aca-total",
     "sketchId": null,
     "groupId": null,
-    "value": 76708
+    "value": 76738
   },
   {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "archipelagicBaseline-total",
-    "sketchId": null,
-    "groupId": null,
-    "value": 71068078698.62077
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "benthic_aca-Coral/Algae",
-    "sketchId": null,
-    "groupId": null,
-    "value": 286219768.2616198
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "benthic_aca-Microalgal Mats",
-    "sketchId": null,
-    "groupId": null,
-    "value": 14013538.29918971
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "benthic_aca-Rock",
-    "sketchId": null,
-    "groupId": null,
-    "value": 93952003.48004337
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "benthic_aca-Rubble",
-    "sketchId": null,
-    "groupId": null,
-    "value": 36575848.35468364
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "benthic_aca-Sand",
-    "sketchId": null,
-    "groupId": null,
-    "value": 38614657.51784066
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "benthic_aca-Seagrass",
-    "sketchId": null,
-    "groupId": null,
-    "value": 6611465.448483655
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "benthic_aca-total",
-    "sketchId": null,
-    "groupId": null,
-    "value": 475987281.36186206
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "eez-total",
-    "sketchId": null,
-    "groupId": null,
-    "value": 627979779839.7606
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "geomorph_aca-Back Reef Slope",
-    "sketchId": null,
-    "groupId": null,
-    "value": 16733378.890135288
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "geomorph_aca-Deep Lagoon",
-    "sketchId": null,
-    "groupId": null,
-    "value": 22304813.891049422
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "geomorph_aca-Inner Reef Flat",
-    "sketchId": null,
-    "groupId": null,
-    "value": 44468084.04530139
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "geomorph_aca-Outer Reef Flat",
-    "sketchId": null,
-    "groupId": null,
-    "value": 172947607.534525
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "geomorph_aca-Plateau",
-    "sketchId": null,
-    "groupId": null,
-    "value": 14220151.351512797
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "geomorph_aca-Reef Crest",
-    "sketchId": null,
-    "groupId": null,
-    "value": 26360800.647080254
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "geomorph_aca-Reef Slope",
-    "sketchId": null,
-    "groupId": null,
-    "value": 14679704.360164369
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "geomorph_aca-Shallow Lagoon",
-    "sketchId": null,
-    "groupId": null,
-    "value": 12843151.784338038
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "geomorph_aca-Sheltered Reef Slope",
-    "sketchId": null,
-    "groupId": null,
-    "value": 236292106.88879684
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "geomorph_aca-Terrestrial Reef Flat",
-    "sketchId": null,
-    "groupId": null,
-    "value": 14469699.363528065
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "geomorph_aca-total",
-    "sketchId": null,
-    "groupId": null,
-    "value": 575319498.7564294
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "gfw_2018-total",
-    "sketchId": null,
-    "groupId": "band-0",
-    "value": 53.8728
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "gfw_2019-total",
-    "sketchId": null,
-    "groupId": "band-0",
-    "value": 53.8728
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "gfw_2020-total",
-    "sketchId": null,
-    "groupId": "band-0",
-    "value": 53.8728
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "gfw_2021-total",
-    "sketchId": null,
-    "groupId": "band-0",
-    "value": 53.8728
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "gfw_2022-total",
-    "sketchId": null,
-    "groupId": "band-0",
-    "value": 53.8728
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "gfw_2023-total",
-    "sketchId": null,
-    "groupId": "band-0",
-    "value": 53.8728
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "gfw_2024-total",
-    "sketchId": null,
-    "groupId": "band-0",
-    "value": 53.8728
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "intermediateMMA-total",
-    "sketchId": null,
-    "groupId": null,
-    "value": 31689738462.768803
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "mangroves-total",
-    "sketchId": null,
-    "groupId": "band-0",
-    "value": 15742695.722857
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "offshore-total",
-    "sketchId": null,
-    "groupId": null,
-    "value": 596407985222.6609
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "reef_extent_aca-total",
-    "sketchId": null,
-    "groupId": null,
-    "value": 1155636571.1287217
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "reef100m-total",
-    "sketchId": null,
-    "groupId": null,
-    "value": 1031869641.0431026
-  },
-  {
-    "geographyId": "world",
-    "metricId": "area",
-    "classId": "territorialSeas-total",
-    "sketchId": null,
-    "groupId": null,
-    "value": 43706187249.23973
-  },
-  {
-    "geographyId": "world",
-    "metricId": "count",
-    "classId": "archipelagicBaseline-total",
-    "sketchId": null,
-    "groupId": null,
-    "value": 7
-  },
-  {
-    "geographyId": "world",
-    "metricId": "count",
-    "classId": "benthic_aca-Coral/Algae",
-    "sketchId": null,
-    "groupId": null,
-    "value": 29315
-  },
-  {
-    "geographyId": "world",
-    "metricId": "count",
-    "classId": "benthic_aca-Microalgal Mats",
-    "sketchId": null,
-    "groupId": null,
-    "value": 4410
-  },
-  {
-    "geographyId": "world",
-    "metricId": "count",
-    "classId": "benthic_aca-Rock",
-    "sketchId": null,
-    "groupId": null,
-    "value": 31324
-  },
-  {
-    "geographyId": "world",
-    "metricId": "count",
-    "classId": "benthic_aca-Rubble",
-    "sketchId": null,
-    "groupId": null,
-    "value": 13594
-  },
-  {
-    "geographyId": "world",
-    "metricId": "count",
-    "classId": "benthic_aca-Sand",
-    "sketchId": null,
-    "groupId": null,
-    "value": 15884
-  },
-  {
-    "geographyId": "world",
-    "metricId": "count",
-    "classId": "benthic_aca-Seagrass",
-    "sketchId": null,
-    "groupId": null,
-    "value": 5921
-  },
-  {
-    "geographyId": "world",
-    "metricId": "count",
-    "classId": "benthic_aca-total",
-    "sketchId": null,
-    "groupId": null,
-    "value": 100448
-  },
-  {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "eez-total",
     "sketchId": null,
@@ -448,167 +416,247 @@
     "value": 2
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "geomorph_aca-Back Reef Slope",
     "sketchId": null,
     "groupId": null,
-    "value": 1530
+    "value": 1502
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "geomorph_aca-Deep Lagoon",
     "sketchId": null,
     "groupId": null,
-    "value": 3255
+    "value": 3205
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "geomorph_aca-Inner Reef Flat",
     "sketchId": null,
     "groupId": null,
-    "value": 2113
+    "value": 1795
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "geomorph_aca-Outer Reef Flat",
     "sketchId": null,
     "groupId": null,
-    "value": 9041
+    "value": 6405
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "geomorph_aca-Plateau",
     "sketchId": null,
     "groupId": null,
-    "value": 1988
+    "value": 1950
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "geomorph_aca-Reef Crest",
     "sketchId": null,
     "groupId": null,
-    "value": 1802
+    "value": 1763
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "geomorph_aca-Reef Slope",
     "sketchId": null,
     "groupId": null,
-    "value": 1525
+    "value": 1134
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "geomorph_aca-Shallow Lagoon",
     "sketchId": null,
     "groupId": null,
-    "value": 986
+    "value": 962
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "geomorph_aca-Sheltered Reef Slope",
     "sketchId": null,
     "groupId": null,
-    "value": 18158
+    "value": 14715
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "geomorph_aca-Terrestrial Reef Flat",
     "sketchId": null,
     "groupId": null,
-    "value": 924
+    "value": 701
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "geomorph_aca-total",
     "sketchId": null,
     "groupId": null,
-    "value": 41322
+    "value": 34132
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "gfw_2018-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 962115
+    "value": 529509
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "gfw_2019-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 962115
+    "value": 529509
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "gfw_2020-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 962115
+    "value": 529509
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "gfw_2021-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 962115
+    "value": 529509
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "gfw_2022-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 962115
+    "value": 529509
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "gfw_2023-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 962115
+    "value": 529509
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "gfw_2024-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 962115
+    "value": 529509
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "intermediateMMA-total",
     "sketchId": null,
     "groupId": null,
-    "value": 55
+    "value": 16
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
-    "classId": "mangroves-total",
+    "classId": "mangroves1996-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 78797430
+    "value": 71936676
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "mangroves2007-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 71936676
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "mangroves2008-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 71936676
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "mangroves2009-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 71936676
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "mangroves2010-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 71936676
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "mangroves2015-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 71936676
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "mangroves2016-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 71936676
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "mangroves2017-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 71936676
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "mangroves2018-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 71936676
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "mangroves2019-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 71936676
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "mangroves2020-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 71936676
+  },
+  {
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "offshore-total",
     "sketchId": null,
@@ -616,23 +664,23 @@
     "value": 1
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "reef_extent_aca-total",
     "sketchId": null,
     "groupId": null,
-    "value": 2605
+    "value": 2373
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "reef100m-total",
     "sketchId": null,
     "groupId": null,
-    "value": 306
+    "value": 299
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "count",
     "classId": "territorialSeas-total",
     "sketchId": null,
@@ -640,131 +688,291 @@
     "value": 1
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "sum",
     "classId": "gfw_2018-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 156075.909919
+    "value": 156064.919919
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "sum",
     "classId": "gfw_2019-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 174431.879929
+    "value": 174100.189917
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "sum",
     "classId": "gfw_2020-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 193230.7599
+    "value": 193205.1699
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "sum",
     "classId": "gfw_2021-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 73674.179936
+    "value": 73628.709936
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "sum",
     "classId": "gfw_2022-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 126796.979914
+    "value": 126793.279914
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "sum",
     "classId": "gfw_2023-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 79083.539912
+    "value": 79081.269912
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "sum",
     "classId": "gfw_2024-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 132242.739888
+    "value": 132227.529888
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "sum",
-    "classId": "mangroves-total",
+    "classId": "mangroves1996-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 26318
+    "value": 27104
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "mangroves2007-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27233
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "mangroves2008-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27263
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "mangroves2009-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27443
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "mangroves2010-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27366
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "mangroves2015-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27400
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "mangroves2016-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27218
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "mangroves2017-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27367
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "mangroves2018-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27372
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "mangroves2019-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27334
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "mangroves2020-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 26304
+  },
+  {
+    "geographyId": "eez",
     "metricId": "valid",
     "classId": "gfw_2018-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 538728
+    "value": 526127
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "valid",
     "classId": "gfw_2019-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 538728
+    "value": 526127
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "valid",
     "classId": "gfw_2020-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 538728
+    "value": 526127
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "valid",
     "classId": "gfw_2021-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 538728
+    "value": 526127
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "valid",
     "classId": "gfw_2022-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 538728
+    "value": 526127
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "valid",
     "classId": "gfw_2023-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 538728
+    "value": 526127
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "valid",
     "classId": "gfw_2024-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 538728
+    "value": 526127
   },
   {
-    "geographyId": "world",
+    "geographyId": "eez",
     "metricId": "valid",
-    "classId": "mangroves-total",
+    "classId": "mangroves1996-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 26318
+    "value": 27104
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "mangroves2007-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27233
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "mangroves2008-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27263
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "mangroves2009-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27443
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "mangroves2010-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27366
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "mangroves2015-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27400
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "mangroves2016-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27218
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "mangroves2017-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27367
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "mangroves2018-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27372
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "mangroves2019-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 27334
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "mangroves2020-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 26304
   }
 ]

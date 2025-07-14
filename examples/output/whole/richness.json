@@ -1,0 +1,666 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "richness",
+      "classId": "coral_genus_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": 13.495145631067961
+    },
+    {
+      "geographyId": null,
+      "metricId": "richness",
+      "classId": "fish_family_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": 17.81132075471698
+    },
+    {
+      "geographyId": null,
+      "metricId": "richness",
+      "classId": "invertebrate_species_richness",
+      "sketchId": null,
+      "groupId": null,
+      "value": 14.783018867924529
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "ANE_005",
+      "coral_genus_richness": 11,
+      "fish_family_richness": 12,
+      "invertebrate_species_richness": 9
+    },
+    {
+      "station_id": "ANE_006",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 15,
+      "invertebrate_species_richness": 12
+    },
+    {
+      "station_id": "FUT_011",
+      "coral_genus_richness": 10,
+      "fish_family_richness": 14,
+      "invertebrate_species_richness": 7
+    },
+    {
+      "station_id": "FUT_009",
+      "coral_genus_richness": 12,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 9
+    },
+    {
+      "station_id": "FUT_012",
+      "coral_genus_richness": 12,
+      "fish_family_richness": 20,
+      "invertebrate_species_richness": 6
+    },
+    {
+      "station_id": "FUT_008",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 15,
+      "invertebrate_species_richness": 2
+    },
+    {
+      "station_id": "FUT_010",
+      "coral_genus_richness": 11,
+      "fish_family_richness": 14,
+      "invertebrate_species_richness": 3
+    },
+    {
+      "station_id": "TAN_013",
+      "coral_genus_richness": 12,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 14
+    },
+    {
+      "station_id": "TAN_016",
+      "coral_genus_richness": 6,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 8
+    },
+    {
+      "station_id": "TAN_014",
+      "coral_genus_richness": 7,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 3
+    },
+    {
+      "station_id": "ANE_004",
+      "coral_genus_richness": 18,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 6
+    },
+    {
+      "station_id": "ANE_003",
+      "coral_genus_richness": 11,
+      "fish_family_richness": 13,
+      "invertebrate_species_richness": 8
+    },
+    {
+      "station_id": "ANE_001",
+      "coral_genus_richness": 16,
+      "fish_family_richness": 14,
+      "invertebrate_species_richness": 10
+    },
+    {
+      "station_id": "TAN_018",
+      "coral_genus_richness": 10,
+      "fish_family_richness": 16,
+      "invertebrate_species_richness": 5
+    },
+    {
+      "station_id": "TAN_017",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 14,
+      "invertebrate_species_richness": 15
+    },
+    {
+      "station_id": "ERR_024",
+      "coral_genus_richness": 8,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 3
+    },
+    {
+      "station_id": "ERR_022",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 17,
+      "invertebrate_species_richness": 4
+    },
+    {
+      "station_id": "ERR_019",
+      "coral_genus_richness": 11,
+      "fish_family_richness": 14,
+      "invertebrate_species_richness": 14
+    },
+    {
+      "station_id": "ERR_020",
+      "coral_genus_richness": 15,
+      "fish_family_richness": 14,
+      "invertebrate_species_richness": 4
+    },
+    {
+      "station_id": "ERR_021",
+      "coral_genus_richness": 15,
+      "fish_family_richness": 14,
+      "invertebrate_species_richness": 13
+    },
+    {
+      "station_id": "TAN_015",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 15,
+      "invertebrate_species_richness": 14
+    },
+    {
+      "station_id": "ERR_023",
+      "coral_genus_richness": 10,
+      "fish_family_richness": 16,
+      "invertebrate_species_richness": 13
+    },
+    {
+      "station_id": "EFA_032",
+      "coral_genus_richness": 8,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 3
+    },
+    {
+      "station_id": "AMR_098",
+      "coral_genus_richness": 10,
+      "fish_family_richness": 17,
+      "invertebrate_species_richness": 13
+    },
+    {
+      "station_id": "PEN_096",
+      "coral_genus_richness": 16,
+      "fish_family_richness": 25,
+      "invertebrate_species_richness": 22
+    },
+    {
+      "station_id": "PEN_095",
+      "coral_genus_richness": 18,
+      "fish_family_richness": 17,
+      "invertebrate_species_richness": 26
+    },
+    {
+      "station_id": "AMR_101",
+      "coral_genus_richness": 17,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 23
+    },
+    {
+      "station_id": "AMR_099",
+      "coral_genus_richness": 15,
+      "fish_family_richness": 16,
+      "invertebrate_species_richness": 19
+    },
+    {
+      "station_id": "AMR_097",
+      "coral_genus_richness": 20,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 24
+    },
+    {
+      "station_id": "AMR_102",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 24,
+      "invertebrate_species_richness": 18
+    },
+    {
+      "station_id": "AMR_100",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 20,
+      "invertebrate_species_richness": 16
+    },
+    {
+      "station_id": "EPI_029",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 14
+    },
+    {
+      "station_id": "EPI_026",
+      "coral_genus_richness": 11,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 10
+    },
+    {
+      "station_id": "MLK_108",
+      "coral_genus_richness": 4,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 16
+    },
+    {
+      "station_id": "MLK_105",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 20
+    },
+    {
+      "station_id": "MLK_110",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 22
+    },
+    {
+      "station_id": "MLK_109",
+      "coral_genus_richness": 7,
+      "fish_family_richness": 17,
+      "invertebrate_species_richness": 6
+    },
+    {
+      "station_id": "MLK_106",
+      "coral_genus_richness": 12,
+      "fish_family_richness": 23,
+      "invertebrate_species_richness": 17
+    },
+    {
+      "station_id": "MLK_103",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 23,
+      "invertebrate_species_richness": 25
+    },
+    {
+      "station_id": "AMB_084",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 17,
+      "invertebrate_species_richness": 26
+    },
+    {
+      "station_id": "AMB_080",
+      "coral_genus_richness": 20,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 22
+    },
+    {
+      "station_id": "AMB_082",
+      "coral_genus_richness": 15,
+      "fish_family_richness": 21,
+      "invertebrate_species_richness": 24
+    },
+    {
+      "station_id": "AMB_079",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 21
+    },
+    {
+      "station_id": "AMB_081",
+      "coral_genus_richness": 18,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 17
+    },
+    {
+      "station_id": "MAE_087",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 18
+    },
+    {
+      "station_id": "MAE_089",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 22,
+      "invertebrate_species_richness": 23
+    },
+    {
+      "station_id": "MAE_090",
+      "coral_genus_richness": 12,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 17
+    },
+    {
+      "station_id": "MAE_088",
+      "coral_genus_richness": 19,
+      "fish_family_richness": 21,
+      "invertebrate_species_richness": 22
+    },
+    {
+      "station_id": "AMB_083",
+      "coral_genus_richness": 17,
+      "fish_family_richness": 17,
+      "invertebrate_species_richness": 24
+    },
+    {
+      "station_id": "PEN_093",
+      "coral_genus_richness": 21,
+      "fish_family_richness": 15,
+      "invertebrate_species_richness": 24
+    },
+    {
+      "station_id": "PEN_094",
+      "coral_genus_richness": 17,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 25
+    },
+    {
+      "station_id": "PEN_092",
+      "coral_genus_richness": 17,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 14
+    },
+    {
+      "station_id": "MAE_086",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 25,
+      "invertebrate_species_richness": 21
+    },
+    {
+      "station_id": "VOT_052",
+      "coral_genus_richness": 3,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 5
+    },
+    {
+      "station_id": "ROW_055",
+      "coral_genus_richness": 19,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 13
+    },
+    {
+      "station_id": "ROW_057",
+      "coral_genus_richness": 20,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 14
+    },
+    {
+      "station_id": "ROW_059",
+      "coral_genus_richness": 18,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 12
+    },
+    {
+      "station_id": "VAN_062",
+      "coral_genus_richness": 15,
+      "fish_family_richness": 20,
+      "invertebrate_species_richness": 14
+    },
+    {
+      "station_id": "MOT_056",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 16,
+      "invertebrate_species_richness": 13
+    },
+    {
+      "station_id": "MOT_060",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 20,
+      "invertebrate_species_richness": 11
+    },
+    {
+      "station_id": "MOT_058",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 8
+    },
+    {
+      "station_id": "VAN_061",
+      "coral_genus_richness": 11,
+      "fish_family_richness": 21,
+      "invertebrate_species_richness": 11
+    },
+    {
+      "station_id": "VAN_065",
+      "coral_genus_richness": 8,
+      "fish_family_richness": 14,
+      "invertebrate_species_richness": 19
+    },
+    {
+      "station_id": "VAN_066",
+      "coral_genus_richness": 18,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 19
+    },
+    {
+      "station_id": "VAN_064",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 8
+    },
+    {
+      "station_id": "VAN_063",
+      "coral_genus_richness": 16,
+      "fish_family_richness": 13,
+      "invertebrate_species_richness": 12
+    },
+    {
+      "station_id": "URE_051",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 18
+    },
+    {
+      "station_id": "URE_053",
+      "coral_genus_richness": 3,
+      "fish_family_richness": 15,
+      "invertebrate_species_richness": 13
+    },
+    {
+      "station_id": "URE_049",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 15,
+      "invertebrate_species_richness": 17
+    },
+    {
+      "station_id": "TOR_068",
+      "coral_genus_richness": 16,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 18
+    },
+    {
+      "station_id": "TOR_072",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 15,
+      "invertebrate_species_richness": 18
+    },
+    {
+      "station_id": "TOR_067",
+      "coral_genus_richness": 23,
+      "fish_family_richness": 16,
+      "invertebrate_species_richness": 19
+    },
+    {
+      "station_id": "TOR_069",
+      "coral_genus_richness": 16,
+      "fish_family_richness": 16,
+      "invertebrate_species_richness": 20
+    },
+    {
+      "station_id": "TOR_071",
+      "coral_genus_richness": 12,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 20
+    },
+    {
+      "station_id": "TOR_070",
+      "coral_genus_richness": 19,
+      "fish_family_richness": 16,
+      "invertebrate_species_richness": 11
+    },
+    {
+      "station_id": "SAN_076",
+      "coral_genus_richness": 8,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 14
+    },
+    {
+      "station_id": "SAN_074",
+      "coral_genus_richness": 9,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 10
+    },
+    {
+      "station_id": "SAN_040",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 14
+    },
+    {
+      "station_id": "SAN_075",
+      "coral_genus_richness": 11,
+      "fish_family_richness": 22,
+      "invertebrate_species_richness": 27
+    },
+    {
+      "station_id": "SAN_077",
+      "coral_genus_richness": 16,
+      "fish_family_richness": 22,
+      "invertebrate_species_richness": 20
+    },
+    {
+      "station_id": "SAN_073",
+      "coral_genus_richness": 15,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 23
+    },
+    {
+      "station_id": "SAN_044",
+      "coral_genus_richness": 16,
+      "fish_family_richness": 17,
+      "invertebrate_species_richness": 18
+    },
+    {
+      "station_id": "SAN_046",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 15,
+      "invertebrate_species_richness": 16
+    },
+    {
+      "station_id": "SAN_048",
+      "coral_genus_richness": 12,
+      "fish_family_richness": 14,
+      "invertebrate_species_richness": 13
+    },
+    {
+      "station_id": "SAN_047",
+      "coral_genus_richness": 10,
+      "fish_family_richness": 16,
+      "invertebrate_species_richness": 13
+    },
+    {
+      "station_id": "SAN_043",
+      "coral_genus_richness": 17,
+      "fish_family_richness": 16,
+      "invertebrate_species_richness": 16
+    },
+    {
+      "station_id": "MAL_041",
+      "coral_genus_richness": 18,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 14
+    },
+    {
+      "station_id": "MAL_039",
+      "coral_genus_richness": 12,
+      "fish_family_richness": 16,
+      "invertebrate_species_richness": 17
+    },
+    {
+      "station_id": "SAN_045",
+      "coral_genus_richness": 3,
+      "fish_family_richness": 15,
+      "invertebrate_species_richness": 14
+    },
+    {
+      "station_id": "SAN_042",
+      "coral_genus_richness": 12,
+      "fish_family_richness": 17,
+      "invertebrate_species_richness": 12
+    },
+    {
+      "station_id": "MAL_037",
+      "coral_genus_richness": 15,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 19
+    },
+    {
+      "station_id": "MLK_104",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 18,
+      "invertebrate_species_richness": 17
+    },
+    {
+      "station_id": "EPI_027",
+      "coral_genus_richness": 17,
+      "fish_family_richness": 17,
+      "invertebrate_species_richness": 13
+    },
+    {
+      "station_id": "EPI_025",
+      "coral_genus_richness": 18,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 3
+    },
+    {
+      "station_id": "EMA_114",
+      "coral_genus_richness": 12,
+      "fish_family_richness": 27,
+      "invertebrate_species_richness": 16
+    },
+    {
+      "station_id": "EMA_112",
+      "coral_genus_richness": 7,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 22
+    },
+    {
+      "station_id": "COO_113",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 17,
+      "invertebrate_species_richness": 28
+    },
+    {
+      "station_id": "COO_111",
+      "coral_genus_richness": 20,
+      "fish_family_richness": 17,
+      "invertebrate_species_richness": 24
+    },
+    {
+      "station_id": "EFA_031",
+      "coral_genus_richness": 18,
+      "fish_family_richness": 16,
+      "invertebrate_species_richness": 15
+    },
+    {
+      "station_id": "EFA_033",
+      "coral_genus_richness": 16,
+      "fish_family_richness": 20,
+      "invertebrate_species_richness": 13
+    },
+    {
+      "station_id": "EFA_034",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 23,
+      "invertebrate_species_richness": 4
+    },
+    {
+      "station_id": "EFA_036",
+      "coral_genus_richness": 14,
+      "fish_family_richness": 22,
+      "invertebrate_species_richness": 3
+    },
+    {
+      "station_id": "EFA_035",
+      "coral_genus_richness": 13,
+      "fish_family_richness": 12,
+      "invertebrate_species_richness": 19
+    },
+    {
+      "station_id": "MAE_085",
+      "coral_genus_richness": 0,
+      "fish_family_richness": 16,
+      "invertebrate_species_richness": 18
+    },
+    {
+      "station_id": "PEN_091",
+      "coral_genus_richness": 0,
+      "fish_family_richness": 17,
+      "invertebrate_species_richness": 13
+    },
+    {
+      "station_id": "SAN_038",
+      "coral_genus_richness": 0,
+      "fish_family_richness": 19,
+      "invertebrate_species_richness": 12
+    }
+  ]
+}

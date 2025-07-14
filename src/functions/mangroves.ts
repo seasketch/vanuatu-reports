@@ -17,7 +17,6 @@ import {
   rekeyMetrics,
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
-import { clipToGeography } from "../util/clipToGeography.js";
 
 /**
  * mangroves: A geoprocessing function that calculates overlap metrics for raster datasources
@@ -36,8 +35,6 @@ export async function mangroves(
   const curGeography = project.getGeographyById(geographyId, {
     fallbackGroup: "default-boundary",
   });
-  // Clip portion of sketch outside geography features
-  const clippedSketch = await clipToGeography(sketch, curGeography);
 
   // Calculate overlap metrics for each class in metric group
   const metricGroup = project.getMetricGroup("mangroves");
@@ -58,7 +55,7 @@ export async function mangroves(
         // Run raster analysis
         const overlapResult = await rasterMetrics(raster, {
           metricId: metricGroup.metricId,
-          feature: clippedSketch,
+          feature: sketch,
           ...(ds.measurementType === "quantitative" && { stats: ["area"] }),
           ...(ds.measurementType === "categorical" && {
             categorical: true,

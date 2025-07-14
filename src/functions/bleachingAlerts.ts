@@ -4,8 +4,6 @@ import {
   Polygon,
   MultiPolygon,
   GeoprocessingHandler,
-  getFirstFromParam,
-  DefaultExtraParams,
   rasterMetrics,
   isRasterDatasource,
   loadCog,
@@ -17,7 +15,6 @@ import {
   rekeyMetrics,
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
-import { clipToGeography } from "../util/clipToGeography.js";
 
 /**
  * bleachingAlerts: A geoprocessing function that calculates overlap metrics for raster datasources

@@ -1,7 +1,7 @@
 {
   "metrics": [
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "reefExtentACA",
       "classId": "reefExtent",
       "sketchId": "106370",

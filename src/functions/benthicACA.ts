@@ -18,7 +18,6 @@ import {
   rekeyMetrics,
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
-import { clipToGeography } from "../util/clipToGeography.js";
 
 /**
  * benthicACA: A geoprocessing function that calculates overlap metrics for vector datasources
@@ -37,8 +36,6 @@ export async function benthicACA(
   const curGeography = project.getGeographyById(geographyId, {
     fallbackGroup: "default-boundary",
   });
-  // Clip portion of sketch outside geography features
-  const clippedSketch = await clipToGeography(sketch, curGeography);
 
   const featuresByDatasource: Record<
     string,
@@ -86,7 +83,7 @@ export async function benthicACA(
         const overlapResult = await overlapPolygonArea(
           metricGroup.metricId,
           finalFeatures,
-          clippedSketch,
+          sketch,
         );
 
         return overlapResult.map(

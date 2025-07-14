@@ -1,7 +1,7 @@
 {
   "metrics": [
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "geomorphACA",
       "classId": "Back Reef Slope",
       "sketchId": "106370",
@@ -12,7 +12,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "geomorphACA",
       "classId": "Deep Lagoon",
       "sketchId": "106370",
@@ -23,7 +23,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "geomorphACA",
       "classId": "Inner Reef Flat",
       "sketchId": "106370",
@@ -34,7 +34,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "geomorphACA",
       "classId": "Outer Reef Flat",
       "sketchId": "106370",
@@ -45,7 +45,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "geomorphACA",
       "classId": "Plateau",
       "sketchId": "106370",
@@ -56,7 +56,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "geomorphACA",
       "classId": "Reef Crest",
       "sketchId": "106370",
@@ -67,7 +67,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "geomorphACA",
       "classId": "Reef Slope",
       "sketchId": "106370",
@@ -78,7 +78,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "geomorphACA",
       "classId": "Shallow Lagoon",
       "sketchId": "106370",
@@ -89,7 +89,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "geomorphACA",
       "classId": "Sheltered Reef Slope",
       "sketchId": "106370",
@@ -100,7 +100,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "geomorphACA",
       "classId": "Terrestrial Reef Flat",
       "sketchId": "106370",

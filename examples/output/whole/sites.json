@@ -1,0 +1,560 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "islands",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 21
+    },
+    {
+      "geographyId": null,
+      "metricId": "provinces",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 6
+    },
+    {
+      "geographyId": null,
+      "metricId": "stations",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 106
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "ANE_005",
+      "island": "Aneityum",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "ANE_006",
+      "island": "Aneityum",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "FUT_011",
+      "island": "Futuna",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "FUT_009",
+      "island": "Futuna",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "FUT_012",
+      "island": "Futuna",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "FUT_008",
+      "island": "Futuna",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "FUT_010",
+      "island": "Futuna",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "TAN_013",
+      "island": "Tanna",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "TAN_016",
+      "island": "Tanna",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "TAN_014",
+      "island": "Tanna",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "ANE_004",
+      "island": "Aneityum",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "ANE_003",
+      "island": "Aneityum",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "ANE_001",
+      "island": "Aneityum",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "TAN_018",
+      "island": "Tanna",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "TAN_017",
+      "island": "Tanna",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "ERR_024",
+      "island": "Erromango",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "ERR_022",
+      "island": "Erromango",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "ERR_019",
+      "island": "Erromango",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "ERR_020",
+      "island": "Erromango",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "ERR_021",
+      "island": "Erromango",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "TAN_015",
+      "island": "Tanna",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "ERR_023",
+      "island": "Erromango",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "EFA_032",
+      "island": "Efate",
+      "province": "Shefa"
+    },
+    {
+      "station_id": "AMR_098",
+      "island": "Ambrym",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "PEN_096",
+      "island": "Pentecost",
+      "province": "Penema"
+    },
+    {
+      "station_id": "PEN_095",
+      "island": "Pentecost",
+      "province": "Penema"
+    },
+    {
+      "station_id": "AMR_101",
+      "island": "Ambrym",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "AMR_099",
+      "island": "Ambrym",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "AMR_097",
+      "island": "Ambrym",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "AMR_102",
+      "island": "Ambrym",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "AMR_100",
+      "island": "Ambrym",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "EPI_029",
+      "island": "Epi",
+      "province": "Shefa"
+    },
+    {
+      "station_id": "EPI_026",
+      "island": "Epi",
+      "province": "Shefa"
+    },
+    {
+      "station_id": "MLK_108",
+      "island": "Malekula",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "MLK_105",
+      "island": "Malekula",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "MLK_110",
+      "island": "Malekula",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "MLK_109",
+      "island": "Malekula",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "MLK_106",
+      "island": "Malekula",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "MLK_103",
+      "island": "Malekula",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "AMB_084",
+      "island": "Ambae",
+      "province": "Penema"
+    },
+    {
+      "station_id": "AMB_080",
+      "island": "Ambae",
+      "province": "Penema"
+    },
+    {
+      "station_id": "AMB_082",
+      "island": "Ambae",
+      "province": "Penema"
+    },
+    {
+      "station_id": "AMB_079",
+      "island": "Ambae",
+      "province": "Penema"
+    },
+    {
+      "station_id": "AMB_081",
+      "island": "Ambae",
+      "province": "Penema"
+    },
+    {
+      "station_id": "MAE_085",
+      "island": "Maewo",
+      "province": "Penema"
+    },
+    {
+      "station_id": "MAE_087",
+      "island": "Maewo",
+      "province": "Penema"
+    },
+    {
+      "station_id": "MAE_089",
+      "island": "Maewo",
+      "province": "Penema"
+    },
+    {
+      "station_id": "MAE_090",
+      "island": "Maewo",
+      "province": "Penema"
+    },
+    {
+      "station_id": "MAE_088",
+      "island": "Maewo",
+      "province": "Penema"
+    },
+    {
+      "station_id": "AMB_083",
+      "island": "Ambae",
+      "province": "Penema"
+    },
+    {
+      "station_id": "PEN_093",
+      "island": "Pentecost",
+      "province": "Penema"
+    },
+    {
+      "station_id": "PEN_094",
+      "island": "Pentecost",
+      "province": "Penema"
+    },
+    {
+      "station_id": "PEN_091",
+      "island": "Pentecost",
+      "province": "Penema"
+    },
+    {
+      "station_id": "PEN_092",
+      "island": "Pentecost",
+      "province": "Penema"
+    },
+    {
+      "station_id": "MAE_086",
+      "island": "Maewo",
+      "province": "Penema"
+    },
+    {
+      "station_id": "VOT_052",
+      "island": "Vot Tande",
+      "province": "Torba"
+    },
+    {
+      "station_id": "ROW_055",
+      "island": "Rowa Islands",
+      "province": "Torba"
+    },
+    {
+      "station_id": "ROW_057",
+      "island": "Rowa Islands",
+      "province": "Torba"
+    },
+    {
+      "station_id": "ROW_059",
+      "island": "Rowa Islands",
+      "province": "Torba"
+    },
+    {
+      "station_id": "VAN_062",
+      "island": "Vanua Lava",
+      "province": "Torba"
+    },
+    {
+      "station_id": "MOT_056",
+      "island": "Mota Lava",
+      "province": "Torba"
+    },
+    {
+      "station_id": "MOT_060",
+      "island": "Mota Lava",
+      "province": "Torba"
+    },
+    {
+      "station_id": "MOT_058",
+      "island": "Mota Lava",
+      "province": "Torba"
+    },
+    {
+      "station_id": "VAN_061",
+      "island": "Vanua Lava",
+      "province": "Torba"
+    },
+    {
+      "station_id": "VAN_065",
+      "island": "Vanua Lava",
+      "province": "Torba"
+    },
+    {
+      "station_id": "VAN_066",
+      "island": "Vanua Lava",
+      "province": "Torba"
+    },
+    {
+      "station_id": "VAN_064",
+      "island": "Vanua Lava",
+      "province": "Torba"
+    },
+    {
+      "station_id": "VAN_063",
+      "island": "Vanua Lava",
+      "province": "Torba"
+    },
+    {
+      "station_id": "URE_051",
+      "island": "Ureparapara",
+      "province": "Torba"
+    },
+    {
+      "station_id": "URE_053",
+      "island": "Ureparapara",
+      "province": "Torba"
+    },
+    {
+      "station_id": "URE_049",
+      "island": "Ureparapara",
+      "province": "Torba"
+    },
+    {
+      "station_id": "TOR_068",
+      "island": "Torres Islands",
+      "province": "Torba"
+    },
+    {
+      "station_id": "TOR_072",
+      "island": "Torres Islands",
+      "province": "Torba"
+    },
+    {
+      "station_id": "TOR_067",
+      "island": "Torres Islands",
+      "province": "Torba"
+    },
+    {
+      "station_id": "TOR_069",
+      "island": "Torres Islands",
+      "province": "Torba"
+    },
+    {
+      "station_id": "TOR_071",
+      "island": "Torres Islands",
+      "province": "Torba"
+    },
+    {
+      "station_id": "TOR_070",
+      "island": "Torres Islands",
+      "province": "Torba"
+    },
+    {
+      "station_id": "SAN_076",
+      "island": "Santo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "SAN_074",
+      "island": "Santo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "SAN_040",
+      "island": "Santo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "SAN_038",
+      "island": "Santo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "SAN_075",
+      "island": "Santo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "SAN_077",
+      "island": "Santo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "SAN_073",
+      "island": "Santo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "SAN_044",
+      "island": "Santo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "SAN_046",
+      "island": "Santo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "SAN_048",
+      "island": "Santo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "SAN_047",
+      "island": "Santo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "SAN_043",
+      "island": "Santo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "MAL_041",
+      "island": "Malo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "MAL_039",
+      "island": "Malo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "SAN_045",
+      "island": "Santo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "SAN_042",
+      "island": "Santo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "MAL_037",
+      "island": "Malo",
+      "province": "Sanma"
+    },
+    {
+      "station_id": "MLK_104",
+      "island": "Malekula",
+      "province": "Malampa"
+    },
+    {
+      "station_id": "EPI_027",
+      "island": "Epi",
+      "province": "Shefa"
+    },
+    {
+      "station_id": "EPI_025",
+      "island": "Epi",
+      "province": "Shefa"
+    },
+    {
+      "station_id": "EMA_114",
+      "island": "Emae",
+      "province": "Shefa"
+    },
+    {
+      "station_id": "EMA_112",
+      "island": "Emae",
+      "province": "Shefa"
+    },
+    {
+      "station_id": "COO_113",
+      "island": "Cook's Reef",
+      "province": "Shefa"
+    },
+    {
+      "station_id": "COO_111",
+      "island": "Cook's Reef",
+      "province": "Shefa"
+    },
+    {
+      "station_id": "EFA_031",
+      "island": "Efate",
+      "province": "Shefa"
+    },
+    {
+      "station_id": "EFA_033",
+      "island": "Efate",
+      "province": "Shefa"
+    },
+    {
+      "station_id": "EFA_034",
+      "island": "Efate",
+      "province": "Shefa"
+    },
+    {
+      "station_id": "EFA_036",
+      "island": "Efate",
+      "province": "Shefa"
+    },
+    {
+      "station_id": "EFA_035",
+      "island": "Efate",
+      "province": "Shefa"
+    }
+  ]
+}

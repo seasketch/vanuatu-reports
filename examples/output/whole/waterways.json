@@ -1,0 +1,12 @@
+{
+  "metrics": [
+    {
+      "metricId": "waterways",
+      "value": 244,
+      "classId": null,
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": null
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "metrics": [
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "mangroves",
       "classId": "1996",
       "sketchId": "102333",
@@ -12,7 +12,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "mangroves",
       "classId": "2007",
       "sketchId": "102333",
@@ -23,7 +23,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "mangroves",
       "classId": "2008",
       "sketchId": "102333",
@@ -34,7 +34,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "mangroves",
       "classId": "2009",
       "sketchId": "102333",
@@ -45,7 +45,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "mangroves",
       "classId": "2010",
       "sketchId": "102333",
@@ -56,7 +56,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "mangroves",
       "classId": "2015",
       "sketchId": "102333",
@@ -67,7 +67,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "mangroves",
       "classId": "2016",
       "sketchId": "102333",
@@ -78,7 +78,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "mangroves",
       "classId": "2017",
       "sketchId": "102333",
@@ -89,7 +89,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "mangroves",
       "classId": "2018",
       "sketchId": "102333",
@@ -100,7 +100,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "mangroves",
       "classId": "2019",
       "sketchId": "102333",
@@ -111,7 +111,7 @@
       }
     },
     {
-      "geographyId": "world",
+      "geographyId": "eez",
       "metricId": "mangroves",
       "classId": "2020",
       "sketchId": "102333",

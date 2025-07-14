@@ -4,11 +4,11 @@
       "geographyId": "eez",
       "metricId": "reefExtentACA",
       "classId": "reefExtent",
-      "sketchId": "102333",
+      "sketchId": "106357",
       "groupId": null,
-      "value": 57434446.000791,
+      "value": 1002852979.93273,
       "extra": {
-        "sketchName": "2island"
+        "sketchName": "whole"
       }
     }
   ]
