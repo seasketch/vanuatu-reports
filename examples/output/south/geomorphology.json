@@ -1,0 +1,158 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Bridges",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Canyons_blind",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 2771143622.074354,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Canyons_shelf_incising",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Escarpments",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 7305226346.758962,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Large_basins_of_seas_and_oceans",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 14481387270.010565,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Plateaus",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 13034895840.719498,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Ridges",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 6222154313.527678,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Rift_valleys",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Sills",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Small_basins_of_seas_and_oceans",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Spreading_ridges",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 3539046.887955,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Terraces",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Trenches",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 2724182883.601323,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "geomorphology",
+      "classId": "Troughs",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 696942935.095701,
+      "extra": {
+        "sketchName": "south"
+      }
+    }
+  ]
+}

@@ -1151,17 +1151,36 @@
     "explodeMulti": true
   },
   {
-    "src": "data/src/Data_Received/Geopackage/vanuatu.gpkg",
-    "layerName": "GEO_seamounts",
-    "geo_type": "vector",
     "datasourceId": "seamounts",
+    "geo_type": "vector",
     "formats": [
       "fgb"
     ],
+    "precalc": true,
+    "layerName": "GEO_seamounts",
     "classKeys": [],
     "created": "2025-07-14T18:27:15.981Z",
     "lastUpdated": "2025-07-14T18:27:15.981Z",
+    "src": "data/src/Data_Received/Geopackage/vanuatu.gpkg",
     "propertiesToKeep": [],
+    "explodeMulti": true
+  },
+  {
+    "src": "data/src/reports/geomorphology.fgb",
+    "layerName": "geomorphology",
+    "geo_type": "vector",
+    "datasourceId": "geomorphology",
+    "formats": [
+      "fgb"
+    ],
+    "classKeys": [
+      "geomorph_type"
+    ],
+    "created": "2025-07-14T20:30:21.089Z",
+    "lastUpdated": "2025-07-14T20:30:21.089Z",
+    "propertiesToKeep": [
+      "geomorph_type"
+    ],
     "explodeMulti": true,
     "precalc": true
   }

@@ -26,6 +26,7 @@ import { LandUse } from "../components/LandUse.js";
 import { Waterways } from "../components/Waterways.js";
 import { Gfw } from "../components/Gfw.jsx";
 import { Seamounts } from "../components/Seamounts.js";
+import { Geomorphology } from "../components/Geomorphology.js";
 
 const enableAllTabs = false;
 const BaseReport = () => {
@@ -72,6 +73,7 @@ const BaseReport = () => {
         <Waterways />
         <Gfw />
         <Seamounts />
+        <Geomorphology />
       </ReportPage>
     </>
   );

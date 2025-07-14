@@ -1474,12 +1474,78 @@
   },
   {
     "metricId": "seamounts",
+    "type": "areaOverlap",
     "classes": [
       {
         "classId": "seamounts",
         "datasourceId": "seamounts",
         "display": "Seamounts",
         "layerId": "d5mpOBY2M"
+      }
+    ]
+  },
+  {
+    "metricId": "geomorphology",
+    "type": "areaOverlap",
+    "datasourceId": "geomorphology",
+    "classKey": "geomorph_type",
+    "layerId": "T4xmmOaWf",
+    "classes": [
+      {
+        "classId": "Bridges",
+        "display": "Bridges"
+      },
+      {
+        "classId": "Troughs",
+        "display": "Troughs"
+      },
+      {
+        "classId": "Escarpments",
+        "display": "Escarpments"
+      },
+      {
+        "classId": "Rift_valleys",
+        "display": "Rift Valleys"
+      },
+      {
+        "classId": "Spreading_ridges",
+        "display": "Spreading Ridges"
+      },
+      {
+        "classId": "Large_basins_of_seas_and_oceans",
+        "display": "Large Basins"
+      },
+      {
+        "classId": "Terraces",
+        "display": "Terraces"
+      },
+      {
+        "classId": "Canyons_shelf_incising",
+        "display": "Canyons shelf Incising"
+      },
+      {
+        "classId": "Plateaus",
+        "display": "Plateaus"
+      },
+      {
+        "classId": "Trenches",
+        "display": "Trenches"
+      },
+      {
+        "classId": "Small_basins_of_seas_and_oceans",
+        "display": "Small Basins"
+      },
+      {
+        "classId": "Sills",
+        "display": "Sills"
+      },
+      {
+        "classId": "Ridges",
+        "display": "Ridges"
+      },
+      {
+        "classId": "Canyons_blind",
+        "display": "Canyons"
       }
     ]
   }
