@@ -27,7 +27,9 @@ interface RichnessReportResult extends ReportResult {
 /**
  * Richness component
  */
-export const Richness: React.FunctionComponent = () => {
+export const Richness: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
 
   // Metrics
@@ -39,69 +41,80 @@ export const Richness: React.FunctionComponent = () => {
   const withinLabel = t("Average Richness");
 
   return (
-    <ResultsCard title={titleLabel} functionName="richness">
-      {(data: RichnessReportResult) => {
-        return (
-          <ReportError>
-            <p>
-              <Trans i18nKey="Richness 1">
-                This report summarizes the richness of coral genera, fish
-                families, and invertebrate species within the area of interest.
-              </Trans>
-            </p>
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard title={titleLabel} functionName="richness">
+        {(data: RichnessReportResult) => {
+          return (
+            <ReportError>
+              <p>
+                <Trans i18nKey="Richness 1">
+                  This report summarizes the richness of coral genera, fish
+                  families, and invertebrate species within the area of
+                  interest.
+                </Trans>
+              </p>
 
-            <ClassTable
-              rows={data.metrics}
-              metricGroup={metricGroup}
-              columnConfig={[
-                {
-                  columnLabel: " ",
-                  type: "class",
-                  width: 30,
-                },
-                {
-                  columnLabel: withinLabel,
-                  type: "metricValue",
-                  metricId: metricGroup.metricId,
-                  valueFormatter: (val) => Number(val).toFixed(2),
-                  chartOptions: {
-                    showTitle: true,
+              <ClassTable
+                rows={data.metrics}
+                metricGroup={metricGroup}
+                columnConfig={[
+                  {
+                    columnLabel: " ",
+                    type: "class",
+                    width: 30,
                   },
-                  colStyle: { textAlign: "center" },
-                  width: 20,
-                },
-                {
-                  columnLabel: mapLabel,
-                  type: "layerToggle",
-                  width: 10,
-                },
-              ]}
-            />
+                  {
+                    columnLabel: withinLabel,
+                    type: "metricValue",
+                    metricId: metricGroup.metricId,
+                    valueFormatter: (val) => Number(val).toFixed(2),
+                    chartOptions: {
+                      showTitle: true,
+                    },
+                    colStyle: { textAlign: "center" },
+                    width: 20,
+                  },
+                  {
+                    columnLabel: mapLabel,
+                    type: "layerToggle",
+                    width: 10,
+                  },
+                ]}
+              />
 
-            <Collapse title={t("Show By Station")}>
-              {genSketchTable(data, metricGroup, t)}
-            </Collapse>
+              <Collapse
+                title={t("Show By Station")}
+                key={props.printing + "Richness MPA Collapse"}
+                collapsed={!props.printing}
+              >
+                {genSketchTable(data, metricGroup, t)}
+              </Collapse>
 
-            <Collapse title={t("Learn More")}>
-              <Trans i18nKey="Richness - learn more">
-                <p>
-                  ℹ️ Overview: This report summarizes the richness of coral
-                  genera, fish families, and invertebrate species within the
-                  area of interest.
-                </p>
-                <p>🗺️ Source Data: 2023 Vanuatu Expedition</p>
-                <p>
-                  📈 Report: This report calculates the average richness of
-                  coral genera, fish families, and invertebrate species within
-                  the area of interest by averaging the richness results of
-                  individual dive sites within the area.
-                </p>
-              </Trans>
-            </Collapse>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+              <Collapse
+                title={t("Learn More")}
+                key={props.printing + "Richness LearnMore Collapse"}
+                collapsed={!props.printing}
+              >
+                <Trans i18nKey="Richness - learn more">
+                  <p>
+                    ℹ️ Overview: This report summarizes the richness of coral
+                    genera, fish families, and invertebrate species within the
+                    area of interest.
+                  </p>
+                  <p>🗺️ Source Data: 2023 Vanuatu Expedition</p>
+                  <p>
+                    📈 Report: This report calculates the average richness of
+                    coral genera, fish families, and invertebrate species within
+                    the area of interest by averaging the richness results of
+                    individual dive sites within the area.
+                  </p>
+                </Trans>
+              </Collapse>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

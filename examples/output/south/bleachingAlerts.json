@@ -1,0 +1,92 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "0",
+      "sketchId": "102336",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "1",
+      "sketchId": "102336",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "2",
+      "sketchId": "102336",
+      "groupId": "band-0",
+      "value": 1148,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "3",
+      "sketchId": "102336",
+      "groupId": "band-0",
+      "value": 1072,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "4",
+      "sketchId": "102336",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "5",
+      "sketchId": "102336",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "6",
+      "sketchId": "102336",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "bleachingAlerts",
+      "classId": "7",
+      "sketchId": "102336",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "south"
+      }
+    }
+  ]
+}

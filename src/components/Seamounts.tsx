@@ -9,7 +9,6 @@ import {
   useSketchProperties,
 } from "@seasketch/geoprocessing/client-ui";
 import {
-  GeogProp,
   MetricGroup,
   ReportResult,
   SketchProperties,
@@ -23,12 +22,12 @@ import precalcMetrics from "../../data/precalc/precalcSeamounts.json" with { typ
 /**
  * Seamounts report
  */
-export const Seamounts: React.FunctionComponent<GeogProp> = (props) => {
+export const Seamounts: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
-  const curGeography = project.getGeographyById(props.geographyId, {
-    fallbackGroup: "default-boundary",
-  });
+  const curGeography = project.getGeographyByGroup("default-boundary")[0];
 
   // Metrics
   const metricGroup = project.getMetricGroup("seamounts", t);
@@ -40,108 +39,114 @@ export const Seamounts: React.FunctionComponent<GeogProp> = (props) => {
   const percWithinLabel = t("% Within Plan");
 
   return (
-    <ResultsCard
-      title={titleLabel}
-      functionName="seamounts"
-      extraParams={{ geographyIds: [curGeography.geographyId] }}
-    >
-      {(data: ReportResult) => {
-        const percMetricIdName = `${metricGroup.metricId}Perc`;
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard title={titleLabel} functionName="seamounts">
+        {(data: ReportResult) => {
+          const percMetricIdName = `${metricGroup.metricId}Perc`;
 
-        const valueMetrics = metricsWithSketchId(
-          data.metrics.filter((m) => m.metricId === metricGroup.metricId),
-          [id],
-        );
-        const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
-          metricIdOverride: percMetricIdName,
-        });
-        const metrics = [...valueMetrics, ...percentMetrics];
+          const valueMetrics = metricsWithSketchId(
+            data.metrics.filter((m) => m.metricId === metricGroup.metricId),
+            [id],
+          );
+          const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
+            metricIdOverride: percMetricIdName,
+          });
+          const metrics = [...valueMetrics, ...percentMetrics];
 
-        const objectives = (() => {
-          const objectives = project.getMetricGroupObjectives(metricGroup, t);
-          if (objectives.length) {
-            return objectives;
-          } else {
-            return;
-          }
-        })();
+          const objectives = (() => {
+            const objectives = project.getMetricGroupObjectives(metricGroup, t);
+            if (objectives.length) {
+              return objectives;
+            } else {
+              return;
+            }
+          })();
 
-        return (
-          <ReportError>
-            <p>
-              <Trans i18nKey="Seamounts 1">
-                This report summarizes the number of seamounts within the area
-                of interest.
-              </Trans>
-            </p>
+          return (
+            <ReportError>
+              <p>
+                <Trans i18nKey="Seamounts 1">
+                  This report summarizes the number of seamounts within the area
+                  of interest.
+                </Trans>
+              </p>
 
-            <ClassTable
-              rows={metrics}
-              metricGroup={metricGroup}
-              objective={objectives}
-              columnConfig={[
-                {
-                  columnLabel: " ",
-                  type: "class",
-                  width: 30,
-                },
-                {
-                  columnLabel: withinLabel,
-                  type: "metricValue",
-                  metricId: metricGroup.metricId,
-                  valueFormatter: "integer",
-                  chartOptions: {
-                    showTitle: true,
+              <ClassTable
+                rows={metrics}
+                metricGroup={metricGroup}
+                objective={objectives}
+                columnConfig={[
+                  {
+                    columnLabel: " ",
+                    type: "class",
+                    width: 30,
                   },
-                  width: 20,
-                },
-                {
-                  columnLabel: percWithinLabel,
-                  type: "metricChart",
-                  metricId: percMetricIdName,
-                  valueFormatter: "percent",
-                  chartOptions: {
-                    showTitle: true,
+                  {
+                    columnLabel: withinLabel,
+                    type: "metricValue",
+                    metricId: metricGroup.metricId,
+                    valueFormatter: "integer",
+                    chartOptions: {
+                      showTitle: true,
+                    },
+                    width: 20,
                   },
-                  width: 40,
-                },
-                {
-                  columnLabel: mapLabel,
-                  type: "layerToggle",
-                  width: 10,
-                },
-              ]}
-            />
+                  {
+                    columnLabel: percWithinLabel,
+                    type: "metricChart",
+                    metricId: percMetricIdName,
+                    valueFormatter: "percent",
+                    chartOptions: {
+                      showTitle: true,
+                    },
+                    width: 40,
+                  },
+                  {
+                    columnLabel: mapLabel,
+                    type: "layerToggle",
+                    width: 10,
+                  },
+                ]}
+              />
 
-            {isCollection && childProperties && (
-              <Collapse title={t("Show by Sketch")}>
-                {genSketchTable(data, metricGroup, childProperties)}
+              {isCollection && childProperties && (
+                <Collapse
+                  title={t("Show by Sketch")}
+                  key={props.printing + "Seamounts MPA Collapse"}
+                  collapsed={!props.printing}
+                >
+                  {genSketchTable(data, metricGroup, childProperties)}
+                </Collapse>
+              )}
+
+              <Collapse
+                title={t("Learn More")}
+                key={props.printing + "Seamounts LearnMore Collapse"}
+                collapsed={!props.printing}
+              >
+                <Trans i18nKey="Seamounts - learn more">
+                  <p>
+                    Source data:{" "}
+                    <a
+                      href="https://doi.org/10.14324/111.444/ucloe.000030"
+                      target="_blank"
+                    >
+                      Yesson et al. 2021
+                    </a>
+                  </p>
+                  <p>
+                    📈 Report: This report calculates the total number of
+                    seamounts within the area of interest. This value is divided
+                    by the total number of seamounts to obtain the % contained
+                    within the area of interest.
+                  </p>
+                </Trans>
               </Collapse>
-            )}
-
-            <Collapse title={t("Learn More")}>
-              <Trans i18nKey="Seamounts - learn more">
-                <p>
-                  Source data:{" "}
-                  <a
-                    href="https://doi.org/10.14324/111.444/ucloe.000030"
-                    target="_blank"
-                  >
-                    Yesson et al. 2021
-                  </a>
-                </p>
-                <p>
-                  📈 Report: This report calculates the total number of
-                  seamounts within the area of interest. This value is divided
-                  by the total number of seamounts to obtain the % contained
-                  within the area of interest.
-                </p>
-              </Trans>
-            </Collapse>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

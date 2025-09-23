@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "seamounts",
+      "classId": "seamounts",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 11,
+      "extra": {
+        "sketchName": "south"
+      }
+    }
+  ]
+}

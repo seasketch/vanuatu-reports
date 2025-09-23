@@ -1,0 +1,30 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "isotopes",
+      "classId": "isotopeRatio",
+      "sketchId": null,
+      "groupId": null,
+      "value": 0.0152704746214402
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "ANE_006",
+      "ratio": 0.023226863226863226
+    },
+    {
+      "station_id": "ANE_004",
+      "ratio": 0.014706300668468213
+    },
+    {
+      "station_id": "ANE_003",
+      "ratio": 0.010569543557290964
+    },
+    {
+      "station_id": "ANE_001",
+      "ratio": 0.012579191033138402
+    }
+  ]
+}

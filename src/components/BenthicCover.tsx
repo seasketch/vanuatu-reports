@@ -4,7 +4,6 @@ import {
   ClassTable,
   Collapse,
   Column,
-  LayerToggle,
   ReportError,
   ResultsCard,
   SketchClassTableStyled,
@@ -31,12 +30,11 @@ interface BenthicReportResult extends ReportResult {
 }
 
 /**
- * BenthicCover component
- *
- * @param props - geographyId
- * @returns A react component which displays an overlap report
+ * Benthic Cover - expedition report
  */
-export const BenthicCover: React.FunctionComponent = () => {
+export const BenthicCover: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
 
   // Metrics
@@ -48,72 +46,80 @@ export const BenthicCover: React.FunctionComponent = () => {
   const mapLabel = t("Map");
 
   return (
-    <ResultsCard title={titleLabel} functionName="benthicCover">
-      {(data: BenthicReportResult) => {
-        const metrics = data.metrics;
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard title={titleLabel} functionName="benthicCover">
+        {(data: BenthicReportResult) => {
+          const metrics = data.metrics;
 
-        return (
-          <ReportError>
-            <p>
-              <Trans i18nKey="BenthicCover 1">
-                This report estimates the percentage of benthic habitats within
-                this area of interest.
-              </Trans>
-            </p>
+          return (
+            <ReportError>
+              <p>
+                <Trans i18nKey="BenthicCover 1">
+                  This report estimates the percentage of benthic habitats
+                  within this area of interest.
+                </Trans>
+              </p>
 
-            <ClassTable
-              rows={metrics}
-              metricGroup={metricGroup}
-              columnConfig={[
-                {
-                  columnLabel: titleLabel,
-                  type: "class",
-                  width: 30,
-                },
-                {
-                  columnLabel: withinLabel,
-                  type: "metricValue",
-                  metricId: metricGroup.metricId,
-                  valueFormatter: (value) =>
-                    (typeof value === "number" ? value.toFixed(2) : value) +
-                    "%",
-                  chartOptions: {
-                    showTitle: true,
+              <ClassTable
+                rows={metrics}
+                metricGroup={metricGroup}
+                columnConfig={[
+                  {
+                    columnLabel: titleLabel,
+                    type: "class",
+                    width: 30,
                   },
-                  colStyle: { textAlign: "center" },
-                  width: 50,
-                },
-                {
-                  columnLabel: mapLabel,
-                  type: "layerToggle",
-                  width: 10,
-                },
-              ]}
-            />
+                  {
+                    columnLabel: withinLabel,
+                    type: "metricValue",
+                    metricId: metricGroup.metricId,
+                    valueFormatter: (value) =>
+                      (typeof value === "number" ? value.toFixed(2) : value) +
+                      "%",
+                    chartOptions: {
+                      showTitle: true,
+                    },
+                    colStyle: { textAlign: "center" },
+                    width: 50,
+                  },
+                  {
+                    columnLabel: mapLabel,
+                    type: "layerToggle",
+                    width: 10,
+                  },
+                ]}
+              />
 
-            <Collapse title={t("Show By Station")}>
-              {genSketchTable(data, metricGroup, t)}
-            </Collapse>
+              {!props.printing && (
+                <Collapse title={t("Show By Station")}>
+                  {genSketchTable(data, metricGroup, t)}
+                </Collapse>
+              )}
 
-            <Collapse title={t("Learn More")}>
-              <Trans i18nKey="BenthicCover - learn more">
-                <p>
-                  🗺️ Source Data: Percentage of benthic cover per site. There
-                  are 25 points per image, ~13-15 images per transect, and 3
-                  transects per site.
-                </p>
-                <p>
-                  📈 Report: This report collects the percent of each benthic
-                  cover at each site within the area of interest. It then
-                  caluclates the average percent cover of each benthic habitat
-                  type.
-                </p>
-              </Trans>
-            </Collapse>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+              <Collapse
+                title={t("Learn More")}
+                key={props.printing + "BenthicCover LearnMore Collapse"}
+                collapsed={!props.printing}
+              >
+                <Trans i18nKey="BenthicCover - learn more">
+                  <p>
+                    🗺️ Source Data: Percentage of benthic cover per site. There
+                    are 25 points per image, ~13-15 images per transect, and 3
+                    transects per site.
+                  </p>
+                  <p>
+                    📈 Report: This report collects the percent of each benthic
+                    cover at each site within the area of interest. It then
+                    caluclates the average percent cover of each benthic habitat
+                    type.
+                  </p>
+                </Trans>
+              </Collapse>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

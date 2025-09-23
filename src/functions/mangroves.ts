@@ -21,21 +21,13 @@ import {
 /**
  * mangroves: A geoprocessing function that calculates overlap metrics for raster datasources
  * @param sketch - A sketch or collection of sketches
- * @param extraParams
- * @returns Calculated metrics and a null sketch
+ * @returns Calculated metrics
  */
 export async function mangroves(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
-  extraParams: DefaultExtraParams = {},
 ): Promise<ReportResult> {
-  // Check for client-provided geography, fallback to first geography assigned as default-boundary in metrics.json
-  const geographyId = getFirstFromParam("geographyIds", extraParams);
-  const curGeography = project.getGeographyById(geographyId, {
-    fallbackGroup: "default-boundary",
-  });
-
   // Calculate overlap metrics for each class in metric group
   const metricGroup = project.getMetricGroup("mangroves");
   const metrics: Metric[] = (
@@ -67,7 +59,6 @@ export async function mangroves(
           (metrics): Metric => ({
             ...metrics,
             classId: curClass.classId,
-            geographyId: curGeography.geographyId,
           }),
         );
       }),

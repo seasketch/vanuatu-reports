@@ -1,0 +1,70 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "benthicACA",
+      "classId": "Coral/Algae",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 9972610.334508,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "benthicACA",
+      "classId": "Microalgal Mats",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 51726.063662,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "benthicACA",
+      "classId": "Rock",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 6996226.909907,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "benthicACA",
+      "classId": "Rubble",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 3208298.15612,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "benthicACA",
+      "classId": "Sand",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 2775764.995008,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "benthicACA",
+      "classId": "Seagrass",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 29474.431733,
+      "extra": {
+        "sketchName": "south"
+      }
+    }
+  ]
+}

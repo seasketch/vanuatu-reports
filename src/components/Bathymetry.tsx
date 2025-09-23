@@ -20,7 +20,9 @@ const formatBathymetry = (val: number) => {
   return `-${baseVal}m`;
 };
 
-export const Bathymetry: React.FunctionComponent = () => {
+export const Bathymetry: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
   const [{ isCollection }] = useSketchProperties();
   const mg = projectClient.getMetricGroup("bathymetry", t);
@@ -72,12 +74,20 @@ export const Bathymetry: React.FunctionComponent = () => {
               </KeySection>
 
               {isCollection && (
-                <Collapse title={t("Show by MPA")}>
+                <Collapse
+                  title={t("Show by MPA")}
+                  key={props.printing + "Bathymetry MPA Collapse"}
+                  collapsed={!props.printing}
+                >
                   {genBathymetryTable(data, mg)}
                 </Collapse>
               )}
 
-              <Collapse title={t("Learn More")}>
+              <Collapse
+                title={t("Learn More")}
+                key={props.printing + "Bathymetry LearnMore Collapse"}
+                collapsed={!props.printing}
+              >
                 <Trans i18nKey="Bathymetry Card - Learn more">
                   <p>🗺️ Source Data: GEBCO 2024</p>
                   <p>

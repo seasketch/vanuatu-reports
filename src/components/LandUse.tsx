@@ -20,7 +20,9 @@ import project from "../../project/projectClient.js";
 /**
  * LandUse component
  */
-export const LandUse: React.FunctionComponent<GeogProp> = (props) => {
+export const LandUse: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
   const [{ id }] = useSketchProperties();
 
@@ -35,74 +37,80 @@ export const LandUse: React.FunctionComponent<GeogProp> = (props) => {
   const mapLabel = t("Show On Map");
 
   return (
-    <ResultsCard title={titleLabel} functionName="landUse" useChildCard>
-      {(data: ReportResult) => {
-        const metrics = metricsWithSketchId(
-          data.metrics.filter((m) => m.metricId === metricGroup.metricId),
-          [id],
-        );
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard title={titleLabel} functionName="landUse" useChildCard>
+        {(data: ReportResult) => {
+          const metrics = metricsWithSketchId(
+            data.metrics.filter((m) => m.metricId === metricGroup.metricId),
+            [id],
+          );
 
-        return (
-          <ToolbarCard
-            title={titleLabel}
-            items={
-              <LayerToggle
-                label={mapLabel}
-                layerId={metricGroup.layerId}
-                simple
-              />
-            }
-          >
-            <ReportError>
-              <p>
-                <Trans i18nKey="LandUse 1">
-                  This report summarizes land use within 1 km of the area of
-                  interest.
-                </Trans>
-              </p>
-
-              <ClassTable
-                rows={metrics}
-                metricGroup={metricGroup}
-                columnConfig={[
-                  {
-                    columnLabel: descriptionLabel,
-                    type: "class",
-                    width: 30,
-                  },
-                  {
-                    columnLabel: withinLabel,
-                    type: "metricValue",
-                    metricId: metricGroup.metricId,
-                    valueFormatter: (val) =>
-                      squareMeterToKilometer(Number(val)).toFixed(2),
-                    valueLabel: unitsLabel,
-                    chartOptions: {
-                      showTitle: true,
-                    },
-                    width: 20,
-                  },
-                ]}
-              />
-
-              <Collapse title={t("Learn More")}>
-                <Trans i18nKey="LandUse - learn more">
-                  <p>
-                    ℹ️ Overview: Land use nearby a marine area of interest can
-                    impact runoff impacts and water quality in the area of
+          return (
+            <ToolbarCard
+              title={titleLabel}
+              items={
+                <LayerToggle
+                  label={mapLabel}
+                  layerId={metricGroup.layerId}
+                  simple
+                />
+              }
+            >
+              <ReportError>
+                <p>
+                  <Trans i18nKey="LandUse 1">
+                    This report summarizes land use within 1 km of the area of
                     interest.
-                  </p>
-                  <p>🗺️ Source Data: Open Street Map</p>
-                  <p>
-                    📈 Report: This report calculates the total area of land use
-                    within 1km of the area of interest.
-                  </p>
-                </Trans>
-              </Collapse>
-            </ReportError>
-          </ToolbarCard>
-        );
-      }}
-    </ResultsCard>
+                  </Trans>
+                </p>
+
+                <ClassTable
+                  rows={metrics}
+                  metricGroup={metricGroup}
+                  columnConfig={[
+                    {
+                      columnLabel: descriptionLabel,
+                      type: "class",
+                      width: 30,
+                    },
+                    {
+                      columnLabel: withinLabel,
+                      type: "metricValue",
+                      metricId: metricGroup.metricId,
+                      valueFormatter: (val) =>
+                        squareMeterToKilometer(Number(val)).toFixed(2),
+                      valueLabel: unitsLabel,
+                      chartOptions: {
+                        showTitle: true,
+                      },
+                      width: 20,
+                    },
+                  ]}
+                />
+
+                <Collapse
+                  title={t("Learn More")}
+                  key={props.printing + "LandUse LearnMore Collapse"}
+                  collapsed={!props.printing}
+                >
+                  <Trans i18nKey="LandUse - learn more">
+                    <p>
+                      ℹ️ Overview: Land use nearby a marine area of interest can
+                      impact runoff impacts and water quality in the area of
+                      interest.
+                    </p>
+                    <p>🗺️ Source Data: Open Street Map</p>
+                    <p>
+                      📈 Report: This report calculates the total area of land
+                      use within 1km of the area of interest.
+                    </p>
+                  </Trans>
+                </Collapse>
+              </ReportError>
+            </ToolbarCard>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };

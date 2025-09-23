@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "reefExtentACA",
+      "classId": "reefExtent",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 41982216.146407,
+      "extra": {
+        "sketchName": "south"
+      }
+    }
+  ]
+}

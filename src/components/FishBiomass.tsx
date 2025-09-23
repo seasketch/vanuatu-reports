@@ -15,6 +15,7 @@ import {
 import { MetricGroup } from "@seasketch/geoprocessing/client-core";
 import project from "../../project/projectClient.js";
 import { Station } from "../util/station.js";
+import { ClassTablePrintAware } from "./ClassTablePrintAware.js";
 
 const trophicGroups = [
   "Herbivore/Detritivore",
@@ -27,7 +28,9 @@ const trophicGroups = [
 /**
  * FishBiomass component
  */
-export const FishBiomass: React.FunctionComponent = () => {
+export const FishBiomass: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
 
   // Metrics
@@ -41,128 +44,145 @@ export const FishBiomass: React.FunctionComponent = () => {
   const averageLabel = t("Average Fish Biomass");
 
   return (
-    <ResultsCard title={titleLabel} functionName="fishBiomass">
-      {(data: Station[]) => {
-        const averages = data.find((s) => s.station_id === "averages");
-        const averageMetrics = averages
-          ? Object.entries(averages)
-              .filter(([key]) => key !== "station_id")
-              .map(([classId, value]) => ({
-                value: value as number,
-                classId,
-                metricId: metricGroup.metricId,
-                geographyId: null,
-                sketchId: null,
-                groupId: null,
-              }))
-          : [];
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard title={titleLabel} functionName="fishBiomass">
+        {(data: Station[]) => {
+          const averages = data.find((s) => s.station_id === "averages");
+          const averageMetrics = averages
+            ? Object.entries(averages)
+                .filter(([key]) => key !== "station_id")
+                .map(([classId, value]) => ({
+                  value: value as number,
+                  classId,
+                  metricId: metricGroup.metricId,
+                  geographyId: null,
+                  sketchId: null,
+                  groupId: null,
+                }))
+            : [];
 
-        return (
-          <ReportError>
-            <KeySection>
-              <Trans i18nKey="FishBiomass 1">
-                This area has an average total fish biomass of{" "}
-                <Pill>
-                  {Number(averages?.toal_fish_biomass).toFixed(1)} g/m²
-                </Pill>
-              </Trans>
-            </KeySection>
+          return (
+            <ReportError>
+              <KeySection>
+                <Trans i18nKey="FishBiomass 1">
+                  This area has an average total fish biomass of{" "}
+                  <Pill>
+                    {Number(averages?.toal_fish_biomass).toFixed(1)} g/m²
+                  </Pill>
+                </Trans>
+              </KeySection>
 
-            <LayerToggle
-              layerId="rNFcihFlN"
-              label="Show Total Fish Biomass On Map"
-            />
-
-            <Collapse title={t("Show By Family")}>
-              <ClassTable
-                rows={averageMetrics.filter(
-                  (m) =>
-                    m.classId !== "toal_fish_biomass" &&
-                    !trophicGroups.includes(m.classId),
-                )}
-                metricGroup={metricGroup}
-                columnConfig={[
-                  {
-                    columnLabel: fishLabel,
-                    type: "class",
-                    width: 20,
-                  },
-                  {
-                    columnLabel: averageLabel,
-                    type: "metricValue",
-                    metricId: metricGroup.metricId,
-                    valueFormatter: (val) => Number(val).toFixed(1),
-                    chartOptions: {
-                      showTitle: true,
-                    },
-                    valueLabel: "g/m²",
-                    colStyle: { textAlign: "center" },
-                    width: 50,
-                  },
-                  {
-                    columnLabel: mapLabel,
-                    type: "layerToggle",
-                    width: 10,
-                  },
-                ]}
+              <LayerToggle
+                layerId="rNFcihFlN"
+                label="Show Total Fish Biomass On Map"
               />
-            </Collapse>
 
-            <Collapse title={t("Show By Trophic Group")}>
-              <ClassTable
-                rows={averageMetrics.filter((m) =>
-                  trophicGroups.includes(m.classId),
-                )}
-                metricGroup={metricGroup}
-                columnConfig={[
-                  {
-                    columnLabel: trophicLabel,
-                    type: "class",
-                    width: 30,
-                  },
-                  {
-                    columnLabel: averageLabel,
-                    type: "metricValue",
-                    metricId: metricGroup.metricId,
-                    valueFormatter: (val) => Number(val).toFixed(1),
-                    chartOptions: {
-                      showTitle: true,
+              <Collapse
+                title={t("Show By Family")}
+                key={props.printing + "FishBiomass Family Collapse"}
+                collapsed={!props.printing}
+              >
+                <ClassTablePrintAware
+                  rows={averageMetrics.filter(
+                    (m) =>
+                      m.classId !== "toal_fish_biomass" &&
+                      !trophicGroups.includes(m.classId),
+                  )}
+                  metricGroup={metricGroup}
+                  printing={props.printing}
+                  columnConfig={[
+                    {
+                      columnLabel: fishLabel,
+                      type: "class",
+                      width: 20,
                     },
-                    valueLabel: "g/m²",
-                    colStyle: { textAlign: "center" },
-                    width: 40,
-                  },
-                  {
-                    columnLabel: mapLabel,
-                    type: "layerToggle",
-                    width: 10,
-                  },
-                ]}
-              />
-            </Collapse>
+                    {
+                      columnLabel: averageLabel,
+                      type: "metricValue",
+                      metricId: metricGroup.metricId,
+                      valueFormatter: (val: any) => Number(val).toFixed(1),
+                      chartOptions: {
+                        showTitle: true,
+                      },
+                      valueLabel: "g/m²",
+                      colStyle: { textAlign: "center" },
+                      width: 50,
+                    },
+                    {
+                      columnLabel: mapLabel,
+                      type: "layerToggle",
+                      width: 10,
+                    },
+                  ]}
+                />
+              </Collapse>
 
-            <Collapse title={t("Show By Station")}>
-              {genSketchTable(data, metricGroup, t)}
-            </Collapse>
+              <Collapse
+                title={t("Show By Trophic Group")}
+                key={props.printing + "FishBiomass Trophic Group Collapse"}
+                collapsed={!props.printing}
+              >
+                <ClassTable
+                  rows={averageMetrics.filter((m) =>
+                    trophicGroups.includes(m.classId),
+                  )}
+                  metricGroup={metricGroup}
+                  columnConfig={[
+                    {
+                      columnLabel: trophicLabel,
+                      type: "class",
+                      width: 30,
+                    },
+                    {
+                      columnLabel: averageLabel,
+                      type: "metricValue",
+                      metricId: metricGroup.metricId,
+                      valueFormatter: (val) => Number(val).toFixed(1),
+                      chartOptions: {
+                        showTitle: true,
+                      },
+                      valueLabel: "g/m²",
+                      colStyle: { textAlign: "center" },
+                      width: 40,
+                    },
+                    {
+                      columnLabel: mapLabel,
+                      type: "layerToggle",
+                      width: 10,
+                    },
+                  ]}
+                />
+              </Collapse>
 
-            <Collapse title={t("Learn More")}>
-              <Trans i18nKey="FishBiomass - learn more">
-                <p>
-                  ℹ️ Overview: Total fish biomass, by site, from the 2023
-                  Vanuatu expedition.
-                </p>
-                <p>🗺️ Source Data: 2023 Vanuatu Expedition</p>
-                <p>
-                  📈 Report: This report calculates the average fish biomass
-                  within the area of interest by averaging the fish biomass
-                  results of individual dive sites within the area.
-                </p>
-              </Trans>
-            </Collapse>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+              {!props.printing && (
+                <Collapse title={t("Show By Station")}>
+                  {genSketchTable(data, metricGroup, t)}
+                </Collapse>
+              )}
+
+              <Collapse
+                title={t("Learn More")}
+                key={props.printing + "FishBiomass LearnMore Collapse"}
+                collapsed={!props.printing}
+              >
+                <Trans i18nKey="FishBiomass - learn more">
+                  <p>
+                    ℹ️ Overview: Total fish biomass, by site, from the 2023
+                    Vanuatu expedition.
+                  </p>
+                  <p>🗺️ Source Data: 2023 Vanuatu Expedition</p>
+                  <p>
+                    📈 Report: This report calculates the average fish biomass
+                    within the area of interest by averaging the fish biomass
+                    results of individual dive sites within the area.
+                  </p>
+                </Trans>
+              </Collapse>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

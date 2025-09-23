@@ -22,21 +22,13 @@ import {
 /**
  * benthicACA: A geoprocessing function that calculates overlap metrics for vector datasources
  * @param sketch - A sketch or collection of sketches
- * @param extraParams
  * @returns Calculated metrics and a null sketch
  */
 export async function benthicACA(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
-  extraParams: DefaultExtraParams = {},
 ): Promise<ReportResult> {
-  // Check for client-provided geography, fallback to first geography assigned as default-boundary in metrics.json
-  const geographyId = getFirstFromParam("geographyIds", extraParams);
-  const curGeography = project.getGeographyById(geographyId, {
-    fallbackGroup: "default-boundary",
-  });
-
   const featuresByDatasource: Record<
     string,
     Feature<Polygon | MultiPolygon>[]
@@ -90,7 +82,6 @@ export async function benthicACA(
           (metric): Metric => ({
             ...metric,
             classId: curClass.classId,
-            geographyId: curGeography.geographyId,
           }),
         );
       }),

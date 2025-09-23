@@ -1,0 +1,70 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "size",
+      "classId": "archipelagicBaseline",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 985273290.519307,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "size",
+      "classId": "eez",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 48841119450.23964,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "size",
+      "classId": "intermediateMMA",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 867174487.826262,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "size",
+      "classId": "offshore",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 47973870757.74598,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "size",
+      "classId": "reef100m",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 41319896.773609,
+      "extra": {
+        "sketchName": "south"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "size",
+      "classId": "territorialSeas",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 2889223554.464283,
+      "extra": {
+        "sketchName": "south"
+      }
+    }
+  ]
+}

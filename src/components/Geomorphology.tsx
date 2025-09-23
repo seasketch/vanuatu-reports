@@ -9,7 +9,6 @@ import {
   useSketchProperties,
 } from "@seasketch/geoprocessing/client-ui";
 import {
-  GeogProp,
   Metric,
   MetricGroup,
   ReportResult,
@@ -23,16 +22,13 @@ import project from "../../project/projectClient.js";
 
 /**
  * Geomorphology component
- *
- * @param props - geographyId
- * @returns A react component which displays an overlap report
  */
-export const Geomorphology: React.FunctionComponent<GeogProp> = (props) => {
+export const Geomorphology: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
-  const curGeography = project.getGeographyById(props.geographyId, {
-    fallbackGroup: "default-boundary",
-  });
+  const curGeography = project.getGeographyByGroup("default-boundary")[0];
 
   // Metrics
   const metricGroup = project.getMetricGroup("geomorphology", t);
@@ -50,116 +46,127 @@ export const Geomorphology: React.FunctionComponent<GeogProp> = (props) => {
   const unitsLabel = t("km²");
 
   return (
-    <ResultsCard
-      title={titleLabel}
-      functionName="geomorphology"
-      extraParams={{ geographyIds: [curGeography.geographyId] }}
-    >
-      {(data: ReportResult) => {
-        const percMetricIdName = `${metricGroup.metricId}Perc`;
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard
+        title={titleLabel}
+        functionName="geomorphology"
+        extraParams={{ geographyIds: [curGeography.geographyId] }}
+      >
+        {(data: ReportResult) => {
+          const percMetricIdName = `${metricGroup.metricId}Perc`;
 
-        const valueMetrics = metricsWithSketchId(
-          data.metrics.filter((m) => m.metricId === metricGroup.metricId),
-          [id],
-        );
-        const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
-          metricIdOverride: percMetricIdName,
-        });
-        const metrics = [...valueMetrics, ...percentMetrics];
+          const valueMetrics = metricsWithSketchId(
+            data.metrics.filter((m) => m.metricId === metricGroup.metricId),
+            [id],
+          );
+          const percentMetrics = toPercentMetric(valueMetrics, precalcMetrics, {
+            metricIdOverride: percMetricIdName,
+          });
+          const metrics = [...valueMetrics, ...percentMetrics];
 
-        const objectives = (() => {
-          const objectives = project.getMetricGroupObjectives(metricGroup, t);
-          if (objectives.length) {
-            return objectives;
-          } else {
-            return;
-          }
-        })();
+          const objectives = (() => {
+            const objectives = project.getMetricGroupObjectives(metricGroup, t);
+            if (objectives.length) {
+              return objectives;
+            } else {
+              return;
+            }
+          })();
 
-        return (
-          <ReportError>
-            <p>
-              <Trans i18nKey="Geomorphology 1">
-                This report summarizes this plan&apos;s overlap with the data.
-              </Trans>
-            </p>
+          return (
+            <ReportError>
+              <p>
+                <Trans i18nKey="Geomorphology 1">
+                  This report summarizes this area of interest's overlap with
+                  geomorphic features.
+                </Trans>
+              </p>
 
-            <ClassTable
-              rows={metrics}
-              metricGroup={metricGroup}
-              objective={objectives}
-              columnConfig={[
-                {
-                  columnLabel: t("Geomorphic Feature"),
-                  type: "class",
-                  width: 30,
-                },
-                {
-                  columnLabel: withinLabel,
-                  type: "metricValue",
-                  metricId: metricGroup.metricId,
-                  valueFormatter: (val) =>
-                    Number(val)
-                      ? squareMeterToKilometer(Number(val)).toFixed(2)
-                      : 0,
-                  valueLabel: unitsLabel,
-                  chartOptions: {
-                    showTitle: true,
+              <ClassTable
+                rows={metrics}
+                metricGroup={metricGroup}
+                objective={objectives}
+                columnConfig={[
+                  {
+                    columnLabel: t("Geomorphic Feature"),
+                    type: "class",
+                    width: 30,
                   },
-                  width: 20,
-                },
-                {
-                  columnLabel: percWithinLabel,
-                  type: "metricChart",
-                  metricId: percMetricIdName,
-                  valueFormatter: "percent",
-                  chartOptions: {
-                    showTitle: true,
+                  {
+                    columnLabel: withinLabel,
+                    type: "metricValue",
+                    metricId: metricGroup.metricId,
+                    valueFormatter: (val) =>
+                      Number(val)
+                        ? squareMeterToKilometer(Number(val)).toFixed(2)
+                        : 0,
+                    valueLabel: unitsLabel,
+                    chartOptions: {
+                      showTitle: true,
+                    },
+                    width: 20,
                   },
-                  width: 40,
-                },
-                {
-                  columnLabel: mapLabel,
-                  type: "layerToggle",
-                  width: 10,
-                },
-              ]}
-            />
+                  {
+                    columnLabel: percWithinLabel,
+                    type: "metricChart",
+                    metricId: percMetricIdName,
+                    valueFormatter: "percent",
+                    chartOptions: {
+                      showTitle: true,
+                    },
+                    width: 40,
+                  },
+                  {
+                    columnLabel: mapLabel,
+                    type: "layerToggle",
+                    width: 10,
+                  },
+                ]}
+              />
 
-            {isCollection && childProperties && (
-              <Collapse title={t("Show by Sketch")}>
-                {genSketchTable(
-                  data,
-                  metricGroup,
-                  precalcMetrics,
-                  childProperties,
-                )}
+              {isCollection && childProperties && (
+                <Collapse
+                  title={t("Show by Sketch")}
+                  key={props.printing + "Geomorphology MPA Collapse"}
+                  collapsed={!props.printing}
+                >
+                  {genSketchTable(
+                    data,
+                    metricGroup,
+                    precalcMetrics,
+                    childProperties,
+                  )}
+                </Collapse>
+              )}
+
+              <Collapse
+                title={t("Learn More")}
+                key={props.printing + "Geomorphology LearnMore Collapse"}
+                collapsed={!props.printing}
+              >
+                <Trans i18nKey="Geomorphology - learn more">
+                  <p>
+                    🗺️ Source Data:{" "}
+                    <a
+                      href="https://linkinghub.elsevier.com/retrieve/pii/S0025322714000310"
+                      target="_blank"
+                    >
+                      Harris et al. 2014
+                    </a>
+                  </p>
+                  <p>
+                    📈 Report: This report calculates the total area of each
+                    geomorphic feature within the area of interest. This value
+                    is divided by the total area of each geomorphic feature to
+                    obtain the % contained within the area of interest.
+                  </p>
+                </Trans>
               </Collapse>
-            )}
-
-            <Collapse title={t("Learn More")}>
-              <Trans i18nKey="Geomorphology - learn more">
-                <p>
-                  🗺️ Source Data:{" "}
-                  <a
-                    href="https://linkinghub.elsevier.com/retrieve/pii/S0025322714000310"
-                    target="_blank"
-                  >
-                    Harris et al. 2014
-                  </a>
-                </p>
-                <p>
-                  📈 Report: This report calculates the total area of each
-                  geomorphic feature within the area of interest. This value is
-                  divided by the total area of each geomorphic feature to obtain
-                  the % contained within the area of interest.
-                </p>
-              </Trans>
-            </Collapse>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 

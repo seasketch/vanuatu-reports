@@ -1,0 +1,55 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "islands",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 1
+    },
+    {
+      "geographyId": null,
+      "metricId": "provinces",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 1
+    },
+    {
+      "geographyId": null,
+      "metricId": "stations",
+      "classId": null,
+      "sketchId": null,
+      "groupId": null,
+      "value": 5
+    }
+  ],
+  "stations": [
+    {
+      "station_id": "ANE_005",
+      "island": "Aneityum",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "ANE_006",
+      "island": "Aneityum",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "ANE_004",
+      "island": "Aneityum",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "ANE_003",
+      "island": "Aneityum",
+      "province": "Tafea"
+    },
+    {
+      "station_id": "ANE_001",
+      "island": "Aneityum",
+      "province": "Tafea"
+    }
+  ]
+}

@@ -25,11 +25,10 @@ interface IsotopeReportResult extends ReportResult {
 
 /**
  * StableIsotopes component
- *
- * @param props - geographyId
- * @returns A react component which displays an overlap report
  */
-export const StableIsotopes: React.FunctionComponent = () => {
+export const StableIsotopes: React.FunctionComponent<{ printing: boolean }> = (
+  props,
+) => {
   const { t } = useTranslation();
 
   // Metrics
@@ -41,68 +40,78 @@ export const StableIsotopes: React.FunctionComponent = () => {
   const mapLabel = t("Map");
 
   return (
-    <ResultsCard title={titleLabel} functionName="isotopes">
-      {(data: IsotopeReportResult) => {
-        const metrics = data.metrics;
+    <div style={{ breakInside: "avoid" }}>
+      <ResultsCard title={titleLabel} functionName="isotopes">
+        {(data: IsotopeReportResult) => {
+          const metrics = data.metrics;
 
-        return (
-          <ReportError>
-            <p>
-              <Trans i18nKey="StableIsotopes 1">
-                Poor water quality can stress reefs by causing macroalgal
-                blooms, promoting coral disease, and increasing bioerosion. This
-                report estimates the percentage of Nitrogen-15 within the area
-                of interest.
-              </Trans>
-            </p>
+          return (
+            <ReportError>
+              <p>
+                <Trans i18nKey="StableIsotopes 1">
+                  Poor water quality can stress reefs by causing macroalgal
+                  blooms, promoting coral disease, and increasing bioerosion.
+                  This report estimates the percentage of Nitrogen-15 within the
+                  area of interest.
+                </Trans>
+              </p>
 
-            <ClassTable
-              rows={metrics}
-              metricGroup={metricGroup}
-              columnConfig={[
-                {
-                  columnLabel: " ",
-                  type: "class",
-                  width: 30,
-                },
-                {
-                  columnLabel: withinLabel,
-                  type: "metricValue",
-                  metricId: metricGroup.metricId,
-                  valueFormatter: (value) => percentWithEdge(Number(value)),
-                  chartOptions: {
-                    showTitle: true,
+              <ClassTable
+                rows={metrics}
+                metricGroup={metricGroup}
+                columnConfig={[
+                  {
+                    columnLabel: " ",
+                    type: "class",
+                    width: 30,
                   },
-                  colStyle: { textAlign: "center" },
-                  width: 50,
-                },
-                {
-                  columnLabel: mapLabel,
-                  type: "layerToggle",
-                  width: 10,
-                },
-              ]}
-            />
+                  {
+                    columnLabel: withinLabel,
+                    type: "metricValue",
+                    metricId: metricGroup.metricId,
+                    valueFormatter: (value) => percentWithEdge(Number(value)),
+                    chartOptions: {
+                      showTitle: true,
+                    },
+                    colStyle: { textAlign: "center" },
+                    width: 50,
+                  },
+                  {
+                    columnLabel: mapLabel,
+                    type: "layerToggle",
+                    width: 10,
+                  },
+                ]}
+              />
 
-            <Collapse title={t("Show By Station")}>
-              {genSketchTable(data, metricGroup, t)}
-            </Collapse>
+              <Collapse
+                title={t("Show By Station")}
+                key={props.printing + "StableIsotopes MPA Collapse"}
+                collapsed={!props.printing}
+              >
+                {genSketchTable(data, metricGroup, t)}
+              </Collapse>
 
-            <Collapse title={t("Learn More")}>
-              <Trans i18nKey="StableIsotopes - learn more">
-                <p>🗺️ Source Data: 2023 Vanuatu Expedition</p>
-                <p>
-                  📈 Report: This report calculates the average percentage of
-                  Nitrogen-15 in the area of interest by averaging the
-                  percentage of Nitrogen-15 of individual dive sites within the
-                  area.
-                </p>
-              </Trans>
-            </Collapse>
-          </ReportError>
-        );
-      }}
-    </ResultsCard>
+              <Collapse
+                title={t("Learn More")}
+                key={props.printing + "StableIsotopes LearnMore Collapse"}
+                collapsed={!props.printing}
+              >
+                <Trans i18nKey="StableIsotopes - learn more">
+                  <p>🗺️ Source Data: 2023 Vanuatu Expedition</p>
+                  <p>
+                    📈 Report: This report calculates the average percentage of
+                    Nitrogen-15 in the area of interest by averaging the
+                    percentage of Nitrogen-15 of individual dive sites within
+                    the area.
+                  </p>
+                </Trans>
+              </Collapse>
+            </ReportError>
+          );
+        }}
+      </ResultsCard>
+    </div>
   );
 };
 
