@@ -2,10 +2,7 @@
   {
     "datasourceId": "world",
     "geo_type": "vector",
-    "formats": [
-      "json",
-      "fgb"
-    ],
+    "formats": ["json", "fgb"],
     "precalc": false,
     "metadata": {
       "name": "World Outline Polygon",
@@ -22,9 +19,7 @@
   {
     "datasourceId": "eez",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "eez_gmw",
     "classKeys": [],
@@ -37,28 +32,20 @@
   {
     "datasourceId": "sites",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "sites",
     "classKeys": [],
     "created": "2025-05-27T20:53:28.995Z",
     "lastUpdated": "2025-05-27T20:53:28.995Z",
     "src": "data/src/expedition/processed-data/sites.fgb",
-    "propertiesToKeep": [
-      "station_id",
-      "island",
-      "province"
-    ],
+    "propertiesToKeep": ["station_id", "island", "province"],
     "explodeMulti": true
   },
   {
     "datasourceId": "benthic_cover",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "benthic_cover",
     "classKeys": [],
@@ -81,63 +68,46 @@
   {
     "datasourceId": "richness_coral",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "coral_genus_richness",
     "classKeys": [],
     "created": "2025-05-28T22:06:27.099Z",
     "lastUpdated": "2025-05-28T22:06:27.099Z",
     "src": "data/src/expedition/processed-data/coral_genus_richness.fgb",
-    "propertiesToKeep": [
-      "station_id",
-      "coral_genus_richness"
-    ],
+    "propertiesToKeep": ["station_id", "coral_genus_richness"],
     "explodeMulti": true
   },
   {
     "datasourceId": "richness_fish",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "fish_family_richness",
     "classKeys": [],
     "created": "2025-05-28T22:06:43.172Z",
     "lastUpdated": "2025-05-28T22:06:43.172Z",
     "src": "data/src/expedition/processed-data/fish_family_richness.fgb",
-    "propertiesToKeep": [
-      "station_id",
-      "fish_family_richness"
-    ],
+    "propertiesToKeep": ["station_id", "fish_family_richness"],
     "explodeMulti": true
   },
   {
     "datasourceId": "richness_invert",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "invert_species_richness_on_transects",
     "classKeys": [],
     "created": "2025-05-28T22:07:00.913Z",
     "lastUpdated": "2025-05-28T22:07:00.913Z",
     "src": "data/src/expedition/processed-data/invert_species_richness.fgb",
-    "propertiesToKeep": [
-      "station_id",
-      "invertebrate_species_richness"
-    ],
+    "propertiesToKeep": ["station_id", "invertebrate_species_richness"],
     "explodeMulti": true
   },
   {
     "datasourceId": "juvenile_coral_density",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "juvenile_coral_density",
     "classKeys": [],
@@ -216,28 +186,20 @@
   {
     "datasourceId": "benthic_aca",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "benthic",
-    "classKeys": [
-      "class"
-    ],
+    "classKeys": ["class"],
     "created": "2025-06-17T19:53:36.673Z",
     "lastUpdated": "2025-06-17T20:01:01.350Z",
     "src": "data/src/allen-coral-atlas/Benthic-Map/benthic.fgb",
-    "propertiesToKeep": [
-      "class"
-    ],
+    "propertiesToKeep": ["class"],
     "explodeMulti": true
   },
   {
     "datasourceId": "gebco_depth",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 1,
@@ -249,28 +211,20 @@
   {
     "datasourceId": "geomorph_aca",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "geomorphic",
-    "classKeys": [
-      "class"
-    ],
+    "classKeys": ["class"],
     "created": "2025-06-17T20:45:48.783Z",
     "lastUpdated": "2025-06-17T20:45:48.783Z",
     "src": "data/src/allen-coral-atlas/Geomorphic-Map/geomorphic.fgb",
-    "propertiesToKeep": [
-      "class"
-    ],
+    "propertiesToKeep": ["class"],
     "explodeMulti": true
   },
   {
     "datasourceId": "reef_extent_aca",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "reef-extent",
     "classKeys": [],
@@ -283,9 +237,7 @@
   {
     "datasourceId": "mangroves2020",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -297,13 +249,11 @@
   {
     "datasourceId": "dhw_2015",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 31,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:23.873Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -311,13 +261,11 @@
   {
     "datasourceId": "dhw_2016",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 32,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:25.322Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -325,13 +273,11 @@
   {
     "datasourceId": "dhw_2017",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 33,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:26.784Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -339,13 +285,11 @@
   {
     "datasourceId": "dhw_2018",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 34,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:28.160Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -353,13 +297,11 @@
   {
     "datasourceId": "dhw_2019",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 35,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:29.229Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -367,13 +309,11 @@
   {
     "datasourceId": "dhw_2020",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 36,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:30.492Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -381,13 +321,11 @@
   {
     "datasourceId": "dhw_2021",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 37,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:31.626Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -395,13 +333,11 @@
   {
     "datasourceId": "dhw_2022",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 38,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:32.697Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -409,13 +345,11 @@
   {
     "datasourceId": "dhw_2023",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 39,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:33.609Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -423,13 +357,11 @@
   {
     "datasourceId": "dhw_2024",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "quantitative",
     "band": 40,
-    "noDataValue": 9.96921e+36,
+    "noDataValue": 9.96921e36,
     "created": "2025-06-20T16:24:41.802Z",
     "lastUpdated": "2025-06-20T16:26:34.709Z",
     "src": "data/src/Data_Received/CoralReefWatch/dhw.tif"
@@ -437,9 +369,7 @@
   {
     "datasourceId": "bleachingAlerts",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": false,
     "measurementType": "categorical",
     "band": 1,
@@ -451,9 +381,7 @@
   {
     "datasourceId": "fish_density",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "fish_density",
     "classKeys": [],
@@ -562,9 +490,7 @@
   {
     "datasourceId": "fish_biomass",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "fish_biomass",
     "classKeys": [],
@@ -673,9 +599,7 @@
   {
     "datasourceId": "invert_density",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "invert_density",
     "classKeys": [],
@@ -786,29 +710,20 @@
   {
     "datasourceId": "isotopes",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "isotope_means",
     "classKeys": [],
     "created": "2025-06-27T18:10:37.443Z",
     "lastUpdated": "2025-06-27T18:10:37.443Z",
     "src": "data/src/expedition/processed-data/isotope_means.fgb",
-    "propertiesToKeep": [
-      "station_id",
-      "mean_total_n",
-      "mean_d15n",
-      "species"
-    ],
+    "propertiesToKeep": ["station_id", "mean_total_n", "mean_d15n", "species"],
     "explodeMulti": true
   },
   {
     "datasourceId": "mangroves1996",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -820,9 +735,7 @@
   {
     "datasourceId": "mangroves2007",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -834,9 +747,7 @@
   {
     "datasourceId": "mangroves2008",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -848,9 +759,7 @@
   {
     "datasourceId": "mangroves2009",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -862,9 +771,7 @@
   {
     "datasourceId": "mangroves2010",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -876,9 +783,7 @@
   {
     "datasourceId": "mangroves2015",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -890,9 +795,7 @@
   {
     "datasourceId": "mangroves2016",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -904,9 +807,7 @@
   {
     "datasourceId": "mangroves2017",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -918,9 +819,7 @@
   {
     "datasourceId": "mangroves2018",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -932,9 +831,7 @@
   {
     "datasourceId": "mangroves2019",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -946,28 +843,20 @@
   {
     "datasourceId": "landUse",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "Land Use",
-    "classKeys": [
-      "type"
-    ],
+    "classKeys": ["type"],
     "created": "2025-07-01T18:28:08.846Z",
     "lastUpdated": "2025-07-01T18:28:08.846Z",
     "src": "data/src/Data_Received/OpenStreetMap/Land Use.geojson",
-    "propertiesToKeep": [
-      "type"
-    ],
+    "propertiesToKeep": ["type"],
     "explodeMulti": true
   },
   {
     "datasourceId": "waterways",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": false,
     "layerName": "Waterways",
     "classKeys": [],
@@ -980,9 +869,7 @@
   {
     "datasourceId": "gfw_2018",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -994,9 +881,7 @@
   {
     "datasourceId": "gfw_2019",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -1008,9 +893,7 @@
   {
     "datasourceId": "gfw_2020",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -1022,9 +905,7 @@
   {
     "datasourceId": "gfw_2021",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -1036,9 +917,7 @@
   {
     "datasourceId": "gfw_2022",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -1050,9 +929,7 @@
   {
     "datasourceId": "gfw_2023",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -1064,9 +941,7 @@
   {
     "datasourceId": "gfw_2024",
     "geo_type": "raster",
-    "formats": [
-      "tif"
-    ],
+    "formats": ["tif"],
     "precalc": true,
     "measurementType": "quantitative",
     "band": 1,
@@ -1078,9 +953,7 @@
   {
     "datasourceId": "territorialSeas",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "TerritorialSea_12nm",
     "classKeys": [],
@@ -1093,9 +966,7 @@
   {
     "datasourceId": "intermediateMMA",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "6NM_Intermidiate MMA",
     "classKeys": [],
@@ -1108,9 +979,7 @@
   {
     "datasourceId": "offshore",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "Offshore_6NM_to_200NM",
     "classKeys": [],
@@ -1123,9 +992,7 @@
   {
     "datasourceId": "archipelagicBaseline",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "ArchipelagicBaseline_noLand",
     "classKeys": [],
@@ -1138,9 +1005,7 @@
   {
     "datasourceId": "reef100m",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "Reefs+100m",
     "classKeys": [],
@@ -1153,9 +1018,7 @@
   {
     "datasourceId": "seamounts",
     "geo_type": "vector",
-    "formats": [
-      "fgb"
-    ],
+    "formats": ["fgb"],
     "precalc": true,
     "layerName": "GEO_seamounts",
     "classKeys": [],
@@ -1166,22 +1029,29 @@
     "explodeMulti": true
   },
   {
-    "src": "data/src/reports/geomorphology.fgb",
-    "layerName": "geomorphology",
-    "geo_type": "vector",
     "datasourceId": "geomorphology",
-    "formats": [
-      "fgb"
-    ],
-    "classKeys": [
-      "geomorph_type"
-    ],
+    "geo_type": "vector",
+    "formats": ["fgb"],
+    "precalc": true,
+    "layerName": "geomorphology",
+    "classKeys": ["geomorph_type"],
     "created": "2025-07-14T20:30:21.089Z",
     "lastUpdated": "2025-07-14T20:30:21.089Z",
-    "propertiesToKeep": [
-      "geomorph_type"
-    ],
+    "src": "data/src/reports/geomorphology.fgb",
+    "propertiesToKeep": ["geomorph_type"],
+    "explodeMulti": true
+  },
+  {
+    "src": "data/src/reports/population/2020_Pop_EA.shp",
+    "layerName": "2020_Pop_EA",
+    "geo_type": "vector",
+    "datasourceId": "population",
+    "formats": ["fgb"],
+    "classKeys": [],
+    "created": "2025-09-23T20:10:10.133Z",
+    "lastUpdated": "2025-09-23T20:10:10.133Z",
+    "propertiesToKeep": ["Population"],
     "explodeMulti": true,
-    "precalc": true
+    "precalc": false
   }
 ]

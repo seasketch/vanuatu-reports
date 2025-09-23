@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "population",
+      "sketchId": "102336",
+      "groupId": null,
+      "value": 2092,
+      "extra": {
+        "sketchName": "south"
+      }
+    }
+  ]
+}

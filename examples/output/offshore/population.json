@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "population",
+      "sketchId": "106370",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    }
+  ]
+}

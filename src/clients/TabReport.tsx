@@ -32,6 +32,7 @@ import { Gfw } from "../components/Gfw.jsx";
 import { Seamounts } from "../components/Seamounts.js";
 import { Geomorphology } from "../components/Geomorphology.js";
 import { SketchProperties } from "@seasketch/geoprocessing";
+import { Population } from "../components/Population.js";
 
 const BaseReport = () => {
   const { t } = useTranslation();
@@ -145,6 +146,7 @@ const BaseReport = () => {
           <BleachingAlerts printing={isPrinting} />
           <LandUse printing={isPrinting} />
           <Waterways printing={isPrinting} />
+          <Population printing={isPrinting} />
           <Gfw printing={isPrinting} />
           <Seamounts printing={isPrinting} />
           <Geomorphology printing={isPrinting} />
