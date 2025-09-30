@@ -1552,11 +1552,33 @@
   {
     "metricId": "population",
     "type": "sumOverlap",
+    "datasourceId": "population",
+    "layerId": "5d7biXxBY",
+    "classKey": "Pname",
     "classes": [
       {
-        "classId": "population",
-        "datasourceId": "population",
-        "display": "Population"
+        "display": "Tafea",
+        "classId": "TAFEA"
+      },
+      {
+        "classId": "SHEFA",
+        "display": "Shefa"
+      },
+      {
+        "classId": "PENAMA",
+        "display": "Penama"
+      },
+      {
+        "classId": "MALAMPA",
+        "display": "Malampa"
+      },
+      {
+        "classId": "SANMA",
+        "display": "Sanma"
+      },
+      {
+        "classId": "TORBA",
+        "display": "Torba"
       }
     ]
   }

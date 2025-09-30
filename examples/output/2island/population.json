@@ -3,10 +3,65 @@
     {
       "geographyId": null,
       "metricId": "population",
-      "classId": "population",
+      "classId": "MALAMPA",
       "sketchId": "102333",
       "groupId": null,
       "value": 7115,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "PENAMA",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "SANMA",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "SHEFA",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "TAFEA",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "TORBA",
+      "sketchId": "102333",
+      "groupId": null,
+      "value": 0,
       "extra": {
         "sketchName": "2island"
       }

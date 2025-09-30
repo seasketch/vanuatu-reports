@@ -3,7 +3,62 @@
     {
       "geographyId": null,
       "metricId": "population",
-      "classId": "population",
+      "classId": "MALAMPA",
+      "sketchId": "106370",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "PENAMA",
+      "sketchId": "106370",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "SANMA",
+      "sketchId": "106370",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "SHEFA",
+      "sketchId": "106370",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "TAFEA",
+      "sketchId": "106370",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "TORBA",
       "sketchId": "106370",
       "groupId": null,
       "value": 0,
