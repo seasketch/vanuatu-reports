@@ -8,6 +8,7 @@ import {
   LayerToggle,
   VerticalSpacer,
   SketchClassTable,
+  Skeleton,
 } from "@seasketch/geoprocessing/client-ui";
 import { BathymetryResults } from "../functions/bathymetry.js";
 import { Trans, useTranslation } from "react-i18next";
@@ -32,10 +33,14 @@ export const Bathymetry: React.FunctionComponent<{ printing: boolean }> = (
   return (
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={title} functionName="bathymetry" useChildCard>
-        {(data: BathymetryResults[]) => {
+        {(results: BathymetryResults[]) => {
+          if (!results || !Array.isArray(results)) {
+            console.log("Results is not an array:", typeof results, results);
+            return <Skeleton />;
+          }
           const overallStats = isCollection
-            ? data.find((s) => s.isCollection)
-            : data[0];
+            ? results.find((s) => s.isCollection)
+            : results[0];
 
           return (
             <ToolbarCard
@@ -79,7 +84,7 @@ export const Bathymetry: React.FunctionComponent<{ printing: boolean }> = (
                   key={props.printing + "Bathymetry MPA Collapse"}
                   collapsed={!props.printing}
                 >
-                  {genBathymetryTable(data, mg)}
+                  {genBathymetryTable(results, mg)}
                 </Collapse>
               )}
 

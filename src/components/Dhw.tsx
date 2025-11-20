@@ -4,6 +4,7 @@ import {
   Collapse,
   ReportError,
   ResultsCard,
+  Skeleton,
 } from "@seasketch/geoprocessing/client-ui";
 import { DHWResults } from "../functions/dhw.js";
 import { DhwLineChart } from "../components/DhwLineChart.js";
@@ -20,7 +21,11 @@ export const Dhw: React.FunctionComponent<{ printing: boolean }> = (props) => {
   return (
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="dhw">
-        {(data: DHWResults[]) => {
+        {(results: DHWResults[]) => {
+          if (!results || !Array.isArray(results)) {
+            console.log("Results is not an array:", typeof results, results);
+            return <Skeleton />;
+          }
           return (
             <ReportError>
               <p>
@@ -32,10 +37,10 @@ export const Dhw: React.FunctionComponent<{ printing: boolean }> = (props) => {
                 </Trans>
               </p>
 
-              {data.some(
+              {results.some(
                 (d) => d.min !== null || d.mean !== null || d.max !== null,
               ) ? (
-                <DhwLineChart data={data} />
+                <DhwLineChart data={results} />
               ) : (
                 <p
                   style={{

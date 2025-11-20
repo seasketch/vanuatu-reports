@@ -4,12 +4,11 @@ import {
   Polygon,
   MultiPolygon,
   GeoprocessingHandler,
-  getFirstFromParam,
   DefaultExtraParams,
-  Feature,
-  isVectorDatasource,
-  getFeaturesForSketchBBoxes,
-  overlapPolygonArea,
+  GeoprocessingRequestModel,
+  runLambdaWorker,
+  parseLambdaResponse,
+  isMetricArray,
 } from "@seasketch/geoprocessing";
 import project from "../../project/projectClient.js";
 import {
@@ -18,6 +17,7 @@ import {
   rekeyMetrics,
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
+import { benthicACAWorker } from "./benthicACAWorker.js";
 
 /**
  * benthicACA: A geoprocessing function that calculates overlap metrics for vector datasources
@@ -28,65 +28,40 @@ export async function benthicACA(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
+  extraParams: DefaultExtraParams = {},
+  request?: GeoprocessingRequestModel<Polygon | MultiPolygon>,
 ): Promise<ReportResult> {
-  const featuresByDatasource: Record<
-    string,
-    Feature<Polygon | MultiPolygon>[]
-  > = {};
-
-  // Calculate overlap metrics for each class in metric group
   const metricGroup = project.getMetricGroup("benthicACA");
+
   const metrics = (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {
-        const ds = project.getMetricGroupDatasource(metricGroup, {
+        const parameters = {
           classId: curClass.classId,
-        });
-        if (!isVectorDatasource(ds))
-          throw new Error(`Expected vector datasource for ${ds.datasourceId}`);
-        const url = project.getDatasourceUrl(ds);
+          metricGroup,
+        };
 
-        // Fetch features overlapping with sketch, if not already fetched
-        const features =
-          featuresByDatasource[ds.datasourceId] ||
-          (await getFeaturesForSketchBBoxes(sketch, url));
-        featuresByDatasource[ds.datasourceId] = features;
-
-        // Get classKey for current data class
-        const classKey = project.getMetricGroupClassKey(metricGroup, {
-          classId: curClass.classId,
-        });
-
-        let finalFeatures: Feature<Polygon | MultiPolygon>[] = [];
-        if (classKey === undefined)
-          // Use all features
-          finalFeatures = features;
-        else {
-          // Filter to features that are a member of this class
-          finalFeatures = features.filter(
-            (feat) =>
-              feat.geometry &&
-              feat.properties &&
-              feat.properties[classKey] === curClass.classId,
-          );
-        }
-
-        // Calculate overlap metrics
-        const overlapResult = await overlapPolygonArea(
-          metricGroup.metricId,
-          finalFeatures,
-          sketch,
-        );
-
-        return overlapResult.map(
-          (metric): Metric => ({
-            ...metric,
-            classId: curClass.classId,
-          }),
-        );
+        return process.env.NODE_ENV === "test"
+          ? benthicACAWorker(sketch, parameters)
+          : runLambdaWorker(
+              sketch,
+              project.package.name,
+              "benthicACAWorker",
+              project.geoprocessing.region,
+              parameters,
+              request!,
+            );
       }),
     )
-  ).flat();
+  ).reduce<Metric[]>(
+    (metrics, result) =>
+      metrics.concat(
+        isMetricArray(result)
+          ? result
+          : (parseLambdaResponse(result) as Metric[]),
+      ),
+    [],
+  );
 
   return {
     metrics: sortMetrics(rekeyMetrics(metrics)),
@@ -99,4 +74,5 @@ export default new GeoprocessingHandler(benthicACA, {
   timeout: 500, // seconds
   memory: 1024, // megabytes
   executionMode: "async",
+  workers: ["benthicACAWorker"],
 });

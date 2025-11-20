@@ -4,11 +4,14 @@ import {
   Polygon,
   MultiPolygon,
   GeoprocessingHandler,
-  getFirstFromParam,
-  DefaultExtraParams,
   rasterMetrics,
   isRasterDatasource,
   loadCog,
+  DefaultExtraParams,
+  GeoprocessingRequestModel,
+  runLambdaWorker,
+  isMetricArray,
+  parseLambdaResponse,
 } from "@seasketch/geoprocessing";
 import project from "../../project/projectClient.js";
 import {
@@ -17,6 +20,7 @@ import {
   rekeyMetrics,
   sortMetrics,
 } from "@seasketch/geoprocessing/client-core";
+import { mangrovesWorker } from "./mangrovesWorker.js";
 
 /**
  * mangroves: A geoprocessing function that calculates overlap metrics for raster datasources
@@ -27,43 +31,41 @@ export async function mangroves(
   sketch:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
+  extraParams: DefaultExtraParams = {},
+  request?: GeoprocessingRequestModel<Polygon | MultiPolygon>,
 ): Promise<ReportResult> {
   // Calculate overlap metrics for each class in metric group
   const metricGroup = project.getMetricGroup("mangroves");
-  const metrics: Metric[] = (
+
+  const metrics = (
     await Promise.all(
       metricGroup.classes.map(async (curClass) => {
-        const ds = project.getMetricGroupDatasource(metricGroup, {
+        const parameters = {
           classId: curClass.classId,
-        });
-        if (!isRasterDatasource(ds))
-          throw new Error(`Expected raster datasource for ${ds.datasourceId}`);
+          metricGroup,
+        };
 
-        const url = project.getDatasourceUrl(ds);
-
-        // Load raster metadata
-        const raster = await loadCog(url);
-
-        // Run raster analysis
-        const overlapResult = await rasterMetrics(raster, {
-          metricId: metricGroup.metricId,
-          feature: sketch,
-          ...(ds.measurementType === "quantitative" && { stats: ["area"] }),
-          ...(ds.measurementType === "categorical" && {
-            categorical: true,
-            categoryMetricValues: [curClass.classId],
-          }),
-        });
-
-        return overlapResult.map(
-          (metrics): Metric => ({
-            ...metrics,
-            classId: curClass.classId,
-          }),
-        );
+        return process.env.NODE_ENV === "test"
+          ? mangrovesWorker(sketch, parameters)
+          : runLambdaWorker(
+              sketch,
+              project.package.name,
+              "mangrovesWorker",
+              project.geoprocessing.region,
+              parameters,
+              request!,
+            );
       }),
     )
-  ).flat();
+  ).reduce<Metric[]>(
+    (metrics, result) =>
+      metrics.concat(
+        isMetricArray(result)
+          ? result
+          : (parseLambdaResponse(result) as Metric[]),
+      ),
+    [],
+  );
 
   return {
     metrics: sortMetrics(rekeyMetrics(metrics)),
@@ -76,4 +78,5 @@ export default new GeoprocessingHandler(mangroves, {
   timeout: 500, // seconds
   memory: 1024, // megabytes
   executionMode: "async",
+  workers: ["mangrovesWorker"],
 });

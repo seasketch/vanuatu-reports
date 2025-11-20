@@ -6,6 +6,7 @@ import {
   LayerToggle,
   ReportError,
   ResultsCard,
+  Skeleton,
   SketchClassTable,
   useSketchProperties,
 } from "@seasketch/geoprocessing/client-ui";
@@ -60,15 +61,6 @@ export const BenthicACA: React.FunctionComponent<{ printing: boolean }> = (
           });
           const metrics = [...valueMetrics, ...percentMetrics];
 
-          const objectives = (() => {
-            const objectives = project.getMetricGroupObjectives(metricGroup, t);
-            if (objectives.length) {
-              return objectives;
-            } else {
-              return;
-            }
-          })();
-
           return (
             <ReportError>
               <p>
@@ -86,7 +78,6 @@ export const BenthicACA: React.FunctionComponent<{ printing: boolean }> = (
               <ClassTable
                 rows={metrics}
                 metricGroup={metricGroup}
-                objective={objectives}
                 columnConfig={[
                   {
                     columnLabel: t("Benthic Feature"),

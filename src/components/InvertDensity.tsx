@@ -8,6 +8,7 @@ import {
   Pill,
   ReportError,
   ResultsCard,
+  Skeleton,
   SketchClassTableStyled,
   Table,
 } from "@seasketch/geoprocessing/client-ui";
@@ -38,8 +39,12 @@ export const InvertDensity: React.FunctionComponent<{ printing: boolean }> = (
   return (
     <div style={{ breakInside: "avoid" }}>
       <ResultsCard title={titleLabel} functionName="invertDensity">
-        {(data: Station[]) => {
-          const averages = data.find((s) => s.station_id === "averages");
+        {(results: Station[]) => {
+          if (!results || !Array.isArray(results)) {
+            console.log("Results is not an array:", typeof results, results);
+            return <Skeleton />;
+          }
+          const averages = results.find((s) => s.station_id === "averages");
           const averageMetrics = averages
             ? Object.entries(averages)
                 .filter(([key]) => key !== "station_id")
@@ -138,7 +143,7 @@ export const InvertDensity: React.FunctionComponent<{ printing: boolean }> = (
 
               {!props.printing && (
                 <Collapse title={t("Show By Station")}>
-                  {genSketchTable(data, metricGroup, t)}
+                  {genSketchTable(results, metricGroup, t)}
                 </Collapse>
               )}
 
