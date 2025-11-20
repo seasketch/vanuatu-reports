@@ -53,6 +53,7 @@ export async function seamounts(
           (metric): Metric => ({
             ...metric,
             classId: curClass.classId,
+            geographyId: "eez",
           }),
         );
       }),

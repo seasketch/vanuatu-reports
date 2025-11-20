@@ -27,7 +27,6 @@ export const Seamounts: React.FunctionComponent<{ printing: boolean }> = (
 ) => {
   const { t } = useTranslation();
   const [{ isCollection, id, childProperties }] = useSketchProperties();
-  const curGeography = project.getGeographyByGroup("default-boundary")[0];
 
   // Metrics
   const metricGroup = project.getMetricGroup("seamounts", t);
@@ -53,15 +52,6 @@ export const Seamounts: React.FunctionComponent<{ printing: boolean }> = (
           });
           const metrics = [...valueMetrics, ...percentMetrics];
 
-          const objectives = (() => {
-            const objectives = project.getMetricGroupObjectives(metricGroup, t);
-            if (objectives.length) {
-              return objectives;
-            } else {
-              return;
-            }
-          })();
-
           return (
             <ReportError>
               <p>
@@ -74,7 +64,6 @@ export const Seamounts: React.FunctionComponent<{ printing: boolean }> = (
               <ClassTable
                 rows={metrics}
                 metricGroup={metricGroup}
-                objective={objectives}
                 columnConfig={[
                   {
                     columnLabel: " ",
