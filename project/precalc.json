@@ -445,7 +445,7 @@
     "classId": "ous_all-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 186843360.693831
+    "value": 186833681.886589
   },
   {
     "geographyId": "eez",
@@ -477,7 +477,7 @@
     "classId": "ous_maritimeTransportation-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 69164229.813784
+    "value": 69157549.900584
   },
   {
     "geographyId": "eez",
@@ -981,7 +981,7 @@
     "classId": "ous_all-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 14658704
+    "value": 14658592
   },
   {
     "geographyId": "eez",
@@ -1013,7 +1013,7 @@
     "classId": "ous_maritimeTransportation-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 7968363
+    "value": 7974064
   },
   {
     "geographyId": "eez",
@@ -1221,7 +1221,7 @@
     "classId": "ous_all-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 215799740.506711
+    "value": 221309366.812932
   },
   {
     "geographyId": "eez",
@@ -1253,7 +1253,7 @@
     "classId": "ous_maritimeTransportation-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 99328825.252261
+    "value": 100892540.511875
   },
   {
     "geographyId": "eez",
@@ -1437,7 +1437,7 @@
     "classId": "ous_all-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 1784591
+    "value": 1784437
   },
   {
     "geographyId": "eez",
@@ -1469,7 +1469,7 @@
     "classId": "ous_maritimeTransportation-total",
     "sketchId": null,
     "groupId": "band-0",
-    "value": 650955
+    "value": 650924
   },
   {
     "geographyId": "eez",
