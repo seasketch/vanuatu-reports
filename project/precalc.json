@@ -442,6 +442,78 @@
   {
     "geographyId": "eez",
     "metricId": "area",
+    "classId": "ous_all-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 186843360.693831
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "ous_aquacultureMariculture-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1543368.154843
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "ous_culturalUse-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1784463.844818
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "ous_fishing-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 144636804.441768
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "ous_maritimeTransportation-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 69164229.813784
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "ous_mining-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 722943.072308
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "ous_recreationTourism-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1994520.755872
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "ous_researchConservation-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 4056321.682535
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
+    "classId": "ous_wasteManagement-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 310131.727203
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "area",
     "classId": "reef_extent_aca-total",
     "sketchId": null,
     "groupId": null,
@@ -906,6 +978,78 @@
   {
     "geographyId": "eez",
     "metricId": "count",
+    "classId": "ous_all-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 14658704
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "ous_aquacultureMariculture-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1017117
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "ous_culturalUse-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1206759
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "ous_fishing-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 64933396
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "ous_maritimeTransportation-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 7968363
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "ous_mining-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 5777992
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "ous_recreationTourism-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1084444
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "ous_researchConservation-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 2160473
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
+    "classId": "ous_wasteManagement-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 357742
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "count",
     "classId": "reef_extent_aca-total",
     "sketchId": null,
     "groupId": null,
@@ -1073,6 +1217,78 @@
   },
   {
     "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "ous_all-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 215799740.506711
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "ous_aquacultureMariculture-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 119904831.145432
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "ous_culturalUse-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 575969705.172089
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "ous_fishing-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 3656088800.659557
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "ous_maritimeTransportation-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 99328825.252261
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "ous_mining-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 281088076.346649
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "ous_recreationTourism-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 326847638.047012
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "ous_researchConservation-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 433138953.769196
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "sum",
+    "classId": "ous_wasteManagement-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 14208022.010132
+  },
+  {
+    "geographyId": "eez",
     "metricId": "valid",
     "classId": "gfw_2018-total",
     "sketchId": null,
@@ -1214,5 +1430,77 @@
     "sketchId": null,
     "groupId": "band-0",
     "value": 26304
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "ous_all-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 1784591
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "ous_aquacultureMariculture-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 282315
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "ous_culturalUse-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 301022
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "ous_fishing-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 23629257
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "ous_maritimeTransportation-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 650955
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "ous_mining-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 117877
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "ous_recreationTourism-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 341058
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "ous_researchConservation-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 708814
+  },
+  {
+    "geographyId": "eez",
+    "metricId": "valid",
+    "classId": "ous_wasteManagement-total",
+    "sketchId": null,
+    "groupId": "band-0",
+    "value": 53727
   }
 ]

@@ -1,0 +1,103 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_all",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 30765828.216029,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_aquacultureMariculture",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 51813418.335449,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_culturalUse",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 29510148.573914,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_fishing",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 599776304.832701,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_maritimeTransportation",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 2004141.067612,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_mining",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 25493879.163086,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_recreationTourism",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 88674763.121918,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_researchConservation",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 72448458.044647,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_wasteManagement",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    }
+  ]
+}

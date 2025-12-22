@@ -1,0 +1,103 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_all",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_aquacultureMariculture",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_culturalUse",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_fishing",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_maritimeTransportation",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_mining",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_recreationTourism",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_researchConservation",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_wasteManagement",
+      "sketchId": "102333",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "2island"
+      }
+    }
+  ]
+}

@@ -1581,5 +1581,65 @@
         "display": "Torba"
       }
     ]
+  },
+  {
+    "metricId": "ous",
+    "type": "sumOverlap",
+    "classes": [
+      {
+        "datasourceId": "ous_all",
+        "layerId": "mxAwAxZDs",
+        "classId": "ous_all",
+        "display": "All Ocean Use"
+      },
+      {
+        "datasourceId": "ous_aquacultureMariculture",
+        "layerId": "tsADnjOuh",
+        "classId": "ous_aquacultureMariculture",
+        "display": "Aquaculture & Mariculture"
+      },
+      {
+        "datasourceId": "ous_culturalUse",
+        "layerId": "Hg4GjYKSh",
+        "classId": "ous_culturalUse",
+        "display": "Cultural Use"
+      },
+      {
+        "datasourceId": "ous_fishing",
+        "layerId": "AZ2XmGG6p",
+        "classId": "ous_fishing",
+        "display": "Fishing"
+      },
+      {
+        "datasourceId": "ous_maritimeTransportation",
+        "layerId": "reCaxNKBJ",
+        "classId": "ous_maritimeTransportation",
+        "display": "Maritime Transportation"
+      },
+      {
+        "datasourceId": "ous_mining",
+        "layerId": "k4HBwj9qg",
+        "classId": "ous_mining",
+        "display": "Mining"
+      },
+      {
+        "datasourceId": "ous_recreationTourism",
+        "layerId": "YJr2rS5Kp",
+        "classId": "ous_recreationTourism",
+        "display": "Recreation & Tourism"
+      },
+      {
+        "datasourceId": "ous_researchConservation",
+        "layerId": "ivWDOf1bW",
+        "classId": "ous_researchConservation",
+        "display": "Research & Conservation"
+      },
+      {
+        "datasourceId": "ous_wasteManagement",
+        "layerId": "Yn9RJbZl9",
+        "classId": "ous_wasteManagement",
+        "display": "Waste Management"
+      }
+    ]
   }
 ]

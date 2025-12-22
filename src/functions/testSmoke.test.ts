@@ -28,6 +28,7 @@ import { reefExtentACA } from "./reefExtentACA.js";
 import { seamounts } from "./seamounts.js";
 import { waterways } from "./waterways.js";
 import { richness } from "./richness.js";
+import { ous } from "./ous.js";
 
 // Create standard smoke tests
 function createSmokeTest(
@@ -78,6 +79,7 @@ const tests = [
   { name: "sites", func: sites },
   { name: "size", func: size },
   { name: "waterways", func: waterways },
+  { name: "ous", func: ous },
 ];
 
 // Generate tests

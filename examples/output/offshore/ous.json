@@ -1,0 +1,103 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_all",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_aquacultureMariculture",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_culturalUse",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_fishing",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_maritimeTransportation",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_mining",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_recreationTourism",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_researchConservation",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "ous",
+      "classId": "ous_wasteManagement",
+      "sketchId": "106370",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "offshore"
+      }
+    }
+  ]
+}
