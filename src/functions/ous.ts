@@ -66,6 +66,6 @@ export default new GeoprocessingHandler(ous, {
   title: "ous",
   description: "",
   timeout: 500, // seconds
-  memory: 1024, // megabytes
+  memory: 4096, // megabytes
   executionMode: "async",
 });
