@@ -1,0 +1,264 @@
+{
+  "stats": {
+    "people": 136,
+    "bySector": {
+      "Fishing": 109,
+      "Maritime Transportation": 40,
+      "Recreation & Tourism": 16,
+      "Research & Conservation": 7,
+      "Cultural Use": 9,
+      "Mining": 7,
+      "Aquaculture & Mariculture": 7
+    },
+    "byVillage": {
+      "Lausake": 17,
+      "Marow": 21,
+      "Wiana": 6,
+      "Ngurua": 46,
+      "Mapua": 46
+    },
+    "byGear": {
+      "Trolling": 56,
+      "Bottom Longline": 17,
+      "Dropline": 54,
+      "Traditional Fish Drive": 26,
+      "Gill Nets": 62,
+      "Underwater Breathing Apparatus": 5,
+      "Handline": 72,
+      "unknown-gear": 65,
+      "Other": 19,
+      "Spear": 27,
+      "Gleaning": 29,
+      "Deep Sea": 4,
+      "Pole and Line": 10,
+      "Drifting Longline": 5,
+      "Traps": 1
+    }
+  },
+  "metrics": [
+    {
+      "metricId": "ousPeopleCount",
+      "value": 136,
+      "classId": "ousPeopleCount_all",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 109,
+      "classId": "Fishing",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 40,
+      "classId": "Maritime Transportation",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 16,
+      "classId": "Recreation & Tourism",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 7,
+      "classId": "Research & Conservation",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 9,
+      "classId": "Cultural Use",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 7,
+      "classId": "Mining",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 7,
+      "classId": "Aquaculture & Mariculture",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 17,
+      "classId": "Lausake",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 21,
+      "classId": "Marow",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 6,
+      "classId": "Wiana",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 46,
+      "classId": "Ngurua",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 46,
+      "classId": "Mapua",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 56,
+      "classId": "Trolling",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 17,
+      "classId": "Bottom Longline",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 54,
+      "classId": "Dropline",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 26,
+      "classId": "Traditional Fish Drive",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 62,
+      "classId": "Gill Nets",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 5,
+      "classId": "Underwater Breathing Apparatus",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 72,
+      "classId": "Handline",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 65,
+      "classId": "unknown-gear",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 19,
+      "classId": "Other",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 27,
+      "classId": "Spear",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 29,
+      "classId": "Gleaning",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 4,
+      "classId": "Deep Sea",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 10,
+      "classId": "Pole and Line",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 5,
+      "classId": "Drifting Longline",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    },
+    {
+      "metricId": "ousPeopleCount",
+      "value": 1,
+      "classId": "Traps",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "127431"
+    }
+  ]
+}

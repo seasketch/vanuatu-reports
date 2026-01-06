@@ -29,6 +29,7 @@ import { seamounts } from "./seamounts.js";
 import { waterways } from "./waterways.js";
 import { richness } from "./richness.js";
 import { ous } from "./ous.js";
+import { ousDemographics } from "./ousDemographics.js";
 
 // Create standard smoke tests
 function createSmokeTest(
@@ -80,6 +81,7 @@ const tests = [
   { name: "size", func: size },
   { name: "waterways", func: waterways },
   { name: "ous", func: ous },
+  { name: "ousDemographics", func: ousDemographics },
 ];
 
 // Generate tests

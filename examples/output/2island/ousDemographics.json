@@ -1,0 +1,18 @@
+{
+  "stats": {
+    "people": 0,
+    "bySector": {},
+    "byVillage": {},
+    "byGear": {}
+  },
+  "metrics": [
+    {
+      "metricId": "ousPeopleCount",
+      "value": 0,
+      "classId": "ousPeopleCount_all",
+      "groupId": null,
+      "geographyId": null,
+      "sketchId": "102333"
+    }
+  ]
+}

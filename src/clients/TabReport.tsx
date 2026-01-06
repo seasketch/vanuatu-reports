@@ -34,6 +34,7 @@ import { Geomorphology } from "../components/Geomorphology.js";
 import { SketchProperties } from "@seasketch/geoprocessing";
 import { Population } from "../components/Population.js";
 import { Ous } from "../components/Ous.js";
+import { OusDemographic } from "../components/OusDemographic.js";
 
 const BaseReport = () => {
   const { t } = useTranslation();
@@ -127,6 +128,7 @@ const BaseReport = () => {
           <Size printing={isPrinting} />
           <Bathymetry printing={isPrinting} />
           <Ous printing={isPrinting} />
+          <OusDemographic />
           {!isPrinting && <SketchAttributesCard autoHide />}
         </ReportPage>
         <ReportPage hidden={!isPrinting && tab !== "EXPEDITION"}>

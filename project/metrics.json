@@ -1641,5 +1641,149 @@
         "display": "Waste Management"
       }
     ]
+  },
+  {
+    "metricId": "ousOverallDemographicOverlap",
+    "type": "countOverlap",
+    "classes": [
+      {
+        "classId": "ousTotalPeople",
+        "display": "Total"
+      }
+    ]
+  },
+  {
+    "metricId": "ousSectorDemographicOverlap",
+    "type": "countOverlap",
+    "classes": [
+      {
+        "classId": "Aquaculture & Mariculture",
+        "display": "Aquaculture & Mariculture"
+      },
+      {
+        "classId": "Cultural Use",
+        "display": "Cultural Use"
+      },
+      {
+        "classId": "Development & Infrastructure",
+        "display": "Development & Infrastructure"
+      },
+      {
+        "classId": "Fishing",
+        "display": "Fishing"
+      },
+      {
+        "classId": "Maritime Transportation",
+        "display": "Maritime Transportation"
+      },
+      {
+        "classId": "Mining",
+        "display": "Mining"
+      },
+      {
+        "classId": "Recreation & Tourism",
+        "display": "Recreation & Tourism"
+      },
+      {
+        "classId": "Research & Conservation",
+        "display": "Research & Conservation"
+      },
+      {
+        "classId": "Waste Management",
+        "display": "Waste Management"
+      }
+    ]
+  },
+  {
+    "metricId": "ousVillageDemographicOverlap",
+    "type": "countOverlap",
+    "classes": [
+      {
+        "classId": "Lausake",
+        "display": "Lausake"
+      },
+      {
+        "classId": "Mangarongo",
+        "display": "Mangarongo"
+      },
+      {
+        "classId": "Mapua",
+        "display": "Mapua"
+      },
+      {
+        "classId": "Marow",
+        "display": "Marow"
+      },
+      {
+        "classId": "Ngurua",
+        "display": "Ngurua"
+      },
+      {
+        "classId": "Wiana",
+        "display": "Wiana"
+      }
+    ]
+  },
+  {
+    "metricId": "ousGearDemographicOverlap",
+    "type": "countOverlap",
+    "classes": [
+      {
+        "classId": "Bottom Longline",
+        "display": "Bottom Longline"
+      },
+      {
+        "classId": "Deep Sea",
+        "display": "Deep Sea"
+      },
+      {
+        "classId": "Drifting Longline",
+        "display": "Drifting Longline"
+      },
+      {
+        "classId": "Dropline",
+        "display": "Dropline"
+      },
+      {
+        "classId": "Gill Nets",
+        "display": "Gill Nets"
+      },
+      {
+        "classId": "Gleaning",
+        "display": "Gleaning"
+      },
+      {
+        "classId": "Handline",
+        "display": "Handline"
+      },
+      {
+        "classId": "Other",
+        "display": "Other"
+      },
+      {
+        "classId": "Pole and Line",
+        "display": "Pole and Line"
+      },
+      {
+        "classId": "Spear",
+        "display": "Spear"
+      },
+      {
+        "classId": "Traditional Fish Drive",
+        "display": "Traditional Fish Drive"
+      },
+      {
+        "classId": "Traps",
+        "display": "Traps"
+      },
+      {
+        "classId": "Trolling",
+        "display": "Trolling"
+      },
+      {
+        "classId": "Underwater Breathing Apparatus",
+        "display": "Underwater Breathing Apparatus"
+      }
+    ]
   }
 ]
