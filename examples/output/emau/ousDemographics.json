@@ -1,6 +1,6 @@
 {
   "stats": {
-    "people": 136,
+    "people": 131,
     "bySector": {
       "Fishing": 109,
       "Maritime Transportation": 40,
@@ -14,7 +14,7 @@
       "Lausake": 17,
       "Marow": 21,
       "Wiana": 6,
-      "Ngurua": 46,
+      "Ngurua": 41,
       "Mapua": 46
     },
     "byGear": {
@@ -38,7 +38,7 @@
   "metrics": [
     {
       "metricId": "ousPeopleCount",
-      "value": 136,
+      "value": 131,
       "classId": "ousPeopleCount_all",
       "groupId": null,
       "geographyId": null,
@@ -126,7 +126,7 @@
     },
     {
       "metricId": "ousPeopleCount",
-      "value": 46,
+      "value": 41,
       "classId": "Ngurua",
       "groupId": null,
       "geographyId": null,

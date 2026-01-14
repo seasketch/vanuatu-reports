@@ -10,14 +10,13 @@ import {
   Feature,
   FeatureCollection,
   getFeaturesForSketchBBoxes,
-  loadFgb,
   toSketchArray,
   clip,
   createMetric,
 } from "@seasketch/geoprocessing";
 import { Metric } from "@seasketch/geoprocessing/client-core";
 import projectClient from "../../project/projectClient.js";
-import { featureCollection, intersect } from "@turf/turf";
+import { booleanIntersects } from "@turf/turf";
 
 export interface OusFeatureProperties {
   resp_id: number;
@@ -69,61 +68,41 @@ export async function ousDemographics(
         | Sketch<Polygon | MultiPolygon>
         | SketchCollection<Polygon | MultiPolygon>,
     );
-    const sketchColl = featureCollection(sketches);
+    const sketchColl = genFeatureCollection(sketches);
     return sketch ? clip(sketchColl, "union") : null;
   })();
 
-  // Track counting of respondent/sector level stats, only need to count once
+  // Tracking which respondents have been processed
   const respondentProcessed: Record<string, Record<string, boolean>> = {};
+  // Track current number of people represented by each respondent
+  const pplPerRespondent: Record<string, number> = {};
 
-  // Track counting of max represented people for respondent stats
-  const maxPeoplePerRespondent: Record<string, number> = {};
-
+  // Process OUS shapes
   const countStats = shapes.features.reduce<OusStats>(
     (statsSoFar: OusStats, shape: OusFeature) => {
-      if (!shape.properties) {
-        console.log(`Shape missing properties ${JSON.stringify(shape)}`);
-      }
-
-      if (!shape.properties.resp_id) {
-        console.log(
-          `Missing respondent ID for ${JSON.stringify(shape)}, skipping`,
-        );
+      // Skip and log malformed OUS shapes
+      if (
+        !shape.properties ||
+        !shape.properties.resp_id ||
+        shape.properties.number_of_ppl == null ||
+        shape.properties.rep_in_sector == null
+      ) {
+        console.log(`Malformed shape: ${JSON.stringify(shape)}`);
         return statsSoFar;
       }
 
-      let isOverlapping: boolean;
-      if (!combinedSketch) {
-        isOverlapping = true;
-      } else {
-        try {
-          isOverlapping = !!intersect(
-            featureCollection([shape, combinedSketch!]),
-          );
-          if (!isOverlapping) return statsSoFar;
-        } catch {
-          console.log(JSON.stringify(shape), JSON.stringify(combinedSketch));
-          throw new Error("Error in intersect");
-        }
-      }
-      if (!isOverlapping) return statsSoFar;
+      // Skip OUS shapes that do not overlap with the sketch
+      if (combinedSketch && !booleanIntersects(shape, combinedSketch))
+        return statsSoFar;
 
+      // Extract properties from OUS shape
+      // resp_id and village are consistent across a respondent's shapes
+      // curPeople, curSector, and curGears are consistent within a sector per respondent, but not across sectors
       const resp_id = shape.properties.resp_id;
-      const totalPeople = (() => {
-        const totalPeopleVal = shape.properties.number_of_ppl;
-        if (totalPeopleVal !== null && totalPeopleVal !== undefined) {
-          if (typeof totalPeopleVal === "string") {
-            return parseFloat(totalPeopleVal);
-          } else {
-            return totalPeopleVal;
-          }
-        } else {
-          return 1;
-        }
-      })();
-      const village = shape.properties.village
-        ? `${shape.properties.village}`
+      const village: string = shape.properties.village
+        ? shape.properties.village
         : "unknown-village";
+      const curPpl = Number(shape.properties.rep_in_sector);
       const curSector: string = shape.properties.sector
         ? shape.properties.sector
         : "unknown-sector";
@@ -133,76 +112,59 @@ export async function ousDemographics(
             .map((s: string) => s.trim())
         : ["unknown-gear"];
 
-      // Number of people is gathered once per sector
-      // So you can only know the total number of people for each sector, not overall
-      const curPeople = (() => {
-        const peopleVal = shape.properties["rep_in_sector"];
-        if (peopleVal !== null && peopleVal !== undefined) {
-          if (typeof peopleVal === "string") {
-            return parseFloat(peopleVal);
-          } else {
-            return peopleVal;
-          }
-        } else {
-          return 1;
-        }
-      })();
-
-      // Mutates
+      // Updated stats object
       let newStats: OusStats = { ...statsSoFar };
 
       // If new respondent
       if (!respondentProcessed[resp_id]) {
         // Add respondent to total respondents
-        newStats.people = newStats.people + curPeople;
+        newStats.people = newStats.people + curPpl;
 
         // Add new respondent to municipality stats
         newStats.byVillage[village] = newStats.byVillage[village]
-          ? newStats.byVillage[village] + curPeople
-          : curPeople;
+          ? newStats.byVillage[village] + curPpl
+          : curPpl;
 
+        // Respondent processed
         respondentProcessed[resp_id] = {};
 
-        // Keep track of # people this respondent represents
-        respondentProcessed[resp_id][curPeople] = true;
-        maxPeoplePerRespondent[resp_id] = curPeople;
+        // Keep track of # people this respondent is currently representing
+        respondentProcessed[resp_id][curPpl] = true;
+        pplPerRespondent[resp_id] = curPpl;
       }
 
-      // If new number of people represented by respondent, add them up to max
-      if (!respondentProcessed[resp_id][curPeople]) {
-        let newPeopleCount = 0;
-        const sum = maxPeoplePerRespondent[resp_id] + curPeople;
-        if (sum > totalPeople) {
-          newPeopleCount = totalPeople;
-        } else {
-          newPeopleCount = sum;
-        }
+      // If more people represented by respondent, add them
+      if (
+        !respondentProcessed[resp_id][curPpl] &&
+        pplPerRespondent[resp_id] < curPpl
+      ) {
+        // Calculate additional people to add across stats
+        const addnPeople = curPpl - pplPerRespondent[resp_id];
 
-        const addnPeople = newPeopleCount - maxPeoplePerRespondent[resp_id];
-
+        // Adjust totals across stats
         newStats.people += addnPeople;
         newStats.byVillage[village] += addnPeople;
-        maxPeoplePerRespondent[resp_id] = newPeopleCount;
-        respondentProcessed[resp_id][curPeople] = true;
+        pplPerRespondent[resp_id] = curPpl;
+        respondentProcessed[resp_id][curPpl] = true;
       }
 
-      // Once per respondent and gear type counts
+      // Count sectors once per respondent (# ppl is consistent within sector per respondent)
+      if (!respondentProcessed[resp_id][curSector]) {
+        newStats.bySector[curSector] = newStats.bySector[curSector]
+          ? newStats.bySector[curSector] + curPpl
+          : curPpl;
+        respondentProcessed[resp_id][curSector] = true;
+      }
+
+      // Count gear types once per respondent (# ppl is consistent within fishing sector per respondent)
       curGears.forEach((curGear) => {
         if (!respondentProcessed[resp_id][curGear]) {
           newStats.byGear[curGear] = newStats.byGear[curGear]
-            ? newStats.byGear[curGear] + curPeople
-            : curPeople;
+            ? newStats.byGear[curGear] + curPpl
+            : curPpl;
           respondentProcessed[resp_id][curGear] = true;
         }
       });
-
-      // Once per respondent and sector counts
-      if (!respondentProcessed[resp_id][curSector]) {
-        newStats.bySector[curSector] = newStats.bySector[curSector]
-          ? newStats.bySector[curSector] + curPeople
-          : curPeople;
-        respondentProcessed[resp_id][curSector] = true;
-      }
 
       return newStats;
     },
@@ -214,26 +176,22 @@ export async function ousDemographics(
     },
   );
 
-  // calculate sketch % overlap - divide sketch counts by total counts
-  const overallMetrics = [
-    createMetric({
-      metricId: "ousPeopleCount",
-      classId: "ousPeopleCount_all",
-      value: countStats.people,
-      ...(sketch ? { sketchId: sketch.properties.id } : {}),
-    }),
-  ];
-
+  const overallMetric = createMetric({
+    metricId: "ousPeopleCount",
+    classId: "ousPeopleCount_all",
+    value: countStats.people,
+    ...(sketch ? { sketchId: sketch.properties.id } : {}),
+  });
   const sectorMetrics = genOusClassMetrics(countStats.bySector, sketch);
-  const municipalityMetrics = genOusClassMetrics(countStats.byVillage, sketch);
+  const villageMetrics = genOusClassMetrics(countStats.byVillage, sketch);
   const gearMetrics = genOusClassMetrics(countStats.byGear, sketch);
 
   const finalMetrics = {
     stats: countStats,
     metrics: [
-      ...overallMetrics,
+      overallMetric,
       ...sectorMetrics,
-      ...municipalityMetrics,
+      ...villageMetrics,
       ...gearMetrics,
     ],
   };
@@ -242,9 +200,8 @@ export async function ousDemographics(
 }
 
 /** Generate metrics from OUS class stats */
-export function genOusClassMetrics<G extends Polygon | MultiPolygon>(
+export function genOusClassMetrics(
   classStats: ClassCountStats,
-  /** optionally calculate stats for OUS shapes that overlap with sketch  */
   sketch?:
     | Sketch<Polygon | MultiPolygon>
     | SketchCollection<Polygon | MultiPolygon>,
@@ -264,9 +221,8 @@ export function genOusClassMetrics<G extends Polygon | MultiPolygon>(
 export default new GeoprocessingHandler(ousDemographics, {
   title: "ousDemographics",
   description: "Calculates ous overlap metrics",
-  timeout: 900, // seconds
+  timeout: 900,
   executionMode: "async",
-  // Specify any Sketch Class form attributes that are required
   memory: 10240,
   requiresProperties: [],
 });
