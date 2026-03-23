@@ -9,22 +9,33 @@ import {
   createMetric,
   loadFgb,
   genFeatureCollection,
+  Feature,
+  Polygon,
+  MultiPolygon,
 } from "@seasketch/geoprocessing";
+import { bbox, booleanIntersects } from "@turf/turf";
 import projectClient from "../../project/projectClient.js";
 
 const DEST_PATH = "ousDemographicPrecalcTotals.json";
 
 async function main() {
-  const url = `${projectClient.dataBucketUrl()}ous_demographics.fgb`;
+  const ousUrl = `${projectClient.dataBucketUrl()}ous_demographics.fgb`;
+  const eezUrl = `${projectClient.dataBucketUrl()}eez.fgb`;
 
-  const rawShapes = await loadFgb<OusFeature>(url);
-
+  const rawShapes = await loadFgb<OusFeature>(ousUrl);
   const shapes = genFeatureCollection(rawShapes) as OusFeatureCollection;
+
+  const eezFeatures = await loadFgb<Feature<Polygon | MultiPolygon>>(eezUrl);
+  const clippedShapes = genFeatureCollection(
+    shapes.features.filter((shape) =>
+      eezFeatures.some((eez) => booleanIntersects(shape, eez)),
+    ),
+  ) as OusFeatureCollection;
 
   // Track counting of respondent/sector level stats, only need to count once
   const respondentProcessed: Record<string, Record<string, boolean>> = {};
 
-  const countStats = shapes.features.reduce<OusStats>(
+  const countStats = clippedShapes.features.reduce<OusStats>(
     (statsSoFar: OusStats, shape: OusFeature) => {
       if (!shape.properties) {
         console.log(`Shape missing properties ${JSON.stringify(shape)}`);

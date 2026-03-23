@@ -274,6 +274,15 @@ export const OusDemographic: React.FunctionComponent = () => {
                     <b>by village</b>.
                   </Trans>
                 </p>
+                <small>
+                  <Trans i18nKey="OUS Demographics - breakdown by village 2">
+                    Note: Because group responses allow for different counts of
+                    people in different sectors, the number of people using the
+                    ocean within the area of interest from a village may not
+                    always sum to number of people represented in the survey
+                    from that village.
+                  </Trans>
+                </small>
                 <ClassTable
                   rows={villageMetrics}
                   metricGroup={villageMetricGroup}
@@ -288,7 +297,10 @@ export const OusDemographic: React.FunctionComponent = () => {
                       columnLabel: peopleUsingOceanLabel,
                       type: "metricValue",
                       metricId: METRIC_ID,
-                      valueFormatter: (value) => Number.format(value as number),
+                      valueFormatter: (value) =>
+                        (value as number)
+                          ? Number.format(value as number) + "+"
+                          : Number.format(value as number),
                       chartOptions: {
                         showTitle: true,
                       },
@@ -305,16 +317,6 @@ export const OusDemographic: React.FunctionComponent = () => {
                       },
                       width: 25,
                       colStyle: { textAlign: "center" },
-                    },
-                    {
-                      columnLabel: peopleUsingOceanPercLabel,
-                      type: "metricChart",
-                      metricId: PERC_METRIC_ID,
-                      valueFormatter: "percent",
-                      chartOptions: {
-                        showTitle: true,
-                      },
-                      width: 30,
                     },
                   ]}
                 />

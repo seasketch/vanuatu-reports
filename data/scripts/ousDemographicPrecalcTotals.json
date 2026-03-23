@@ -25,7 +25,7 @@
   },
   {
     "metricId": "ousPeopleCount",
-    "value": 75,
+    "value": 53,
     "classId": "Cultural Use",
     "groupId": null,
     "geographyId": null,
@@ -33,24 +33,8 @@
   },
   {
     "metricId": "ousPeopleCount",
-    "value": 56,
+    "value": 47,
     "classId": "Recreation & Tourism",
-    "groupId": null,
-    "geographyId": null,
-    "sketchId": null
-  },
-  {
-    "metricId": "ousPeopleCount",
-    "value": 40,
-    "classId": "Waste Management",
-    "groupId": null,
-    "geographyId": null,
-    "sketchId": null
-  },
-  {
-    "metricId": "ousPeopleCount",
-    "value": 96,
-    "classId": "Mining",
     "groupId": null,
     "geographyId": null,
     "sketchId": null
@@ -65,8 +49,8 @@
   },
   {
     "metricId": "ousPeopleCount",
-    "value": 16,
-    "classId": "Development & Infrastructure",
+    "value": 48,
+    "classId": "Mining",
     "groupId": null,
     "geographyId": null,
     "sketchId": null
@@ -75,6 +59,22 @@
     "metricId": "ousPeopleCount",
     "value": 12,
     "classId": "Aquaculture & Mariculture",
+    "groupId": null,
+    "geographyId": null,
+    "sketchId": null
+  },
+  {
+    "metricId": "ousPeopleCount",
+    "value": 11,
+    "classId": "Development & Infrastructure",
+    "groupId": null,
+    "geographyId": null,
+    "sketchId": null
+  },
+  {
+    "metricId": "ousPeopleCount",
+    "value": 7,
+    "classId": "Waste Management",
     "groupId": null,
     "geographyId": null,
     "sketchId": null
@@ -185,7 +185,7 @@
   },
   {
     "metricId": "ousPeopleCount",
-    "value": 150,
+    "value": 132,
     "classId": "unknown-gear",
     "groupId": null,
     "geographyId": null,
