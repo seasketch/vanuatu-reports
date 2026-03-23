@@ -1,0 +1,13 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "isotopes",
+      "classId": "isotopeRatio",
+      "sketchId": null,
+      "groupId": null,
+      "value": null
+    }
+  ],
+  "stations": []
+}

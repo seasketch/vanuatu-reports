@@ -1,0 +1,125 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "mangroves",
+      "classId": "1996",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "mangroves",
+      "classId": "2007",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "mangroves",
+      "classId": "2008",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "mangroves",
+      "classId": "2009",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "mangroves",
+      "classId": "2010",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "mangroves",
+      "classId": "2015",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "mangroves",
+      "classId": "2016",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "mangroves",
+      "classId": "2017",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "mangroves",
+      "classId": "2018",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "mangroves",
+      "classId": "2019",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": "eez",
+      "metricId": "mangroves",
+      "classId": "2020",
+      "sketchId": "127431",
+      "groupId": "band-0",
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    }
+  ]
+}

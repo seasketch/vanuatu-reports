@@ -1,0 +1,15 @@
+{
+  "metrics": [
+    {
+      "geographyId": "eez",
+      "metricId": "reefExtentACA",
+      "classId": "reefExtent",
+      "sketchId": "127431",
+      "groupId": null,
+      "value": 1147050.258717,
+      "extra": {
+        "sketchName": "emau"
+      }
+    }
+  ]
+}

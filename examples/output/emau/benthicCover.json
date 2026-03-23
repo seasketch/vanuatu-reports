@@ -1,0 +1,69 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "Calcified Macroalgae",
+      "sketchId": null,
+      "groupId": null,
+      "value": null
+    },
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "CCA",
+      "sketchId": null,
+      "groupId": null,
+      "value": null
+    },
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "Hard Coral",
+      "sketchId": null,
+      "groupId": null,
+      "value": null
+    },
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "Invertebrate",
+      "sketchId": null,
+      "groupId": null,
+      "value": null
+    },
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "Macroalgae",
+      "sketchId": null,
+      "groupId": null,
+      "value": null
+    },
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "Other",
+      "sketchId": null,
+      "groupId": null,
+      "value": null
+    },
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "Soft Coral",
+      "sketchId": null,
+      "groupId": null,
+      "value": null
+    },
+    {
+      "geographyId": null,
+      "metricId": "benthicCover",
+      "classId": "Turf",
+      "sketchId": null,
+      "groupId": null,
+      "value": null
+    }
+  ],
+  "stations": []
+}

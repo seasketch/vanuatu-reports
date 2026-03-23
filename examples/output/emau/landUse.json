@@ -1,0 +1,59 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "construction",
+      "sketchId": "127431",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "farmland",
+      "sketchId": "127431",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "industrial",
+      "sketchId": "127431",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "orchard",
+      "sketchId": "127431",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "landUse",
+      "classId": "residential",
+      "sketchId": "127431",
+      "groupId": null,
+      "value": 17208.186949,
+      "extra": {
+        "sketchName": "emau"
+      }
+    }
+  ]
+}

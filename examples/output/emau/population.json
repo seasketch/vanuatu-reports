@@ -1,0 +1,70 @@
+{
+  "metrics": [
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "MALAMPA",
+      "sketchId": "127431",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "PENAMA",
+      "sketchId": "127431",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "SANMA",
+      "sketchId": "127431",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "SHEFA",
+      "sketchId": "127431",
+      "groupId": null,
+      "value": 158,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "TAFEA",
+      "sketchId": "127431",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    },
+    {
+      "geographyId": null,
+      "metricId": "population",
+      "classId": "TORBA",
+      "sketchId": "127431",
+      "groupId": null,
+      "value": 0,
+      "extra": {
+        "sketchName": "emau"
+      }
+    }
+  ]
+}
