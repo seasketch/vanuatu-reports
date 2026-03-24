@@ -33,7 +33,7 @@ export const Mangroves: React.FunctionComponent<{ printing: boolean }> = (
     classId: "2020",
     sketchId: null,
     groupId: null,
-    value: 15742695.7229,
+    value: 4640021.685622,
   };
 
   // Labels

@@ -6,7 +6,7 @@
       "classId": "Coral/Algae",
       "sketchId": "102333",
       "groupId": null,
-      "value": 24790215.853703,
+      "value": 24806063.446049,
       "extra": {
         "sketchName": "2island"
       }
@@ -28,7 +28,7 @@
       "classId": "Rock",
       "sketchId": "102333",
       "groupId": null,
-      "value": 8837534.632949,
+      "value": 8837932.25615,
       "extra": {
         "sketchName": "2island"
       }
@@ -39,7 +39,7 @@
       "classId": "Rubble",
       "sketchId": "102333",
       "groupId": null,
-      "value": 1545446.224704,
+      "value": 1545446.58372,
       "extra": {
         "sketchName": "2island"
       }
@@ -50,7 +50,7 @@
       "classId": "Sand",
       "sketchId": "102333",
       "groupId": null,
-      "value": 352822.413343,
+      "value": 352822.43525,
       "extra": {
         "sketchName": "2island"
       }
@@ -61,7 +61,7 @@
       "classId": "Seagrass",
       "sketchId": "102333",
       "groupId": null,
-      "value": 496818.367311,
+      "value": 497516.787356,
       "extra": {
         "sketchName": "2island"
       }

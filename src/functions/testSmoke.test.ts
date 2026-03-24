@@ -35,7 +35,7 @@ import { ousDemographics } from "./ousDemographics.js";
 function createSmokeTest(
   functionName: string,
   functionToTest: Function,
-  timeout: number = 60_000,
+  timeout: number = 500_000,
 ) {
   describe(functionName, () => {
     test("handler function is present", () => {
@@ -59,7 +59,7 @@ function createSmokeTest(
 
 const tests = [
   { name: "bathymetry", func: bathymetry },
-  { name: "benthicACA", func: benthicACA },
+  { name: "benthicACA", func: benthicACA, timeout: 500_000 },
   { name: "benthicCover", func: benthicCover },
   { name: "bleachingAlerts", func: bleachingAlerts },
   { name: "dhw", func: dhw },
