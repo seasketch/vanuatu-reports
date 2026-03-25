@@ -7,7 +7,6 @@ import {
   ResultsCard,
 } from "@seasketch/geoprocessing/client-ui";
 import {
-  GeogProp,
   ReportResult,
   firstMatchingMetric,
   percentWithEdge,
@@ -27,14 +26,16 @@ export const Mangroves: React.FunctionComponent<{ printing: boolean }> = (
 
   // Metrics
   const metricGroup = project.getMetricGroup("mangroves", t);
-  const precalcMetric = {
-    geographyId: "world",
-    metricId: "area",
-    classId: "2020",
-    sketchId: null,
-    groupId: null,
-    value: 4640021.685622,
-  };
+  const curGeography = project.getGeographyByGroup("default-boundary")[0];
+  const precalcMetrics = project.getPrecalcMetrics(
+    metricGroup,
+    "area",
+    curGeography.geographyId,
+  );
+  const precalcTotal2020 = firstMatchingMetric(
+    precalcMetrics,
+    (m) => m.classId === "2020",
+  );
 
   // Labels
   const titleLabel = t("Mangroves - Global Mangrove Watch");
@@ -75,7 +76,7 @@ export const Mangroves: React.FunctionComponent<{ printing: boolean }> = (
           );
           const percentMetric2020 = toPercentMetric(
             [valueMetric2020],
-            [precalcMetric],
+            [precalcTotal2020],
             {
               metricIdOverride: percMetricIdName,
             },
